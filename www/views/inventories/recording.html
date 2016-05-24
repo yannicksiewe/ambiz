@@ -1,0 +1,59 @@
+
+<ion-view view-title="Recording">
+<ion-content>
+          <div class="card">
+            <div class="item item-text-wrap"  ng-repeat = "item in inventories | filter: { id : ID}">
+                      <p>{{item.id}},{{item.txType}},{{item.Descptn}},{{item.identif}}</p>
+            </div>
+          </div>
+      <form name="recording" novalidate>
+           <div class="padding">
+           <div class="list">
+                 </br></br>
+                <span class="input-label">lotPic</span>
+                    <div class="item item-input-inset">
+                        <label class="item-input-wrapper">
+                            <input type="text" placeholder=""  ng-model='inventoryItem.lotPic'>
+                        </label>
+                         <button class="button button-clear"  ng-click='scan()'>
+                           <i class="icon ion-android-camera placeholder-icon"></i>
+                         </button>
+                    </div>
+
+
+                    <span class="input-label">artPic</span>
+                    <div class="item item-input-inset">
+                      <label class="item-input-wrapper">
+                       <input type="text" placeholder=""  ng-model='inventoryItem.artPic'>
+                      </label>
+                    </div>
+
+                    <span class="input-label">artName</span>
+                    <div class="item item-input-inset">
+                      <label class="item-input-wrapper">
+                        <input type="text" placeholder=""  ng-model='inventoryItem.artName'>
+                      </label>
+                    </div>
+
+                    <span class="input-label">section</span>
+                    <div class="item item-input-inset">
+                      <label class="item-input-wrapper">
+                        <input type="text" placeholder="" ng-model='inventoryItem.section'>
+                      </label>
+                    </div>
+
+                    <span class="input-label">quantity</span>
+                    <div class="item item-input-inset">
+                      <label class="item-input-wrapper">
+                        <input type="text" placeholder="Enter quantity"  ng-model='inventoryItem.asseccedQty'>
+                      </label>
+                    </div>
+            </div>
+            </div>
+            <div class="padding">
+              <button class="button button-block button-calm" ng-disabled="recording.$invalid"  ng-click="submit()"> Save </button>
+            </div>
+      </form>
+  </ion-content>
+
+</ion-view>
