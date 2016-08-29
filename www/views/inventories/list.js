@@ -1,7 +1,7 @@
 angular.module('AMBIZ')
 .controller('ListController',function($scope, $http, $state,$cordovaBarcodeScanner,$ionicPlatform){
   $scope.inventoryItem={};
-     $http.get('http://192.168.1.9:8080/adinvtry.server/rest/invinvtrys',{params:{start:-1,max:20}})
+     $http.get('http://192.168.1.4:8080/adinvtry.server/rest/invinvtrys',{params:{start:-1,max:20}})
   //  $http.get('data/data.json')
          .success(function(data){
             // console.log(data);
@@ -18,7 +18,7 @@ angular.module('AMBIZ')
 
 
            $scope.doRefresh = function(){
-             $http.get('http://192.168.1.9:8080/adinvtry.server/rest/invinvtrys',{params:{start:-1,max:20}})
+             $http.get('http://192.168.1.4:8080/adinvtry.server/rest/invinvtrys',{params:{start:-1,max:20}})
                 // $http.get('data/data.json')
                .success(function(data){
                 $scope.inventories = data.resultList;
@@ -80,10 +80,7 @@ angular.module('AMBIZ')
                            searchInput.fieldNames.push('lotPic');
                            console.log($scope.lotPic);
 
-
-
-
-                                                               $http.post('http://192.168.1.9:8080/adstock.server/rest/stkarticlelots/findBy',searchInput)
+                                                               $http.post('http://192.168.1.4:8080/adstock.server/rest/stkarticlelots/findBy',searchInput)
                                                                 .success(function(data){
                                                              var response = [];
                                                              response = data.resultList;
