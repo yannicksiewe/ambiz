@@ -6,7 +6,12 @@
 angular.module('AMBIZ', ['ionic','ngCordova'])
 
 .run(function($ionicPlatform) {
+<<<<<<< HEAD
   $ionicPlatform.ready(function() {
+=======
+  $ionicPlatform.ready(function(){
+
+>>>>>>> 1e552ebc18b4d1b2bd378f3fbf3ae87f0833155d
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
@@ -20,6 +25,10 @@ angular.module('AMBIZ', ['ionic','ngCordova'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e552ebc18b4d1b2bd378f3fbf3ae87f0833155d
   });
 })
 
@@ -116,4 +125,45 @@ angular.module('AMBIZ', ['ionic','ngCordova'])
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/inventories/list');
 
+<<<<<<< HEAD
+=======
+
+
+
+
+/*
+  onDeviceReady = function () {
+      app.receivedEvent('deviceready');
+
+      oauth2.addKeycloak({
+            name: 'keycloak',
+            settings: {
+              base: 'http://192.168.1.4:8080/auth',
+              clientId: 'shoot-third-party',
+              realm: "shoot-realm"
+            }
+          });
+
+        oauth2.keycloak.requestAccess()
+      .then(function (token) {
+        console.log(token);
+        // add token to the http header on futher http requests:
+        // 'Authorization': 'Bearer ' + token
+      }, function (err) {
+        alert(err.error);
+      });
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 1e552ebc18b4d1b2bd378f3fbf3ae87f0833155d
 });

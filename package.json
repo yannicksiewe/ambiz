@@ -20,7 +20,12 @@
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
+<<<<<<< HEAD
     "ionic-plugin-keyboard"
+=======
+    "ionic-plugin-keyboard",
+    "org.jboss.aerogear.cordova.oauth2"
+>>>>>>> 1e552ebc18b4d1b2bd378f3fbf3ae87f0833155d
   ],
   "cordovaPlatforms": [
     "android"
