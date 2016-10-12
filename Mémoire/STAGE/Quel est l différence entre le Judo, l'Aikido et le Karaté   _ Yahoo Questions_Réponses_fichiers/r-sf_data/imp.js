@@ -1,0 +1,6 @@
+document.write('<iframe allowtransparency=\"true\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" frameborder=\"0\" height=\"90\" width=\"728\" src=\"https://ads.yahoo.com/iframe3?ZtVXCgjvbQAFnxoCAAAAAHDQewAAAAAAAgAJfj0CAAAAAP8AAAAHFvtVBgAAAAAAD9aYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDsgIAAAAAAAIAAgAAgD8ACtejcD0Ktz8K16NwPQq3PwrXo3A9Crc.CtejcD0Ktz8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADhP4FaxBxZEl3x-SusYjld478wO9nmavYpKOSHAAAAAA==,,https%3A%2F%2Ffr.answers.yahoo.com,D%3Dsmpv%253d3%2526ed%253dzxE1dB3.gBL.y2._4UzAqPxy4evAkykpDU4s7TP82nyi6HoODCPlEWSmbz28qyEGLXybxKyM2ToXjB6gVvxZ0GxDDGLenv25M3LLP858kis8UOlpzYDECxdYV2sRapgLS.zRdDpBe5nQ1VxVl9x2nrIzpfUeJX5nOA_OyihmLR1sVWB79.8.ZbKR7Sk22oi1mTHhr.Auf42saAqBLLYbbzmNE_UUAHsHXXgHPEZ8xyn94__XPGPzCcAylyiyG4ZJA0KPfJtV0bpvPG3TXrwd.3mZfVsWzOE4GvH1B3BdYzla225_c3uuo2H1AyZx4igKc4f7bGjoefz8DwJ56IqV2oNm9vWuHtslBG8-%26P%3D%24%7BRS%7D%7CBjBPdzY4LjGh.4IZVIne4yxpMTU0LgAAAAD8AgP4%7C2114716621%7CLDRB%7C1443903513.214948%7C2-8-8%7Cysd%7C1%26S%3D366137532%26Z%3D970x250%2C728x90%26i%3D176707,04eab0d0-6a0c-11e5-b65e-78e3b5113c5e,1443903555930\"></iframe>');
+var rm_data = new Object();
+rm_data.creative_id = 35299077;
+rm_data.offer_type = 3;
+rm_data.entity_id = 1087039;
+if (window.rm_crex_data) {rm_crex_data.push(35299077);}

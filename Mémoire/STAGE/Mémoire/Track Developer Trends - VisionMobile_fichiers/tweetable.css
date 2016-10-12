@@ -1,0 +1,15 @@
+.tweetable {
+padding: 3px;
+background-color: #e9ebe4;
+color: #000;
+text-decoration: none;
+}
+.tweetable:after {
+content: url('../img/bird_gray_16.png');
+}
+.tweetable:hover {
+background-color: #e2f1f9;
+}
+.tweetable:hover:after {
+content: url('../img/bird_blue_16.png');
+}

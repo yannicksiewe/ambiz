@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <script src="Probl%C3%A8me%20connexion%20internet%20sous%20ubuntu%20%5BR%C3%A9solu%5D_fichiers/ga.js" async="" type="text/javascript"></script><script src="a_data/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="a_data/slick.css">
+    <script type="text/javascript" src="a_data/slick.js"></script>
+    <script type="text/javascript" language="JAVASCRIPT">
+        function lg_u() {
+            var u='';
+            for(i=0;i<arguments.length;i++){
+                u=u+arguments[i];
+            }
+            u = u.replace(/_#s#_/g,'/');
+            u = u.replace(/_#p#_/g,'.php');
+            u = u.replace(/_#h#_/g,'.htm');
+            window.open(u);
+        }
+    </script>
+    <style>
+    body {
+        color: #666;
+        font-family: arial;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        height: 200px;
+        margin: 0;
+    }
+    /* Arrows */
+
+    .slick-prev,
+    .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 37px;
+        height: 82px;
+        margin-top: -41px;
+        padding: 0;
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus {
+        color: transparent;
+        outline: none;
+        background: transparent;
+    }
+
+    .slick-prev {
+        left: 20px;
+    }
+    .slick-next {
+        right: 20px;
+    }
+
+    /* Content */
+    .header {
+        display: none;
+        position: relative;
+        /*height: 30px;
+        width: 100%;*/
+        height: 28px;
+        width: auto;
+        background-color: #356bb3;
+        border: 1px solid #cccccc;
+        border-bottom-color: #fff;
+    }
+    .header img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .brand-product {
+        position: relative;
+        margin-top: -15px;
+        padding: 0 20px;
+    }
+    .brand-list {
+        padding-left: 3px;
+        position: relative;
+        margin-bottom: 0px;
+    }
+    .slick-slide {
+        border-right: 1px solid #f0f0f0;
+        box-sizing: border-box;
+        padding: 0 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    .item-div-img {
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        margin: 2px 0 3px 0;
+    }
+        .item-img {
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+        }
+        .item-discount {
+            position: absolute;
+            top: 4%;
+            left: 3.3%;
+            margin: 0 !important;
+            padding: .3em;
+            color:#fff;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #cc190f;
+        }
+
+    .item-div-price {
+        width: 100%;
+        float: left;
+        overflow: hidden;
+    }
+    .item-product, .item-div-price div, .item-shop {
+        margin-bottom: 4px;
+    }
+        .item-div-price div {
+            text-align: center;
+            overflow: hidden;
+            display: table;
+            width: 100%;
+        }
+        .item-product, .item-shop {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+        .item-product{
+            font-size: 12px;
+            font-family: arial;
+            font-weight: bold;
+            color: #333;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: block;
+        }
+        .item-price-reduc {
+            font-size: 10px;
+            font-family: arial;
+            color: #999;
+            text-decoration: line-through;
+            overflow: hidden;
+            text-align: right;
+            /*line-height: 21px;*/
+            display: table-cell;
+        }
+        .item-price {
+            font-size: 15px;
+            font-family: arial;
+            color: #cc190f;
+            font-weight: bold;
+            overflow: hidden;
+            display: table-cell;
+        }
+        .item-shop {
+            font-size: 12px;
+            font-family: arial;
+            font-weight: bold;
+            color: #333;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: block;
+        }
+        .item-button {
+            min-height: 25px;
+            width: 90px;
+            background-color: #D10B22;
+            color: #fff;
+            font-weight: bold;
+            font-size: 11px;
+            font-family: arial;
+            border: 0;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: auto;
+            display: block;
+        }
+
+        /* Pagination */
+        .slick-dots {
+            list-style-type: none;
+            padding: 0;
+            position: absolute;
+            top: -30px;
+            left: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        .slick-dots li {
+            display: inline-block;
+            padding-right: 6px;
+        }
+        .slick-dots li button {
+            background-color: #f0f0f0;
+            display: inline-block;
+            width: 31px;
+            height: 25px;
+            color: #014596;
+            border: 0;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            padding-right: 6px;
+        }
+        .slick-dots .slick-active button {
+            background-color: #014596;
+            color: #fff;
+        }
+        .brand-slick .slick-prev,
+        .brand-slick .slick-next {
+            position: absolute;
+            margin-top: 0;
+            top: 45%;
+            width: 19px;
+            height: 32px;
+        }
+        .brand-slick .slick-prev {
+            left: -19px;
+            background: url(http://cimg.leguide.com/img/partner/ccm/fleche_gauche.png) no-repeat 0 0;
+        }
+
+        .brand-slick .slick-next {
+            right: -19px;
+            background: url(http://cimg.leguide.com/img/partner/ccm/fleche_droite.png) no-repeat 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="a_data/header_ccmresponsive.jpg" alt="header">
+    </header>
+    <div class="brand-product brand-product--promotion">
+        <ul class="brand-list brand-product-list brand-slick js-brand-slick clearfix slick-initialized slick-slider"><div tabindex="0" aria-live="polite" class="slick-list draggable"><div style="opacity: 1; width: 2048px; transform: translate3d(-256px, 0px, 0px);" class="slick-track"><li data-slick-index="-2" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide slick-cloned" onclick="lg_u('http:','_#s#__','#s#_go','.legu','ide.','com','_#s#_','na','v_','#s#_cc','m_p','t_fr_#','p#_','?id_ma','g=','526','&amp;i','dx=1','00205','91','&amp;id','lg=00','00052','64','108','95','7&amp;la','ng=','fr&amp;','id','bp=0','810351','023609','&amp;va','rs=t','c:p','&amp;sb=','00','2_ac','cuei','l&amp;','type_','r=0&amp;','gov2','=1'); return false;">
+                <div class="item-div-img">
+        
+                    <img class="item-img" src="a_data/image_008.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Bracelets connectés ...</span>
+                    <div>
+                        <span class="item-price">249 €</span>
+                    </div>
+                    <span class="item-shop">Darty</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="-1" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide slick-cloned" onclick="lg_u('ht','tp:','_#s#__','#s','#_','go.leg','ui','de.c','om','_#s','#_na','v_#s#_','ccm_pt','_fr_#p','#_?','id_','ma','g=','290','84563&amp;','idx=','60','90206','&amp;idlg','=2','90','845','631','461&amp;','la','ng=fr','&amp;idb','p=37','0066','6514','909&amp;','vars','=tc:p','&amp;s','b=00','2_accu','eil&amp;','type','_r=0&amp;g','ov2=','1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-30 %</span>
+                    
+                    <img class="item-img" src="a_data/image_003.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre téléphone ...</span>
+                    <div>
+                            <span class="item-price-reduc">169,49 €</span>
+                        
+                        <span class="item-price">117,89 €</span>
+                    </div>
+                    <span class="item-shop">Yonis Shop</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="0" style="width: 128px;" aria-hidden="false" class="item brand-product-item slick-slide slick-active" onclick="lg_u('htt','p:_#','s#_','_#','s#','_go.le','guide','.com_#','s#_','nav','_#s#_c','cm_pt_','fr','_#p#','_?id','_mag=2','801','635','3&amp;id','x=609','020','7&amp;idlg','=2801','635318','20','924&amp;','la','ng=f','r&amp;id','bp=0','75375','912138','9&amp;','va','rs','=t','c:p&amp;sb','=002_','ac','cue','il&amp;typ','e_','r=','0&amp;gov2','=1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-11 %</span>
+                    
+                    <img class="item-img" src="a_data/image.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">3X PAR CB SANS FRAIS - ...</span>
+                    <div>
+                            <span class="item-price-reduc">179,01 €</span>
+                        
+                        <span class="item-price">159,91 €</span>
+                    </div>
+                    <span class="item-shop">Decathlon</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="1" style="width: 128px;" aria-hidden="false" class="item brand-product-item slick-slide slick-active" onclick="lg_u('htt','p:_#s#','__#s#_','go','.le','gu','id','e.co','m_#s#_','nav','_#','s#_cc','m_pt','_fr_#','p#','_?i','d_','mag=2','80','1807','9&amp;id','x=1','002','0569&amp;','id','lg=','280','1807','9c635','030&amp;l','ang','=fr&amp;id','bp=4','89','70','15726','041','&amp;va','rs=','tc:','p&amp;sb','=002','_accue','il&amp;typ','e_','r=','0&amp;g','ov2','=1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-23 %</span>
+                    
+                    <img class="item-img" src="a_data/image_006.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre connectée Pop ...</span>
+                    <div>
+                            <span class="item-price-reduc">89,99 €</span>
+                        
+                        <span class="item-price">69 €</span>
+                    </div>
+                    <span class="item-shop">Auchan.fr</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="2" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('http:','_#s#','__#','s#_g','o.','le','guide','.c','om_','#s#_','na','v_#s#','_ccm','_pt','_fr','_#','p#_?i','d_mag','=2','80011','32&amp;','idx=10','0205','69&amp;','id','lg=','2800','113','2px1','730389','&amp;la','ng=','fr&amp;','vars=','tc:p&amp;s','b=00','2_accu','eil&amp;','type','_r=','0&amp;','gov2','=1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-13 %</span>
+                    
+                    <img class="item-img" src="a_data/image_012.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre téléphone ...</span>
+                    <div>
+                            <span class="item-price-reduc">79,91 €</span>
+                        
+                        <span class="item-price">69,90 €</span>
+                    </div>
+                    <span class="item-shop">Pearl Diffusion</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="3" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('http',':_#','s#','__#s','#_g','o.','leguid','e.c','om_#','s#_na','v_#s','#_ccm','_p','t_','fr_#p','#_','?id_','mag=28','00','17','65&amp;idx','=609','0207','&amp;id','lg=28','001','76527','6351','301','5&amp;l','ang=fr','&amp;idbp=','07537','59','121','341&amp;va','rs=','tc:','p&amp;','sb=002','_accue','il&amp;ty','pe_r','=0','&amp;gov2=','1'); return false;">
+                <div class="item-div-img">
+        
+                    <img class="item-img" src="a_data/image_009.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre GPS GARMIN ...</span>
+                    <div>
+                        <span class="item-price">119,90 €</span>
+                    </div>
+                    <span class="item-shop">Webdistrib</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="4" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('http:_','#s#__#','s#_','go','.l','egu','ide.c','om_#s#','_nav','_#s','#_ccm','_pt_fr','_#','p#_?id','_mag=','28','018079','&amp;id','x=','1002','056','9&amp;i','dl','g=280','180','79c634','99','9&amp;la','ng=fr&amp;','vars','=tc:','p&amp;sb=0','02_','accuei','l&amp;type','_r=','0&amp;','gov2=','1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-33 %</span>
+                    
+                    <img class="item-img" src="a_data/image_007.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Sport Connecté L-FIT ...</span>
+                    <div>
+                            <span class="item-price-reduc">29,90 €</span>
+                        
+                        <span class="item-price">19,99 €</span>
+                    </div>
+                    <span class="item-shop">Auchan.fr</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="5" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('http:_','#s#','__#s#','_go.l','eg','uide.c','om','_#','s#','_nav_','#s#_','ccm','_pt_f','r_#p#','_?i','d_mag=','2801','8079','&amp;idx','=100','20','569&amp;','id','lg=280','180','79c','63114','4&amp;lang','=fr&amp;id','bp=73','112','71479','04','8&amp;vars','=tc',':p','&amp;sb=0','02_a','ccu','eil&amp;ty','pe','_r=0&amp;g','ov','2=1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-20 %</span>
+                    
+                    <img class="item-img" src="a_data/image_002.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre connectée ...</span>
+                    <div>
+                            <span class="item-price-reduc">249 €</span>
+                        
+                        <span class="item-price">199 €</span>
+                    </div>
+                    <span class="item-shop">Auchan.fr</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="6" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('ht','tp:','_#s#','__#s#','_go.','leg','uid','e.co','m_#s#','_na','v_#','s#','_c','cm_','pt_f','r_#','p#_?id','_mag','=290','7779','0&amp;idx=','99','99','999&amp;id','lg=','29','07','7790','11855','&amp;la','ng=f','r&amp;idb','p=87','159465','4173','0&amp;','var','s=tc:p','&amp;sb=','002_ac','cu','eil&amp;t','yp','e_r','=0','&amp;gov','2=1'); return false;">
+                <div class="item-div-img">
+        
+                    <img class="item-img" src="a_data/image_005.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre Runsense SF710 ...</span>
+                    <div>
+                        <span class="item-price">231,50 €</span>
+                    </div>
+                    <span class="item-shop">Monbureau-et-mo ...</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="7" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('http:','_#s#','__#s#','_go.le','gui','de.','co','m_#s','#_nav','_#s#','_cc','m_','pt','_fr','_#p','#_?','id','_ma','g=290','8456','3&amp;i','dx','=60','90','207&amp;i','dlg=2','908456','320','78&amp;l','ang=f','r&amp;idbp','=3','700','66652','08','94&amp;v','ars=tc',':p&amp;','sb=002','_accu','eil&amp;t','ype','_r=0&amp;g','ov2=1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-21 %</span>
+                    
+                    <img class="item-img" src="a_data/image_010.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre téléphone ...</span>
+                    <div>
+                            <span class="item-price-reduc">99,49 €</span>
+                        
+                        <span class="item-price">78,89 €</span>
+                    </div>
+                    <span class="item-shop">Yonis Shop</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="8" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('ht','tp:','_#s#_','_#s#_g','o.l','egui','de.','co','m_#','s#_nav','_#s#_','ccm','_p','t_f','r_#','p#_','?id','_m','ag=2','908','4563&amp;i','dx=6','090','206&amp;i','dl','g=290','845','631462','&amp;l','ang=fr','&amp;id','bp','=37','00','66','6514','916&amp;v','ars','=tc:','p&amp;','sb','=00','2_a','ccu','eil&amp;','type_','r=0&amp;','gov2=1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-30 %</span>
+                    
+                    <img class="item-img" src="a_data/image_011.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre téléphone ...</span>
+                    <div>
+                            <span class="item-price-reduc">169,49 €</span>
+                        
+                        <span class="item-price">117,89 €</span>
+                    </div>
+                    <span class="item-shop">Yonis Shop</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="9" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('http',':_#s#','__#s#_','go.le','gu','ide','.com','_#s#_','na','v_#s','#_ccm','_pt','_fr_#','p#_?i','d_mag=','2800','176','5&amp;i','dx=','609020','0&amp;idlg','=2800','176527','378940','15&amp;l','ang=fr','&amp;i','db','p=7','640','158','01051','8&amp;','va','rs=t','c:p','&amp;sb=','002_ac','cu','eil&amp;','type','_r=0&amp;','gov2=','1'); return false;">
+                <div class="item-div-img">
+        
+                    <img class="item-img" src="a_data/image_004.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre MYKRONOZ Zecircle ...</span>
+                    <div>
+                        <span class="item-price">56,59 €</span>
+                    </div>
+                    <span class="item-shop">Webdistrib</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="10" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('http:','_#s#__','#s#_go','.legu','ide.','com','_#s#_','na','v_','#s#_cc','m_p','t_fr_#','p#_','?id_ma','g=','526','&amp;i','dx=1','00205','91','&amp;id','lg=00','00052','64','108','95','7&amp;la','ng=','fr&amp;','id','bp=0','810351','023609','&amp;va','rs=t','c:p','&amp;sb=','00','2_ac','cuei','l&amp;','type_','r=0&amp;','gov2','=1'); return false;">
+                <div class="item-div-img">
+        
+                    <img class="item-img" src="a_data/image_008.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Bracelets connectés ...</span>
+                    <div>
+                        <span class="item-price">249 €</span>
+                    </div>
+                    <span class="item-shop">Darty</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="11" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide" onclick="lg_u('ht','tp:','_#s#__','#s','#_','go.leg','ui','de.c','om','_#s','#_na','v_#s#_','ccm_pt','_fr_#p','#_?','id_','ma','g=','290','84563&amp;','idx=','60','90206','&amp;idlg','=2','90','845','631','461&amp;','la','ng=fr','&amp;idb','p=37','0066','6514','909&amp;','vars','=tc:p','&amp;s','b=00','2_accu','eil&amp;','type','_r=0&amp;g','ov2=','1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-30 %</span>
+                    
+                    <img class="item-img" src="a_data/image_003.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre téléphone ...</span>
+                    <div>
+                            <span class="item-price-reduc">169,49 €</span>
+                        
+                        <span class="item-price">117,89 €</span>
+                    </div>
+                    <span class="item-shop">Yonis Shop</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="12" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide slick-cloned" onclick="lg_u('htt','p:_#','s#_','_#','s#','_go.le','guide','.com_#','s#_','nav','_#s#_c','cm_pt_','fr','_#p#','_?id','_mag=2','801','635','3&amp;id','x=609','020','7&amp;idlg','=2801','635318','20','924&amp;','la','ng=f','r&amp;id','bp=0','75375','912138','9&amp;','va','rs','=t','c:p&amp;sb','=002_','ac','cue','il&amp;typ','e_','r=','0&amp;gov2','=1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-11 %</span>
+                    
+                    <img class="item-img" src="a_data/image.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">3X PAR CB SANS FRAIS - ...</span>
+                    <div>
+                            <span class="item-price-reduc">179,01 €</span>
+                        
+                        <span class="item-price">159,91 €</span>
+                    </div>
+                    <span class="item-shop">Decathlon</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li><li data-slick-index="13" style="width: 128px;" aria-hidden="true" class="item brand-product-item slick-slide slick-cloned" onclick="lg_u('htt','p:_#s#','__#s#_','go','.le','gu','id','e.co','m_#s#_','nav','_#','s#_cc','m_pt','_fr_#','p#','_?i','d_','mag=2','80','1807','9&amp;id','x=1','002','0569&amp;','id','lg=','280','1807','9c635','030&amp;l','ang','=fr&amp;id','bp=4','89','70','15726','041','&amp;va','rs=','tc:','p&amp;sb','=002','_accue','il&amp;typ','e_','r=','0&amp;g','ov2','=1'); return false;">
+                <div class="item-div-img">
+        
+                        <span class="item-discount">-23 %</span>
+                    
+                    <img class="item-img" src="a_data/image_006.jpg" alt="Img">
+                </div>
+
+                <div class="item-div-price">
+                    <span class="item-product">Montre connectée Pop ...</span>
+                    <div>
+                            <span class="item-price-reduc">89,99 €</span>
+                        
+                        <span class="item-price">69 €</span>
+                    </div>
+                    <span class="item-shop">Auchan.fr</span>
+                    <button class="item-button" type="button">Voir l'offre</button>
+                </div>
+            </li></div></div><button style="display: block;" type="button" data-role="none" class="slick-prev" aria-label="previous">Previous</button><button style="display: block;" type="button" data-role="none" class="slick-next" aria-label="next">Next</button></ul>
+    </div>
+    <script>
+        $(document).ready(function() {
+            jQuery(".js-brand-slick").slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                pauseOnHover : false,
+                responsive: [
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 751,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4
+                        }
+                    },
+                    {
+                        breakpoint: 501,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 400,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47406652-9']);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		      })();
+
+		      </script>
+
+
+</body></html>

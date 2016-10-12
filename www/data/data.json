@@ -1,0 +1,59 @@
+[
+ {
+  "id": "01",
+  "txType":"Inventaire de groupe",
+   "identif":"Inv-Grpe",
+   "descptn": "Rayon 1, Products A - Z"
+   },
+
+   {
+    "id": "02",
+    "txType":"Inventaire de groupe",
+     "identif":"Inv-Grpe",
+     "descptn": "Rayon 7, Products N - W "
+     },
+
+     {
+      "id": "03",
+      "txType":" Individual Products",
+       "identif":" Inv-Ind",
+       "descptn": "Paracetamol"
+       },
+       {
+        "id": "04",
+        "txType":"Individual Products",
+         "identif":"Inv-Ind",
+         "descptn": "Sardine"
+         },
+         {
+          "id": "05",
+          "txType":"Individual Products",
+           "identif":" Product identif",
+           "descptn": "Pain Complet"
+           },
+           {
+            "id": "06",
+            "txType":"Individual Products",
+             "identif":" Product identif",
+             "descptn": "Jus de fruits"
+             },
+             {
+              "id": "07",
+              "txType":"Product Type",
+               "identif":" Product identif",
+               "descptn": "Product Description"
+               },
+               {
+                "id": "08",
+                "txType":"Product Type",
+                 "identif":" Product identif",
+                 "descptn": "Product Description"
+                 },
+                 {
+                  "id": "09",
+                  "txType":"Product Type",
+                   "identif":" Product identif",
+                   "descptn": "Product Description"
+                   }
+
+]

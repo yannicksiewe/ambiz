@@ -1,0 +1,42 @@
+/************************** FORUM-UBUNTU.CSS ***********************
+  les '../images' sont en relatif sur http://-STATIC-/images/
+  v0.1 - 26/06/2010 - McPeter*/
+
+body{background-image:url('../images/commun/ubuntu/ground_body.png'); background-color:#DCC089;}
+#logo{background-image:url('../images/commun/ubuntu/logo.png')}
+#search input[type=text]{background-image:url('../images/commun/ubuntu/search.png')}
+  /* Style pour navigation.css */
+#navigation #active, #announce .hd {background-color:#DEC28A; background-image:url('../images/commun/ubuntu/navigation_menu_1.png')}
+#navigation #active a:hover {color:#C80015}
+#navigation h2 {background-image:url('../images/commun/ubuntu/navigation_menu_2.png')}
+  /* Hallo */
+a.title:hover span {background-image:url('../images/commun/ubuntu/thumb_hover.png')}
+   /* Forum */
+.blockpost h2, .blocktable h2, #quickpost h2, #postreview .blockpost .postleft dt, #punindex .blocktable h2 {background-image:url('../images/forum/ubuntu/ruban-titre.png')}
+.blockpost, #quickpost {background-image:url('../images/forum/ubuntu/fondTitreForum_1px_h3.png')}
+.blocktable {background-image:url('../images/forum/ubuntu/fondTitreForum_1px.png')}
+.blocktable h2 span{background-image:url('../images/forum/ubuntu/fondTitreForum_droite.png')}
+.blockpost h2 span.conr, #quickpost h2 span.conr {background-image:url('../images/forum/ubuntu/fondTitreForum_droite_h3.png')}
+.postfoot li {border-left-color:red;}
+legend {color:#A61010;}
+.codebox {border-color:#AD9060;}
+a{color:#980101}
+a:hover{color:#D90016}
+#postreview .blockpost {background-image:url('../images/forum/ubuntu/fondTitreForum_1px_h3.png')}
+#postreview .blockpost h2 span {background-image:url('../images/forum/ubuntu/fondTitreForum_droite.png')}
+tbody .welcome {
+background-image:url('../images/commun/ubuntu/cadre_Annonces_gauche_1px.png');
+background-color:#DEC28A;
+}
+#winner_inbox {background-image:url('../images/forum/ubuntu/fondGagnantDuMois.png')}
+.linux_pratique {color:red}
+hr {color:#DEC28A}
+#profile .blockmenu, #announce {background-color:#DEC28A}
+.blockform{background-color:#CEAE6E}
+#profile fieldset, #adminconsole fieldset{background-color:#DEB777}
+#profile .blockmenu li {
+background-image:url('../images/commun/ubuntu/navigation_menu_2.png');
+background-color:#DEC28A;
+}
+#profile .blockmenu li.isactive{border-bottom-color:#DEC28A}
+#profile .blockmenu a:hover {color:#C90016}

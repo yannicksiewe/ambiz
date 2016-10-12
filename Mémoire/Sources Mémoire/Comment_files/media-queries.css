@@ -1,0 +1,629 @@
+
+@media screen and (max-width: 1300px) {.pagewidth {width: 80%;}}
+@media screen and (max-width: 1150px) {.pagewidth {width: 88%;}}
+
+@media screen and (max-width: 1024px) {
+	.pagewidth {
+		width: 94%;
+	}
+}
+
+
+@media screen and (max-width: 980px) {
+
+	/************************************************************************************
+	STRUCTURE
+	*************************************************************************************/
+		
+	/* content */
+	#content {
+		margin: 7% 0 5%;
+	}
+	.sidebar1 #content {
+		max-width: 67.8%;
+	}
+	
+	/* sidebar */
+	#sidebar {
+		margin: 7% 0 5%;
+		max-width: 26.2%;
+	}
+	#sidebar .secondary {
+		max-width: 47%;
+	}
+	
+	/* loops-wrapper */
+	.loops-wrapper {
+		max-width: 105%;
+	}
+	
+	/************************************************************************************
+	GRID
+	*************************************************************************************/
+	.col4-1,
+	.col4-2,
+	.col4-3,
+	.col3-1,
+	.col3-2,
+	.col2-1
+	{
+		margin-left: 2%;
+	}
+	.col4-1 {
+		max-width: 23%;
+	}
+	.col4-2, .col2-1 {
+		max-width: 48%;
+	}
+	.col4-3 {
+		max-width: 72%;
+	}
+	.col3-1 {
+		max-width: 31%;
+	}
+	.col3-2 {
+		max-width: 62%;
+	}
+	
+}
+
+@media screen and (max-width: 910px) {
+
+	#body {
+		padding-top: 40px;
+	}
+
+	.mobile-only{
+		display:block;
+	}
+
+	hr.mobile-only{
+		display:block;
+	}
+
+	.desktop-only{
+		display:none;
+	}
+
+	#menu-neoxia-hat, #headerwrap, #menu-neoxia-hat nav{
+		height:45px;
+	}
+
+	#btn-accueil-mobile-only{
+		margin-top:10px;
+	}
+
+	#menu-libelle{
+		margin-top:9px;
+	}
+
+	#menu-neoxia-hat nav {
+		width:93.5%;
+		margin-right:50px;
+	}
+
+	.pagewidth{
+		width:95% !important;
+	}
+
+	/************************************************************************************
+	STRUCTURE
+	*************************************************************************************/
+	.sidebar1 #content {
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		clear: both;
+	}
+	
+	/* sidebar */
+	#sidebar {
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		clear: both;
+	}
+	#sidebar .secondary {
+		width: 48%;
+	}
+	
+	/************************************************************************************
+	HEADER
+	*************************************************************************************/
+	/* reset absolute elements to static */
+	#header .social-widget,
+	#headerwrap #site-logo,
+	#headerwrap #site-description,
+	#headerwrap #main-nav  {
+		position: static;
+		float: none;
+		clear: both;
+	}
+	
+	/* header */
+	#header {
+		height: auto !important;
+		background:none;
+		border: none;
+	}
+
+	#menu-neoxia-left-part{
+		display: none;
+	}
+	
+	/* header widget */
+	.header-widget {
+		position: static !important;
+		float: none;
+		text-align: left;
+		clear: both;
+		margin: 0;
+	}
+	.header-widget .widget {
+		margin: 0 0 10px;
+	}
+	
+	/* social widget */
+	#header .social-widget {
+		padding: 5px 0 0;
+	}
+
+	/* search form */
+	#header #searchform {
+		position: absolute;
+		top: 10px;
+		left: inherit;
+		right: 0;
+		width: 150px;
+	}
+	#header #searchform #s {
+		float: right;
+		width: 50px;
+	}
+	#header #searchform input#s:focus {
+		width: 150px;
+	}
+	
+	/* site logo */
+	#site-logo {
+		margin: 15px 100px 10px 0;
+	}
+	#site-logo a {
+		font-size: 30px;
+	}
+
+	/* site description */
+	#site-description {
+		margin: 0 0 10px;
+	}
+	
+	/* nav bar */
+	#nav-bar {
+		display: none;
+	}
+
+	/************************************************************************************
+	MAIN NAV
+	*************************************************************************************/
+	#headerwrap #main-nav {
+		height: auto;
+		margin: 10px 0;
+	}
+	#headerwrap #main-nav a {
+		padding: 4px 9px;
+	}
+
+
+	/************************************************************************************
+	MOBILE NAV BUTTON
+	*************************************************************************************/
+	
+	#btn-accueil-mobile-only{
+		display:inline-block;
+		margin-left:55px;
+	}
+
+	.mobile-button {
+		position: fixed;
+		top:0;
+		left:0px;
+		width: 45px;
+		height: 45px;
+		display: block;
+		float: right;
+		cursor: pointer;
+		background: #122d3d;
+		border-right: 1px solid #434751;
+	}
+	.mobile-button:before {
+		content: "\f0c9";
+		font: normal 21px/1em FontAwesome;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -.5em 0 0 -.5em;
+		width: 1em;
+		height: 1em;
+		text-align: center;
+	}
+	.mobile-button.active:before {
+		color: #009f86;
+	}
+
+	.mobile-close-button {
+		display:none;
+		position: fixed;
+		top:50px;
+		right:10px;
+		width: 20px;
+		height: 20px;
+		float: right;
+		cursor: pointer;
+		z-index: 1000;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-image: url(images/menu-croix-noir.png);
+	}
+
+	.mobile-close-button:hover {
+		background-image: url(images/menu-croix-gris.png);
+	}
+
+	/************************************************************************************
+	MAIN NAV (MOBILE)
+	*************************************************************************************/
+	#main-nav-wrap {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		z-index: 1000;
+	}
+	
+	#headerwrap{
+		border-bottom: 1px solid #434751;
+		position:fixed;
+		height:30px;
+	}
+
+	/* main nav */
+	#headerwrap #main-nav {
+		clear: both;
+		position: static;
+		width: auto;
+		z-index: 1000;
+		padding: 10px;
+		background: rgba(255, 255, 255, 0.95);
+		display: none; /* visibility will be toggled with jquery */
+	}
+	#headerwrap #main-nav li {
+		clear: both;
+		float: none;
+		margin: 5px 0 5px 10px;
+		padding: 0;
+		border: none;
+		box-shadow: none;
+	}
+	#headerwrap #main-nav a, 
+	#headerwrap #main-nav ul a {
+		font: inherit;
+		text-transform: inherit;
+		background: none;
+		width: auto;
+		display: inline;
+		padding: 0;
+		color: #666;
+		border: none;
+		text-shadow: none;
+		box-shadow: none;
+	}
+	#headerwrap #main-nav a:hover, 
+	#headerwrap #main-nav ul a:hover {
+		background: none;
+		color: #122d3d;
+	}
+	
+	/* dropdown */
+	#headerwrap #main-nav ul {
+		position: static;
+		display: block;
+		margin: 0;
+		padding: 0;
+		background: none;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+
+	}
+
+	#main-nav-wrap nav{
+		position: fixed;
+		top:30px;
+		width: 100%;
+		height: 0;
+		text-align: center;
+	}
+
+	#main-nav-wrap nav #main-nav li a{
+		font-size:30px;
+		line-height:50px;
+	}
+	#main-nav-wrap nav #main-nav{
+		height:100%;
+		width:100%;
+		margin-top:16px;
+		margin-bottom: 0;
+		overflow: scroll;
+		padding-bottom:60px;
+	}
+
+	#main-nav-wrap nav #main-nav .first-of-second-part{
+		padding-top:60px;	
+	}
+
+	/************************************************************************************
+	LOOPS WRAPPER
+	*************************************************************************************/
+	.loops-wrapper.list-post {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#footer{
+		width:100%;
+		padding-bottom:0;
+	}
+
+	#footer .footer-part{
+		float:none;
+		border: none;
+		width:50%;
+		margin: 15px auto;
+		min-height:0px;
+		border: none;
+	}
+
+	#footer .footer-description{
+		border-bottom:1px solid #ccc;
+	}
+
+	#footer .footer-part p{
+		text-align: center;
+		max-width:350px;
+	}
+
+	#footer .footer-description p{
+		float:none;
+		margin: auto;
+		margin-bottom:15px;
+	}
+
+	#footer .footer-part{
+		max-width: 100%;
+		width: 100%;
+		padding: 0;
+	}
+
+
+	#footer .footer-contact{
+		width: 335px;
+		margin: auto;
+	}
+
+	#footer .footer-contact p{
+		float:left;
+		width: auto;
+		margin-left:15px;
+	}
+
+	#footer .footer-contact p:first-child{
+		margin-left:0;
+	}
+
+	#footer .footer-social{
+		border-top:1px solid #ccc;
+		padding-top:15px;
+		margin-top:0;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	/* reset post-content min width */
+	.post-content,
+	.module-post .post-content {
+		min-width: 0 !important;
+	}
+
+	.post-title{
+		font-size:20px;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	/************************************************************************************
+	GRID
+	*************************************************************************************/
+	.col4-1,
+	.col4-2, .col2-1,
+	.col4-3,
+	.col3-1,
+	.col3-2	 {
+		margin-left: 0 !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	/************************************************************************************
+	HEADER
+	*************************************************************************************/
+	/* site logo */
+	#site-logo {
+		font-size: 42px;
+		text-align: left;
+		padding: 0 90px 0 0;
+		width: auto;
+		margin: 10px 0;
+	}
+	
+	/* site description */
+	#site-description {
+		text-align: left;
+		margin: 0 0 10px;
+	}
+
+	/* social widget */
+	.social-widget {
+		position: static !important;
+		margin: 10px 0;
+		float: none;
+		padding: 0;
+	}
+	
+	/************************************************************************************
+	SEARCH FORM
+	*************************************************************************************/
+	#searchform-wrap {
+		position: absolute;
+		top: 10px;
+		right: 40px;
+		z-index: 1000;
+	}
+	#search-icon:before {
+		content: "\f002";
+		font-size: 19px;
+	}
+	
+	#header #searchform {
+		clear: both;
+		width: auto;
+		width: 126px \0;
+		position: static;
+		overflow: hidden;
+		background: #fff;
+		border: solid 1px #999;
+		padding: 5px;
+		display: none; /* visibility will be toggled with jquery */
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	#header #searchform #s {
+		background: #ddd !important;
+		color: #444 !important;
+		padding-left: 8px;
+		width: 110px \0;
+	}
+
+	/************************************************************************************
+	LAYOUTS
+	*************************************************************************************/
+	/* loops-wrapper */
+	.loops-wrapper {
+		margin-left: 0 !important;
+		width: auto !important;
+	}
+
+	/* post */
+	.post {
+		width: auto !important;
+		max-width: 100% !important;
+		margin-left: 0 !important;
+		float: none !important;
+	}
+	
+	/************************************************************************************
+	POST NAV
+	*************************************************************************************/
+	.post-nav .prev, .post-nav .next {
+		display: block;
+		width: 100%;
+		clear: both;
+		margin-bottom: 10px;
+	}
+	
+	/************************************************************************************
+	COMMENTS
+	*************************************************************************************/
+	.commentlist {
+		padding-left: 0;
+	}
+	.commentlist .commententry {
+		clear: left;
+	}
+	.commentlist .avatar {
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin: 0 10px 10px 0;
+	}
+
+	/* commentlist sub-levels */
+	.commentlist ul, .commentlist ol {
+		margin: 0 0 0 7%;
+	}
+
+	/************************************************************************************
+	FOOTER
+	*************************************************************************************/
+	#footer-logo {
+		position: static;
+	}
+	.footer-nav {
+		padding: 0;
+	}
+	
+	/************************************************************************************
+	WOOCOMMERCE SUPPORT
+	*************************************************************************************/
+	.woocommerce #content div.product div.images,
+	.woocommerce #content div.product div.summary {
+		float: none !important;
+		width: 100% !important;
+	}
+
+	/************************************************************************************
+	POSTS
+	*************************************************************************************/
+	
+}
+
+@media screen and (max-width: 350px) {
+	#footer .footer-contact p, #footer .footer-contact p:first-child{
+		font-size:0.9em;
+		margin-left:15px;
+	}
+}
+
+@media screen and (min-width: 911px) {
+
+	/* ensure #nav and #searchform is visible on desktop version */
+	#main-nav,
+	#headerwrap #searchform {
+		display: block !important;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#footer{
+		font-size:14px;
+	}
+
+	#footer .footer-description{
+		max-width: 500px;
+	}
+
+	#footer .footer-contact{
+		max-width:450px;
+	}
+
+	#footer .footer-social{
+		max-width:300px;
+	}
+}

@@ -1,0 +1,1 @@
+Drupal.locale = { 'pluralFormula': function ($n) { return Number(($n>1)); }, 'strings': {"":{"All":"Tout","Mon":"Lun","Thu":"Jeu","Thursday":"Jeudi","Tuesday":"Mardi","Configure":"Configurer","Sunday":"Dimanche","Monday":"Lundi","Wednesday":"Mercredi","Friday":"Vendredi","Saturday":"Samedi","Sun":"Dim","Tue":"Mar","Wed":"Mer","Fri":"Ven","Sat":"Sam","Next":"Suivant"}} };

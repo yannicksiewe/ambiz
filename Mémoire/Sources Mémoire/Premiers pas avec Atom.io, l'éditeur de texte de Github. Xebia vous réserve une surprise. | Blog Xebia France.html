@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+
+<html lang="fr-FR">
+
+<head>
+
+<!-- Title -->
+<title>Premiers pas avec Atom.io, l'éditeur de texte de Github. Xebia vous réserve une surprise. | Blog Xebia France</title>
+
+<!--<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic' rel='stylesheet' type='text/css'>-->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<!-- Meta -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="Agile Enterprise Java, Cloud / NoSQL, Web Oriented Architectures, Mobile">
+<meta name="apple-itunes-app" content="app-id=777338387, app-argument=xebia://blog/posts/17501">
+<!-- jQuery library (served from Google) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="/wp-content/themes/xebiav0.3/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" 	src="/wp-content/themes/xebiav0.3/js/jquery.sticky.js"></script>
+<!-- bxSlider CSS file -->
+<link href="/wp-content/themes/xebiav0.3/css/jquery.bxslider.css" rel="stylesheet" />
+<link href="/wp-content/themes/xebiav0.3/css/font-awesome.css" rel="stylesheet" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1657252-2', 'xebia.fr');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  $(document).ready(function(){
+    $("#sticker").sticky({topSpacing:0});
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true
+});
+  });
+</script>
+
+<script type="text/javascript">
+function BFTValidate(frm) {
+	var email = frm.email.value;
+	if(email=="" || email.indexOf("@")<1 ||email.indexOf(".")<1) {
+		alert("Merci de renseigner une adresse email valide");
+		frm.email.focus();
+		return false;
+	}
+
+	return true;
+}
+</script>
+
+<!-- Hotjar Tracking Code for blog.xebia.fr -->
+<script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:33105, hjsv:4};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-"+f._hjSettings.hjid+".js?sv="+f._hjSettings.hjsv;
+        b.getElementsByTagName("head")[0].appendChild(c); 
+    })(window,document);
+</script>
+
+
+<!-- favicon -->
+<link rel="shortcut icon" href="http://blog.xebia.fr/wp-content/uploads/2014/04/favicon1.ico" type="image/x-icon" />
+<!-- RSS & Pingback -->
+<link rel="pingback" href="http://blog.xebia.fr/xmlrpc.php" />
+
+<!-- / PXPHeader / -->
+		<script type="text/javascript">
+		var ajaxurl = 'http://blog.xebia.fr/wp-admin/admin-ajax.php';
+		</script>
+		
+<!-- All in One SEO Pack 2.2.7.6.2 by Michael Torbert of Semper Fi Web Design[61,183] -->
+<meta name="description"  content="Atom.io est un éditeur de texte développé par Github qui a beaucoup fait parler de lui ces derniers jours. Nous vous proposons de faire un premier tour du" />
+
+<meta name="keywords"  content="atom.io,github" />
+
+<link rel="canonical" href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Blog Xebia France &raquo; Flux" href="http://blog.xebia.fr/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Blog Xebia France &raquo; Flux des commentaires" href="http://blog.xebia.fr/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Blog Xebia France &raquo; Premiers pas avec Atom.io, l&rsquo;éditeur de texte de Github. Xebia vous réserve une surprise. Flux des commentaires" href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/blog.xebia.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.3"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='http://blog.xebia.fr/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cjpopups-animate-css-css'  href='http://blog.xebia.fr/wp-content/plugins/cj-popups/assets/css/animate.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cjpopups-css-css'  href='http://blog.xebia.fr/wp-content/plugins/cj-popups/assets/css/cjpopups.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='c2w-author-css'  href='http://blog.xebia.fr/wp-content/plugins/confluence2wordpress/css/author.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='c2w-toc-css'  href='http://blog.xebia.fr/wp-content/plugins/confluence2wordpress/css/toc.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='digg-digg-css'  href='http://blog.xebia.fr/wp-content/plugins/digg-digg/css/diggdigg-style.css?ver=5.3.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='tag-groups-css-frontend-theme-1-css'  href='http://blog.xebia.fr/wp-content/plugins/tag-groups/css/ui-lightness/jquery-ui-1.10.2.custom.min.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tag-groups-css-frontend-theme-2-css'  href='http://blog.xebia.fr/wp-content/plugins/tag-groups/css/jquery-ui.default.min.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://blog.xebia.fr/wp-content/themes/xebiav0.3/style.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='flexcss-css'  href='http://blog.xebia.fr/wp-content/themes/xebiav0.3/css/flexslider-custom.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='http://blog.xebia.fr/wp-content/themes/xebiav0.3/css/responsive.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelementplayer-css'  href='http://blog.xebia.fr/wp-content/themes/xebiav0.3/css/mediaelementplayer-custom.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='opensans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C300%2C700&#038;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='yarpp-thumbnails-yarpp-thumbnail-css'  href='http://blog.xebia.fr/wp-content/plugins/yet-another-related-posts-plugin/includes/styles_thumbnails.css.php?width=120&#038;height=120&#038;ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='podpress_frontend_styles-css'  href='http://blog.xebia.fr/wp-content/plugins/podpress/style/podpress.css?ver=4.3.3' type='text/css' media='all' />
+<script type="text/javascript">
+//<![CDATA[
+var podpressL10 = {
+	openblogagain : 'back to:',
+	theblog : 'the blog',
+	close : 'close',
+	playbutton : 'Play &gt;'
+}
+//]]>
+</script>
+<script type="text/javascript" src="http://blog.xebia.fr/wp-content/plugins/podpress/players/1pixelout/1pixelout_audio-player.js"></script>
+<script type="text/javascript">//<![CDATA[
+	var podPressPlayerFile = "1pixelout_player.swf";
+	var podPressPopupPlayerOpt = new Object();
+	podPressPopupPlayerOpt["bg"] = "E5E5E5";
+	podPressPopupPlayerOpt["text"] = "333333";
+	podPressPopupPlayerOpt["leftbg"] = "CCCCCC";
+	podPressPopupPlayerOpt["lefticon"] = "333333";
+	podPressPopupPlayerOpt["volslider"] = "666666";
+	podPressPopupPlayerOpt["voltrack"] = "FFFFFF";
+	podPressPopupPlayerOpt["rightbg"] = "B4B4B4";
+	podPressPopupPlayerOpt["rightbghover"] = "999999";
+	podPressPopupPlayerOpt["righticon"] = "333333";
+	podPressPopupPlayerOpt["righticonhover"] = "FFFFFF";
+	podPressPopupPlayerOpt["loader"] = "009900";
+	podPressPopupPlayerOpt["track"] = "FFFFFF";
+	podPressPopupPlayerOpt["border"] = "CCCCCC";
+	podPressPopupPlayerOpt["tracker"] = "DDDDDD";
+	podPressPopupPlayerOpt["skip"] = "666666";
+	podPressPopupPlayerOpt["slider"] = "666666";
+	podPressPopupPlayerOpt["initialvolume"] = "70";
+	podPressPopupPlayerOpt["buffer"] = "5";
+	podPressPopupPlayerOpt["checkpolicy"] = "no";
+	podPressPopupPlayerOpt["animation"] = "yes";
+	podPressPopupPlayerOpt["remaining"] = "no";
+	podpressAudioPlayer.setup("http://blog.xebia.fr/wp-content/plugins/podpress/players/1pixelout/" + podPressPlayerFile, {bg:"E5E5E5", text:"333333", leftbg:"CCCCCC", lefticon:"333333", volslider:"666666", voltrack:"FFFFFF", rightbg:"B4B4B4", rightbghover:"999999", righticon:"333333", righticonhover:"FFFFFF", loader:"009900", track:"FFFFFF", border:"CCCCCC", tracker:"DDDDDD", skip:"666666", slider:"666666", initialvolume:"70", buffer:"5", checkpolicy:"no", animation:"yes", remaining:"no",  pagebg:"FFFFFF", transparentpagebg:"yes", encode: "no"} );
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+var podPressBlogURL = "http://blog.xebia.fr/";
+var podPressBackendURL = "http://blog.xebia.fr/wp-content/plugins/podpress/";
+var podPressDefaultPreviewImage = "http://blog.xebia.fr/wp-content/plugins/podpress/images/vpreview_center.png";
+var podPressMP3PlayerWrapper = false;
+var podPress_cortado_signed = false;
+var podPressOverwriteTitleandArtist = false;
+var podPressHTML5 = true;
+var podPressHTML5_showplayersdirectly = false;
+var podPressText_PlayNow = "Play Now";
+var podPressText_HidePlayer = "Hide Player";
+//]]></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/plugins/cj-popups/assets/js/cjpopups.js'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/plugins/podpress/js/podpress.js?ver=4.3.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.xebia.fr/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.xebia.fr/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Validez votre Json avec Play / Scala' href='http://blog.xebia.fr/2014/03/10/validez-votre-json-avec-play-scala/' />
+<link rel='next' title='Xebia accueille la 43ème soirée du Paris Scala User Group' href='http://blog.xebia.fr/2014/03/11/xebia-accueille-la-43eme-soiree-du-paris-scala-user-group/' />
+<meta name="generator" content="WordPress 4.3.3" />
+<link rel='shortlink' href='http://blog.xebia.fr/?p=17501' />
+<link rel='https://github.com/WP-API/WP-API' href='http://blog.xebia.fr/wp-json' />
+<style type="text/css">
+
+img.most_read_preview{margin-right:5px;}
+div.most_read_hits{font-style:italic;}
+div.most_read_hits .most_read_hits_label{color:#F00;}
+div.most_read_hits .most_read_hits_number{font-weight:bold;}
+
+</style>
+<script type="text/javascript">
+	window._wp_rp_static_base_url = 'https://wprp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "http://blog.xebia.fr/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.6';
+	window._wp_rp_post_id = '17501';
+	window._wp_rp_num_rel_posts = '5';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'Premiers+pas+avec+Atom.io%2C+l%27%C3%A9diteur+de+texte+de+Github.+Xebia+vous+r%C3%A9serve+une+surprise.';
+	window._wp_rp_post_tags = ['github', 'atom.io', 'back', 'devin', 'dan', 'de', 'en', 'lui', 'pa', 'premier', 'mac', 'tour', 'la', 'beta', 'auto', 'sera', 'jour', 'le'];
+	window._wp_rp_promoted_content = true;
+</script>
+<script type="text/javascript" src="https://wprp.zemanta.com/static/js/loader.js?version=3.6" async></script>
+<link rel="stylesheet" href="http://blog.xebia.fr/wp-content/plugins/wordpress-23-related-posts-plugin/static/themes/pinterest.css?version=3.6" />
+<style>.navigation, #commentform #submit, .pagenumber ul li .current, #contact_form .submit, .wpcf7 .wpcf7-submit, #wp-calendar thead, .credit, .widget #searchform #searchsubmit {background: #a9a9a9;} ul.nav li:hover, ul.nav li.current-menu-item a, #commentform #submit:hover, #contact_form .submit:hover, .wpcf7 .wpcf7-submit:hover {background: #978f8f} a:hover, #single .post-footer a:hover, ul.byn_popularposts ul .pop_link:hover {color: #978f8f}</style><style>.header-wrapper, .footer {background-image: none}</style><style>a:hover, #single .post-footer a:hover, ul.byn_popularposts ul .pop_link:hover {color: #6a205f}</style><style>.header-wrapper {
+padding-top: 31px; 
+}
+
+.logo {
+margin-bottom: 30px;
+}
+
+.navigation {
+text-color: #fff;
+background: #6a205f;
+}
+
+.newsletter {
+text-transform: uppercase;
+}
+.inscription {
+text-transform: uppercase;
+background-color: #06a99c;
+color: #ffffff;
+border: none;
+padding: 10px 15px;
+border-radius: 3px;
+cursor: pointer;
+}
+.image-newsletter {
+margin-bottom: 30px;
+}
+.entry-title {
+margin-left: 20px !important;
+}
+ul.nav li a {
+color: #ffffff;
+font-size: 12px;
+display: block;
+text-decoration: none;
+padding-left: 17px;
+padding-right: 17px;
+}
+ul.nav li a:hover {
+background: #6a205f;
+}
+
+.slide {
+background: #6a205f;
+}
+
+.app-button {
+}
+
+#menu-item-17835 {background: #2D2D2D;}
+#menu-item-17821 {background: #6a205f;}
+#menu-item-17829 {background: #afcd37;}
+#menu-item-17832 {background: #d7d5d0;}
+#menu-item-17840 {background: #df0075;}
+#menu-item-17830 {background: #f99b1d;}
+#menu-item-17828 {background: #06a99c;}
+#menu-item-17841 {background: #00a0d4;}
+#menu-item-17842 {background: #aa2615;}
+#menu-item-17833 {background: #1447d3;}
+#menu-item-17878 {background: #6a205f;}
+#menu-item-17930 {background: #E57373;}
+#menu-item-18892 {background: #6a205f;}
+#menu-item-22171 {background: #fcd209;}
+body {
+        font-family: Roboto;
+      }
+
+.p {
+text-align:left;
+}
+
+.sidebar .widget {
+border:0px solid #6a205f;
+}
+
+.newsletter  a{
+border:1px solid #6a205f;
+border-radius: 5px;
+padding : 10px;
+background-color: #6a205f;
+color: #ffffff;
+text-decoration: none;
+}
+.newsletter-button {
+margin-bottom: inherit;
+}
+
+</style>
+<!-- Vipers Video Quicktags v6.5.2 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block; max-width: 100%; visibility: visible !important; margin: 10px auto; } .vvqbox img { max-width: 100%; height: 100%; } .vvqbox object { max-width: 100%; } 
+</style>
+<script type="text/javascript">
+// <![CDATA[
+	var vvqflashvars = {};
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptaccess: "always" };
+	var vvqattributes = {};
+	var vvqexpressinstall = "http://blog.xebia.fr/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf";
+// ]]>
+</script>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body class="single single-post postid-17501 single-format-standard">
+
+<div class="outer-wrapper">
+
+	<div class="header-wrapper">
+		<div class="header-inner">
+							<div id="header-container">
+					
+					<header>
+						
+						<div class="searchbox right">
+							<form role="search" method="get" id="searchform" action="http://blog.xebia.fr/">
+								<input type="text" placeholder="Recherche" autocomplete="off" value="" name="s" id="s">
+								<input type="submit" id="searchsubmit" value="Search">
+							</form>
+						</div>
+
+						<div class="joinusheader right">
+							<a href="http://www.linkedin.com/company/xebia-france"><i class="fa-white fa-linkedin"></i></a>
+							<a href="http://twitter.com/XebiaFr"><i class="fa-white fa-twitter"></i></a>
+							
+							<a href="https://plus.google.com/u/0/b/100396468532572979348/+XebiaFr/"><i class="fa-white fa-google-plus"></i></a>
+							<a href="http://fr.slideshare.net/XebiaFrance"><i class="fa-white fa-slideshare"></i></a>
+							<i class="xebia-tv2"><a href="http://www.xebia.tv"><img class="xebiatvimg" src="/wp-content/uploads/2015/01/xebia-tv-icon-white.png"></a></i>
+						</div>
+
+						<div class="right hiring"><a href="http://www.xebia.fr/career.html" target="_blank" class="hiring_xebia" onClick="_gaq.push(['_trackEvent', 'Lien_recrutement', 'Hiring', 'Click']);">is hiring ! <i class="fa-white fa-flag" style="font-size:20px !important;"></i></a></div>
+
+						<h1 class="blog-title"><a href="http://blog.xebia.fr">
+															<img src="http://blog.xebia.fr/wp-content/uploads/2015/01/logo-xebia-blog2.png" alt="Blog Xebia France"/>
+													</a></h1>
+					</header>
+			
+			<nav class="navigation" id="sticker">
+				<ul class="nav left"><li id="menu-item-17878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-17878"><a href="http://blog.xebia.fr/">Notre univers</a>
+<ul class="sub-menu">
+	<li id="menu-item-17955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17955"><a href="http://xebia.com/">Site Xebia Groupe</a></li>
+	<li id="menu-item-17881" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17881"><a href="http://www.xebia.fr/">Site Xebia France</a></li>
+	<li id="menu-item-19522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19522"><a href="http://training.xebia.fr/">Site Xebia Training</a></li>
+	<li id="menu-item-17879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17879"><a href="http://blog.xebia.fr/2014/02/06/xebia-insights-le-cycle-des-fondations/">Xebia Insights : Le cycle des Fondations</a></li>
+	<li id="menu-item-17880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17880"><a href="http://blog.xebia.fr/2014/03/19/xebia-n5-au-palmares-great-place-to-work/">Xebia, n°5 au palmarès Great Place to Work</a></li>
+	<li id="menu-item-17934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17934"><a href="http://blog.xebia.fr/nos-videos/">Nos vidéos</a></li>
+	<li id="menu-item-18361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18361"><a href="http://blog.xebia.fr/2014/05/12/les-nouvelles-cartes-xebia-essentials-sont-arrivees/">Xebia Essentials</a></li>
+	<li id="menu-item-17883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17883"><a href="http://blog.xebia.fr/livre-scrum-master-academy/">Livre Scrum Master Academy</a></li>
+	<li id="menu-item-21389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21389"><a href="http://blog.xebia.fr/livre-scrum-master-academy/les-recettes-de-cuisine-entrepreunariale-de-luc-legardeur/">&laquo;&nbsp;Les recettes de cuisine entrepreunariale&nbsp;&raquo; de Luc Legardeur</a></li>
+</ul>
+</li>
+<li id="menu-item-17930" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17930"><a href="http://blog.xebia.fr/category/events/">Events</a></li>
+<li id="menu-item-17835" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17835"><a href="http://blog.xebia.fr/category/revue-de-presse/">Revue de presse</a></li>
+<li id="menu-item-17829" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17829"><a href="http://blog.xebia.fr/category/craftsmanship/">Craftsmanship</a></li>
+<li id="menu-item-17832" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17832"><a href="http://blog.xebia.fr/category/agilite/">Agile</a></li>
+<li id="menu-item-17840" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17840"><a href="http://blog.xebia.fr/category/nosql/">Data</a></li>
+<li id="menu-item-17830" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17830"><a href="http://blog.xebia.fr/category/devops/">DevOps</a></li>
+<li id="menu-item-17828" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17828"><a href="http://blog.xebia.fr/category/cloud/">Cloud</a></li>
+<li id="menu-item-17841" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17841"><a href="http://blog.xebia.fr/category/woa/">Front</a></li>
+<li id="menu-item-17842" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-17842"><a href="http://blog.xebia.fr/category/back/">Back</a></li>
+<li id="menu-item-17833" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-17833"><a href="http://blog.xebia.fr/category/mobilite/">Mobile</a>
+<ul class="sub-menu">
+	<li id="menu-item-22454" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22454"><a href="http://blog.xebia.fr/category/mobilite/mobilite-android/">Android</a></li>
+	<li id="menu-item-22455" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22455"><a href="http://blog.xebia.fr/category/mobilite/mobilite-ios/">iOS</a></li>
+</ul>
+</li>
+<li id="menu-item-25484" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25484"><a href="http://blog.xebia.fr/category/iot/">IoT</a></li>
+<li id="menu-item-18892" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18892"><a href="http://blog.xebia.fr/category/divers/">Divers</a></li>
+</ul>
+				
+				<div class="clear"></div>
+			</nav>
+		</div>
+	</div>
+
+	
+	<div class="content-wrapper clearfix" id="single">
+	<div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
+    <!-- Breadcrumb NavXT 5.3.1 -->
+<span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to Blog Xebia France." href="http://blog.xebia.fr" class="home">Blog Xebia France</a></span> &gt; <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to the Back category archives." href="http://blog.xebia.fr/category/back/" class="taxonomy category">Back</a></span> &gt; <span typeof="v:Breadcrumb"><span property="v:title">Premiers pas avec Atom.io, l&rsquo;éditeur de texte de Github. Xebia vous réserve une surprise.</span></span></div>
+		<div class="main-wrapper left">
+					<article id="post-17501" class="post-17501 post type-post status-publish format-standard hentry category-back tag-atom-io tag-github">
+							<ul class="post-header">
+					<li class="post-author-avatar">
+						<img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/d2d7263cc510ef945bf738083be3c4f8-60.jpg' srcset='http://1.gravatar.com/avatar/d2d7263cc510ef945bf738083be3c4f8?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />						</li>
+						<li class="post-author"><a href="http://blog.xebia.fr/author/pantoine/" title="Articles par Philippe Antoine" class="url fn" rel="author">Philippe Antoine</a></li>
+					<li class="post-date">mardi 11 mars 2014</li>
+					<li class="post-category left menu-item-object-category"><a class="back" href="http://blog.xebia.fr/category/back/">Back</a></li>
+					<a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comments"><li class="left entry-comment">30</li></a>
+
+				</ul>
+				<h1 class="entry-title">Premiers pas avec Atom.io, l&rsquo;éditeur de texte de Github. Xebia vous réserve une surprise.</h1>
+			
+				<div class="post-body">
+					<div class="entry">
+												<a id="dd_start"></a><p><a href="https://atom.io/" style="text-decoration: none;" rel="nofollow">Atom.io</a> est un éditeur de texte développé par <a href="https://github.com/" style="text-decoration: none;" rel="nofollow">Github</a> qui a beaucoup fait parler de lui ces derniers jours. Nous vous proposons de faire un premier tour du propriétaire pour comprendre les raisons de cet engouement.</p>
+<p><img width="500" src="http://i.stack.imgur.com/0AZmH.png" style="margin-left: auto; margin-right: auto; display: block;" /></p>
+<p>Si vous avez envie de le tester vous aussi, Xebia vous a mis de coté quelques invitations à la beta privée : les informations pratiques en bas de l&rsquo;article.</p>
+<p><span id="more-17501"></span></p>
+<h3 id="PremierspasavecAtom.io,l&#39;éditeurdetextedeGithub.Xebiavousréserveunesurprise.-Pourquelpublic?">Pour quel public ?</h3>
+<p>À l&rsquo;opposé d&rsquo;un IntelliJ ou encore d&rsquo;un Eclipse, l&rsquo;approche d&rsquo;Atom.io est semblable à des éditeurs de texte comme <a href="http://www.sublimetext.com/" style="text-decoration: none;" rel="nofollow">Sublime Text</a> ou <a href="http://macromates.com/" style="text-decoration: none;" rel="nofollow">TextMate</a>. On retrouve les mêmes ingrédients :</p>
+<ul style="margin-left: 25.0px;">
+<li>un démarrage en fanfare avec un énorme buzz sur la toile</li>
+<li>une version payante au démarrage</li>
+<li>du code closed source</li>
+</ul>
+<p>Pour l&rsquo;instant en beta privée, seule la version Mac est disponible en téléchargement pour les heureux élus. Si ces premiers éléments ne vous ont pas fait fuir, vous êtes donc sûrement dans la cible.</p>
+<p>C&rsquo;est en regardant la stack technique utilisée qu&rsquo;on devine pour quel type de projet Atom sera le plus adapté. Sous le capot d&rsquo;Atom on trouve :</p>
+<ul style="margin-left: 25.0px;">
+<li>un éditeur codé en <a href="http://coffeescript.org/" style="text-decoration: none;" rel="nofollow">CoffeeScript</a> facile à inspecter via une console identique à celle qu&rsquo;on trouve dans Chrome</li>
+<li>une intégration native de <a href="http://nodejs.org/" style="text-decoration: none;" rel="nofollow">node.js</a></li>
+<li>des composants graphiques qui s&rsquo;appuient sur le préprocesseur CSS <a href="http://lesscss.org/" style="text-decoration: none;" rel="nofollow">LESS</a> avec la possibilité de voir le résultat des modifications via un live reload intégré</li>
+<li>et bien sûr un système de packages disponibles en open source sur <a href="https://github.com/" style="text-decoration: none;" rel="nofollow">github</a></li>
+</ul>
+<p>On comprend vite qu&rsquo;il s&rsquo;agit plus d&rsquo;attirer les développeurs Front-End ou Fullstack que les développeurs Scala.</p>
+<h3 id="PremierspasavecAtom.io,l&#39;éditeurdetextedeGithub.Xebiavousréserveunesurprise.-Quelleskillerfeatures?">Quelles killer features ?</h3>
+<p>La principale fonctionnalité d&rsquo;Atom devrait être l&rsquo;intégration poussée avec des repository git. Pour l&rsquo;instant cette version beta ne propose que des fonctionnalités annexes : on peut voir quelle est la branche courante de travail, les fichiers modifiés changent de couleur, on peut naviguer facilement de &quot;diff&quot; en &quot;diff&quot;. On imagine que les équipes de github se laissent un peu de temps pour peaufiner les fonctionnalités de commit/merge.</p>
+<p>En attendant on peut se contenter de quelques nouveautés qui améliorent le workflow quotidien du développeur : une &quot;Command Palette&quot; pour accéder rapidement à toutes les fonctionnalités de l&rsquo;éditeur (très similaire à celle de Sublime Text), une navigation au clavier, le support de nombreux langages par défaut (dont CoffeeScript bien sûr), la preview temps réel des fichiers markdown et enfin une GUI pour éditer sa configuration.</p>
+<p>Dans la même philosophie qu&rsquo;Emacs, Atom mise beaucoup sur la communauté pour créer des packages pouvant répondre à tous les besoins. Pour le développeur Front-End, la premier réflexe sera de chercher des packages pour angular et reproduire ce qu&rsquo;on fait de mieux aujourd&rsquo;hui. Comme référence on peut garder en tête l&rsquo;excellente intégration d&rsquo;Angular dans <a href="http://www.jetbrains.com/webstorm/" style="text-decoration: none;" rel="nofollow">WebStorm</a> :</p>
+<p><img alt="alt text" src="http://d3j5vwomefv46c.cloudfront.net/photos/large/841207489.gif" /></p>
+<p>Source: <a href="http://twitpic.com/dwtzup" style="text-decoration: none;" rel="nofollow">Because WebStorm</a></p>
+<p>En cherchant rapidement dans <a href="https://atom.io/packages" style="text-decoration: none;" rel="nofollow">la biliothèque de packages</a>, on trouve effectivement un package <a href="https://atom.io/packages/atom-angularjs" style="text-decoration: none;" rel="nofollow">atom-angularjs</a> :</p>
+<p><img src="https://raw.github.com/outsideris/atom-angularjs/master/screenshots/autocomplete.png" style="margin-left: auto; margin-right: auto; display: block;"/></p>
+<p>Les fonctionnalités de complétion sont pour l&rsquo;instant assez rudimentaires, mais on imagine que de nouvelles versions du package devraient arriver rapidement.</p>
+<h3 id="PremierspasavecAtom.io,l&#39;éditeurdetextedeGithub.Xebiavousréserveunesurprise.-DécouvrirAtomencréantunpackage">Découvrir Atom en créant un package</h3>
+<p>Rien de tel, pour découvrir un éditeur, que d&rsquo;écrire un plugin pour celui-ci. La<a href="https://atom.io/docs/v0.69.0/creating-a-package" style="text-decoration: none;" rel="nofollow"> documentation de création d&rsquo;un package</a>, encore sommaire, est suffisante pour démarrer. Pour faciliter l&rsquo;apprentissage, <a href="https://atom.io/docs/v0.69.0/your-first-package" style="text-decoration: none;" rel="nofollow">un premier tutorial très simple est disponible</a>.</p>
+<p>Github a tout fait pour que les développeurs Front-End ne soient pas perdus :</p>
+<ul style="margin-left: 25.0px;">
+<li>on retrouve un fichier package.json avec les dépendances à la racine du projet</li>
+<li>un support natif des tests au format <a href="http://jasmine.github.io/" style="text-decoration: none;" rel="nofollow">jasmine</a> : <a href="https://github.com/atom/ascii-art/blob/master/spec/ascii-art-spec.coffee" style="text-decoration: none;" rel="nofollow">un exemple</a></li>
+<li>un <a href="https://atom.io/packages/styleguide" style="text-decoration: none;" rel="nofollow">styleguide</a> pour retrouver facilement les variables LESS à utiliser :</li>
+</ul>
+<p><img width="500" src="https://f.cloud.github.com/assets/69169/1045837/620444d4-102c-11e3-9cac-8d766a8d62b0.png" style="margin-left: auto; margin-right: auto; display: block;" /></p>
+<h3 id="PremierspasavecAtom.io,l&#39;éditeurdetextedeGithub.Xebiavousréserveunesurprise.-Conclusion">Conclusion</h3>
+<p>Cette version beta d&rsquo;Atom.io semble être le début d&rsquo;un produit très intéressant qu&rsquo;il faudra surveiller avec attention. Pour ceux qui souhaiteraient recevoir une invitation et tester l&rsquo;application, les xebians vous ont réservé quelques dizaines d&rsquo;invitations : pour en recevoir une, postez un commentaire sur ce billet avec un mail valide (qui ne sera pas publié). Attention, les premiers arrivés seront les premiers servis.</p>
+<p>N&rsquo;hésitez pas à partager vos premières impressions.</p>
+<a id="dd_end"></a><div class='dd_outer'><div class='dd_inner'><div id='dd_ajax_float'><div class='dd_button_v'><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/" data-count="vertical" data-text="Premiers pas avec Atom.io, l'éditeur de texte de Github. Xebia vous réserve une surprise." data-via="XebiaFr" ></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></div><div style='clear:left'></div><div class='dd_button_v'><a name='fb_share' type='box_count' share_url='http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/' href='http://www.facebook.com/sharer.php'></a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script></div><div style='clear:left'></div><div class='dd_button_v'><script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script><g:plusone size='tall' href='http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/'></g:plusone></div><div style='clear:left'></div><div class='dd_button_v'><script src='//platform.linkedin.com/in.js' type='text/javascript'></script><script type='IN/Share' data-url='http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/' data-counter='top'></script></div><div style='clear:left'></div></div></div></div><script type="text/javascript">var dd_offset_from_content = 45;var dd_top_offset_from_content = 10;var dd_override_start_anchor_id = "";var dd_override_top_offset = "";</script><script type="text/javascript" src="http://blog.xebia.fr/wp-content/plugins/digg-digg//js/diggdigg-floating-bar.js?ver=5.3.6"></script><div class='yarpp-related yarpp-related-none'>
+<h3>Billets sur le même thème :</h3>
+</div>
+<div class="clear"></div>
+					</div>
+
+					
+					<ul class="post-footer">
+						<li class="zillalike left"></li>
+						<li class="post-tag left"><strong>Tags:</strong><ul><li><a href="http://blog.xebia.fr/tag/atom-io/" rel="tag">Atom.io</a></li><li><a href="http://blog.xebia.fr/tag/github/" rel="tag">Github</a></li></ul></li>
+						<li class="post-category left"><strong>Categories :</strong><ul><li><a href="http://blog.xebia.fr/category/back/" rel="category tag">Back</a></li></ul></li>
+
+					</ul>
+					<div class="comments-wrapper">
+	
+	<h4 class="c-title">30 commentaires</h4>
+
+	<div class="comments-navigation">
+		<div class="next-posts"></div>
+		<div class="prev-posts"></div>
+	</div>
+	<div id="comments">
+	<ul class="commentlist">
+			<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308719">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/67819a890ca096977cabd29fa4234260-40.jpg' srcset='http://0.gravatar.com/avatar/67819a890ca096977cabd29fa4234260?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Bastien Jansen</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308719">mar 11th, 2014 / 9:57</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>J&rsquo;étais déjà tombé sur l&rsquo;éditeur, il semble assez intéressant mais malheureusement pas moyen de recevoir cette fameuse invitation :(<br />
+Du coup, les killer features présentées ici semblent encore plus alléchantes&#8230;</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308721">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/f795d92cddd7f4e51f72b63d19a1487a-40.jpg' srcset='http://0.gravatar.com/avatar/f795d92cddd7f4e51f72b63d19a1487a?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Cédric</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308721">mar 11th, 2014 / 10:12</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Pas mal du tout, j&rsquo;attend avec hâte de pouvoir le tester :)</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308722">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/a9903f6597331e04ac738c36014b3361-40.jpg' srcset='http://1.gravatar.com/avatar/a9903f6597331e04ac738c36014b3361?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Gautier</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308722">mar 11th, 2014 / 10:19</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Ah bah je veux bien une invit moi du coup :) ça a l&rsquo;air d&rsquo;être un bon challenger pour sublime text !</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308724">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/d2d7263cc510ef945bf738083be3c4f8-40.jpg' srcset='http://1.gravatar.com/avatar/d2d7263cc510ef945bf738083be3c4f8?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='https://twitter.com/PhilippeAntoine' rel='external nofollow' class='url'>Philippe Antoine</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308724">mar 11th, 2014 / 10:23</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Bonjour Bastien, on a un petit stock d&rsquo;invitations à distribuer. On t&rsquo;en envoie une rapidement pour que tu puisses tester. Si d&rsquo;autres personnes sont intéressées, n&rsquo;hésitez pas à laisser un commentaire.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308725">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/c2f10fb0b05b5950a52a711a899f0dd8-40.jpg' srcset='http://0.gravatar.com/avatar/c2f10fb0b05b5950a52a711a899f0dd8?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Olivier</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308725">mar 11th, 2014 / 10:25</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Bonjour,<br />
+C&rsquo;est marrant de voir le buzz qui monte petit à petit autour d&rsquo;Atom.io, je veux peux être de la partie. Cet outils semble prometteur.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308727">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/84fc2547ce1026dfb6379cc15def4a7d-40.jpg' srcset='http://2.gravatar.com/avatar/84fc2547ce1026dfb6379cc15def4a7d?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='http://coffeebean.loicdescotte.com' rel='external nofollow' class='url'>Loic Descotte</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308727">mar 11th, 2014 / 10:27</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Ça semble prometteur!<br />
+Je croise les doigts pour recevoir une invitation, ce sera peut être une alternative intéressante à Sublime Text.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308730">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/e4733d94517b29422bb178c7e1cf7e92-40.jpg' srcset='http://2.gravatar.com/avatar/e4733d94517b29422bb178c7e1cf7e92?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">bpo</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308730">mar 11th, 2014 / 10:49</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Cool, ca fait un petit moment que j&rsquo;aimerais tester l&rsquo;app. Ca a l&rsquo;air prometteur</p>
+<p>:)</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308731">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/75da740d43c5780539214f24ce1148a6-40.jpg' srcset='http://1.gravatar.com/avatar/75da740d43c5780539214f24ce1148a6?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Jean</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308731">mar 11th, 2014 / 10:52</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>moi je veux bien jouer avec atom, l&rsquo;intégration markdown a l&rsquo;air top pour écrire les articles de blog et la doc des projet github</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308732">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/b42ae03956217a57fc702b278c3ee645-40.jpg' srcset='http://2.gravatar.com/avatar/b42ae03956217a57fc702b278c3ee645?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Samuel Dalichampt</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308732">mar 11th, 2014 / 10:52</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Le fond noir, c&rsquo;est pour reposer les yeux des codeurs nocturne?</p>
+<p>S&rsquo;il reste des invits béta&#8230;. Grand merci</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308733">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/b237153cc32ad88b6a95bbd7e7b28d7f-40.jpg' srcset='http://2.gravatar.com/avatar/b237153cc32ad88b6a95bbd7e7b28d7f?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Damien Metzler</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308733">mar 11th, 2014 / 10:58</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Hello, je suis aussi intéressé par une invit&rsquo;</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308735">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/3d45b77cce96b722c721267b65f2fbb5-40.jpg' srcset='http://0.gravatar.com/avatar/3d45b77cce96b722c721267b65f2fbb5?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='http://www.lteconsulting.fr' rel='external nofollow' class='url'>Arnaud Tournier</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308735">mar 11th, 2014 / 11:20</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Pareil, je suis intéressé par une invite, merci Xebia !</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308738">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/8b2625d276da9a257e5cd03f8d99c0dd-40.jpg' srcset='http://2.gravatar.com/avatar/8b2625d276da9a257e5cd03f8d99c0dd?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='http://www.skorps.com' rel='external nofollow' class='url'>David</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308738">mar 11th, 2014 / 11:58</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Cool ! ça à l&rsquo;air sympa comme éditeur, j&rsquo;aimerais le tester s&rsquo;il vous reste une invit :)<br />
+Merci !</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308739">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/8bd7963dd031cc8ab193028a2581eeac-40.jpg' srcset='http://2.gravatar.com/avatar/8bd7963dd031cc8ab193028a2581eeac?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='http://blog.programmation-web.fr/' rel='external nofollow' class='url'>jeremy</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308739">mar 11th, 2014 / 12:13</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Très prometteur, s&rsquo;il reste des clés, je suis preneur évidement.<br />
+Par contre, atom serra payant visiblement. Quelqu’un à une idée du prix?</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308743">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/9635a25a6ff63eda36ccd112fd3828e3-40.jpg' srcset='http://0.gravatar.com/avatar/9635a25a6ff63eda36ccd112fd3828e3?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Émile</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308743">mar 11th, 2014 / 13:02</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Salut! Je serais bien intéressé aussi par une invitation ;-) merci d&rsquo;avance.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308744">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/52c34e96e4eeff9b7d3c1788ce12104e-40.jpg' srcset='http://2.gravatar.com/avatar/52c34e96e4eeff9b7d3c1788ce12104e?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Olivier Schira</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308744">mar 11th, 2014 / 13:33</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Idem, ça fait un moment que j&rsquo;ai request une invit&rsquo; mais toujours rien !<br />
+Merci Xebia s&rsquo;il vous en reste :)</p>
+<p>Dommage pour le côté payant, espérons que ça ne bride pas trop la communauté&#8230;</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308745">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/4a225395b3273f7b97e66f270fa8e882-40.jpg' srcset='http://1.gravatar.com/avatar/4a225395b3273f7b97e66f270fa8e882?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">guillaume fesquet</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308745">mar 11th, 2014 / 14:03</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Salut,<br />
+S&rsquo;il vous reste des invits je suis preneur ;)<br />
+Merci bien</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308746">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/e793874955f9397dce25f002ea6fa9f8-40.jpg' srcset='http://2.gravatar.com/avatar/e793874955f9397dce25f002ea6fa9f8?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Hiram MADELAINE</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308746">mar 11th, 2014 / 14:14</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Cet éditeur me fait penser à LightTable que j&rsquo;utilise pour Clojure(Script).<br />
+LightTable permet aussi d&rsquo;écrire du JavaScript, HTML, CSS et du Python.<br />
+Il gagne aussi à être connu.<br />
+Néanmoins, je suis curieux de découvrir Atom.<br />
+Merci :-)</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-bdechoux odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308767">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/2970f03eda4f65fe0a94c9bb32f0415a-40.jpg' srcset='http://2.gravatar.com/avatar/2970f03eda4f65fe0a94c9bb32f0415a?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='http://www.xebia.fr' rel='external nofollow' class='url'>Bertrand Dechoux</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308767">mar 11th, 2014 / 16:36</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>@Hiram : Malheureusement, pas du support de Clojure out-of-the-box pour l&rsquo;instant.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308773">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/47271dee53e573eb814d272b4df81456-40.jpg' srcset='http://1.gravatar.com/avatar/47271dee53e573eb814d272b4df81456?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">sebbane</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308773">mar 11th, 2014 / 17:35</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Bonjour<br />
+Une invite svp.<br />
+Merci</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308782">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/26b324ed039d9aadd939a3f3a4844823-40.jpg' srcset='http://2.gravatar.com/avatar/26b324ed039d9aadd939a3f3a4844823?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Jeff MAURY</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308782">mar 11th, 2014 / 18:23</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Et le comparatif avec Brackets, pourquoi tout ce buzz autour d&rsquo;Atom ?<br />
+Je n&rsquo;arrive pas à comprendre pourquoi tout le monde se précipite sur Atom et ignore Brackets, y a t il une réelle raison ou c&rsquo;est un syndrome de Panurge ?</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308787">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/d2d7263cc510ef945bf738083be3c4f8-40.jpg' srcset='http://1.gravatar.com/avatar/d2d7263cc510ef945bf738083be3c4f8?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='https://twitter.com/PhilippeAntoine' rel='external nofollow' class='url'>Philippe Antoine</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308787">mar 11th, 2014 / 19:00</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>@Jeff Maury<br />
+Atom.io est effectivement en concurrence directe avec Brackets.</p>
+<p>J&rsquo;ai travaillé de façon ponctuelle avec Brackets ces dernières semaines et j&rsquo;avoue que j&rsquo;ai été agréablement surpris. Le fait que le logiciel soit en open source est un gros plus. Du côté des petits détails, j&rsquo;ai aimé le support natif de CoffeeScript, et le système de plugin facile à utiliser.</p>
+<p>Je n&rsquo;ai cependant pas suffisamment utilisé Brackets pour le comparer de facon approfondie avec Atom. Je serai intéressé par votre retour d&rsquo;expérience.</p>
+<p>Nous pouvons bien sûr vous envoyer une invitation si vous voulez comparer.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308803">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/c6b78e1d23c4a7f73c475cf55ccae3a2-40.jpg' srcset='http://0.gravatar.com/avatar/c6b78e1d23c4a7f73c475cf55ccae3a2?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">cornell</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308803">mar 11th, 2014 / 21:02</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Tout à fait d&rsquo;accord avec Jeff MAURY, regardez donc du coté de Brackets : <a href="http://brackets.io/" rel="nofollow">http://brackets.io/</a></p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308807">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/81d657ff5102ebcc2c489de584d9ed89-40.jpg' srcset='http://2.gravatar.com/avatar/81d657ff5102ebcc2c489de584d9ed89?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Pierre</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308807">mar 11th, 2014 / 21:41</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Sympa comme article. S&rsquo;il vous reste des invit&rsquo; j&rsquo;en veux bien une merci.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308820">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/f57df923fe10d7730ad9f5851c6745b9-40.jpg' srcset='http://0.gravatar.com/avatar/f57df923fe10d7730ad9f5851c6745b9?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Daco</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308820">mar 11th, 2014 / 23:33</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Bonjour, s&rsquo;il reste des invits je suis preneur.</p>
+<p>Une version Windows de prévu ? Une idée du pricing ?</p>
+<p>Merci pour l&rsquo;article.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308824">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/70ac27f11275c674395cd3c56bf5dd19-40.jpg' srcset='http://1.gravatar.com/avatar/70ac27f11275c674395cd3c56bf5dd19?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">David Cruchon</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308824">mar 12th, 2014 / 0:42</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Salut la compagnie,</p>
+<p>S&rsquo;ils vous reste une invitation en rab, je suis preneur :)  Merci d&rsquo;avance</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308867">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/e1595969282562c82445b0e46dfacd7c-40.jpg' srcset='http://2.gravatar.com/avatar/e1595969282562c82445b0e46dfacd7c?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Olivier Lecrivain</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308867">mar 12th, 2014 / 15:07</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Merci pour l&rsquo;article :) S&rsquo;il vous reste des clés&#8230; je suis moi aussi intéressé :)</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308906">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/8bd7963dd031cc8ab193028a2581eeac-40.jpg' srcset='http://2.gravatar.com/avatar/8bd7963dd031cc8ab193028a2581eeac?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='http://blog.programmation-web.fr/' rel='external nofollow' class='url'>jeremy</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308906">mar 13th, 2014 / 10:41</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Je ne connaissait pas brackets. Je le test depuis quelques jours et il a l&rsquo;aire plutôt bien. Par contre le système de quick édit css ne fonctionne pas quand utilise les fichier less. C&rsquo;est bien dommage.</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1308907">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/3a13bd02cecc417be6f1e81e75d550c5-40.jpg' srcset='http://0.gravatar.com/avatar/3a13bd02cecc417be6f1e81e75d550c5?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Loïc</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308907">mar 13th, 2014 / 10:44</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Bonjour, </p>
+<p>S&rsquo;il vous reste des invitations, je suis intéressé pour essayer Atom.</p>
+<p>Merci d&rsquo;avance,</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 commentisi" id="li-comment-1308977">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/c6683fabbe071e95f430709a35b0d3f6-40.jpg' srcset='http://0.gravatar.com/avatar/c6683fabbe071e95f430709a35b0d3f6?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author">Matt</li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1308977">mar 14th, 2014 / 13:30</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Bonjour,</p>
+<p>Je suis preneur si ils vous reste des invitations.</p>
+<p>Merci</p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 commentisi" id="li-comment-1309175">
+		<ul class="comment-header">
+			<li class="ava"><img alt='' src='http://blog.xebia.fr/wp-content/glc_cache/d2d7263cc510ef945bf738083be3c4f8-40.jpg' srcset='http://1.gravatar.com/avatar/d2d7263cc510ef945bf738083be3c4f8?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /></li>
+			<li class="meta">
+				<li class="author"><a href='https://twitter.com/PhilippeAntoine' rel='external nofollow' class='url'>Philippe Antoine</a></li>
+				<li class="permalink"><a href="http://blog.xebia.fr/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#comment-1309175">mar 18th, 2014 / 11:36</a></li>
+			</li>
+		</ul>
+				
+				
+		<p>Merci à tous pour vos retours, toutes nos invitations sont parties (une trentaine). N&rsquo;hésitez pas à en faire profiter les curieux dans votre entourage.</p>
+<p>Du côté des nouveautés, on a eu un peu plus d&rsquo;informations sur l&rsquo;intégration avec git: <a href="http://blog.atom.io/2014/03/13/git-integration.html" rel="nofollow">http://blog.atom.io/2014/03/13/git-integration.html</a></p>
+<p>Pour les annonces des sorties de nouveaux packages atom, vous pouvez suivre le compte twitter suivant: <a href="https://twitter.com/AtomPackagesBot" rel="nofollow">https://twitter.com/AtomPackagesBot</a></p>
+				
+		<ul class="reply">
+			<li> </li>
+		</ul>
+	</li><!-- #comment-## -->
+	</ul>
+	</div>
+
+	<div class="comments-navigation">
+		<div class="next-posts"></div>
+		<div class="prev-posts"></div>
+	</div>
+	
+ 
+
+<div class="respond" id="comments">
+
+							<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Laisser un commentaire <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/03/11/premiers-pas-avec-atom-io-lediteur-de-texte-de-github-xebia-vous-reserve-une-surprise/#respond" style="display:none;">Annuler la réponse.</a></small></h3>
+									<form action="http://blog.xebia.fr/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										<p class="comment-form-author"><input id="author" placeholder="Nom (Requis)" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><input id="email" placeholder="Email" name="email" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Commentaire</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p>						
+						<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Envoyer" /> <input type='hidden' name='comment_post_ID' value='17501' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="062062ba48" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="130"/></p>					</form>
+							</div><!-- #respond -->
+				
+</div>
+
+</div>
+					
+<div class="wp_rp_wrap  wp_rp_pinterest" id="wp_rp_first"><div class="wp_rp_content"><h3 class="related_post_title">Billets sur le même thème :</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-14020" data-post-type="none" ><a href="http://blog.xebia.fr/2013/05/20/integration-de-restkit-avec-une-uitableview/" class="wp_rp_thumbnail"><img src="http://blog.xebia.fr/wp-content/uploads/2013/05/restkit-150x32.png" alt="Intégration de RestKit avec une UITableView" width="150" /></a><small class="wp_rp_publish_date">lundi 20 mai 2013</small> <a href="http://blog.xebia.fr/2013/05/20/integration-de-restkit-avec-une-uitableview/" class="wp_rp_title">Intégration de RestKit avec une UITableView</a></li><li data-position="1" data-poid="in-8549" data-post-type="none" ><a href="http://blog.xebia.fr/2011/09/20/revue-de-presse-xebia-230/" class="wp_rp_thumbnail"><img src="http://blog.xebia.fr/wp-content/uploads/2015/01/logo-xebia2.png" alt="Revue de Presse Xebia" width="150" /></a><small class="wp_rp_publish_date">mardi 20 septembre 2011</small> <a href="http://blog.xebia.fr/2011/09/20/revue-de-presse-xebia-230/" class="wp_rp_title">Revue de Presse Xebia</a></li><li data-position="2" data-poid="in-8392" data-post-type="none" ><a href="http://blog.xebia.fr/2011/09/01/svn-to-github-par-jean-laurent-de-morlhon/" class="wp_rp_thumbnail"><img src="http://blog.xebia.fr/wp-content/uploads/2015/01/logo-xebia2.png" alt="SVN to GitHub par Jean Laurent de Morlhon" width="150" /></a><small class="wp_rp_publish_date">jeudi 1 septembre 2011</small> <a href="http://blog.xebia.fr/2011/09/01/svn-to-github-par-jean-laurent-de-morlhon/" class="wp_rp_title">SVN to GitHub par Jean Laurent de Morlhon</a></li><li data-position="3" data-poid="in-11309" data-post-type="none" ><a href="http://blog.xebia.fr/2012/04/20/remote-safe-push/" class="wp_rp_thumbnail"><img src="http://blog.xebia.fr/wp-content/uploads/2012/04/gep-enjoy.jpg" alt="remote safe push" width="150" /></a><small class="wp_rp_publish_date">vendredi 20 avril 2012</small> <a href="http://blog.xebia.fr/2012/04/20/remote-safe-push/" class="wp_rp_title">remote safe push</a></li><li data-position="4" data-poid="in-13397" data-post-type="none" ><a href="http://blog.xebia.fr/2013/02/27/craftsman-recipes-refactorer-votre-commit-log-avec-git/" class="wp_rp_thumbnail"><img src="http://blog.xebia.fr/wp-content/uploads/2013/02/1_COMMIT_AMEND-150x30.png" alt="Craftsman Recipes: Refactorez votre commit log avec Git" width="150" /></a><small class="wp_rp_publish_date">mercredi 27 février 2013</small> <a href="http://blog.xebia.fr/2013/02/27/craftsman-recipes-refactorer-votre-commit-log-avec-git/" class="wp_rp_title">Craftsman Recipes: Refactorez votre commit log avec Git</a></li></ul></div></div>
+
+				</div>
+			</article>
+		<!-- /END loop -->
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<ul class="sidebar-footer">
+			<li class="widget"><h3 class="title">Xebia IT Architects</h3>			<div class="textwidget"><p><a href="http://www.xebia.fr">Xebia</a> est un cabinet de conseil international spécialisé dans les technologies Big Data, Cloud et Web, les architectures Java et la Mobilité dans des environnements agiles.</p>
+<p>Tél : +33 (0)1 53 89 99 99<br />
+Fax : +33 (0)1 53 89 99 97<br />
+E-mail : <a href="mailto:info@xebia.fr">info@xebia.fr</a></p>
+<div class="joinusfooter">
+<p><a href="http://www.linkedin.com/company/xebia-france"><i class="fa-white fa-linkedin"></i></a><a href="http://twitter.com/XebiaFr"><i class="fa-white fa-twitter"></i></a><a href="https://plus.google.com/u/0/b/100396468532572979348/+XebiaFr/"><i class="fa-white fa-google-plus"></i></a><i class="xebia-tv2"><a href="http://www.xebia.tv"><img class="xebiatvimg" src="/wp-content/uploads/2015/01/xebia-tv-icon-white.png"></a></i><a href="http://fr.slideshare.net/XebiaFrance"><i class="fa-white fa-slideshare"></i></a>
+</div>
+</div>
+		</li><li class="widget"><h3 class="title"><a class='rsswidget' href='http://blog.xebia.com/feed/'><img style='border:0' width='14' height='14' src='http://blog.xebia.fr/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://blog.xebia.com/'>blog.xebia.com</a></h3><ul><li><a class='rsswidget' href='http://blog.xebia.com/testing-infrastructure-with-saltstack-docker-and-testinfra/'>Testing infrastructure with Saltstack, Docker and Testinfra</a> <span class="rss-date">jeudi 25 février 2016</span></li><li><a class='rsswidget' href='http://blog.xebia.com/dialogue-with-a-scrum-master/'>Dialogue with a Scrum Master</a> <span class="rss-date">jeudi 25 février 2016</span></li><li><a class='rsswidget' href='http://blog.xebia.com/nobody-cares-about-your-product-part-1/'>Nobody cares about your product (Part 1)</a> <span class="rss-date">dimanche 21 février 2016</span></li></ul></li><li class="widget"><h3 class="title">Les 3 articles les plus consultés</h3><ul><li><a title='Il était une fois un projet IT en Kanban (Episode 3 : Tenez vos promesses avec la prédictibilité) (15046)' href='http://blog.xebia.fr/2014/01/31/il-etait-un-fois-un-projet-it-en-kanban-episode-3-tenez-vos-promesses-avec-la-predictibilite/'>Il était une fois un projet IT en Kanban (Episode 3 : Tenez vos promesses avec la prédictibilité)</a>  (15046)</li><li><a title='POST vs. PUT : la confusion (10435)' href='http://blog.xebia.fr/2014/03/17/post-vs-put-la-confusion/'>POST vs. PUT : la confusion</a>  (10435)</li><li><a title='Logstash, ElasticSearch, Kibana - S01E01 - Analyse d&#039;e-réputation sur Twitter (8054)' href='http://blog.xebia.fr/2013/12/06/logstash-elasticsearch-kibana-s01e01-analyse-de-reputation-sur-twitter/'>Logstash, ElasticSearch, Kibana - S01E01 - Analyse d'e-réputation sur Twitter</a>  (8054)</li></ul></li><li class="widget"><h3 class="title">Les blogs de l&rsquo;Alliance</h3>			<div class="textwidget"><ul>
+<li><a href="http://blog.thiga.fr/">Blog Thiga</a></li>
+<li><a href="http://blog.cellenza.com/">Blog Cellenza</a></li>
+<li><a href="http://blog.ux-republic.com/">Blog UX Republic</a></li>
+<li><a href="http://blog.xebialabs.com/">Blog Xebia Labs</a></li>
+<li><a href="http://www.akamis.com/blog/">Blog Akamis</a></li>
+<li><a href="http://blog.wescale.fr/">Blog Wescale</a></li>
+</ul>
+<a href="http://alliance.xebia.fr/"><img src="http://blog.xebia.fr/wp-content/uploads/2015/03/logo-alliance-xebia-long-2.png" alt="Alliance" style="margin-top:10px";></a></div>
+		</li>		</ul>
+	
+		<footer class="credit">
+			<div class="left"><a href="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/"><img class="licence" src="http://blog.xebia.fr/wp-content/uploads/2012/01/by-nc-nd.png" /></a> Sauf mention contraire, le contenu de ce blog est sous <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/">contrat Creative Commons</a> - <a href="/mentions-legales">Mentions légales</a>
+</div>
+			
+			<div class="clear"></div>
+		</footer>
+	</div>
+
+</div><!-- end, OuterWrapper -->
+
+
+<div id="popup-cjpopup-19777" class="cjpopup cjpopup-no-tablet cjpopup-no-phone cjpopup-hidden cjpopup-modal-box" data-click="#newsletterxebia" data-backdrop-id="backdrop-cjpopup-19777" data-cookie="0" data-popup-type="modal-box" data-width="" data-padding="40px" data-delay="" data-bgcolor="#6a205f" data-textcolor="#ffffff" data-linkcolor="#4e8ef7" data-animation-in="fadeIn" data-animation-out="fadeOut"><div class="popup-content"><p><a href="http://blog.xebia.fr/wp-content/uploads/2014/09/xebia-newsletter.png"><img src="http://blog.xebia.fr/wp-content/uploads/2014/09/xebia-newsletter.png" alt="xebia-newsletter" width="223" height="79" class="image-newsletter alignnone size-full wp-image-19793" /></a></p>
+<form method="post" onsubmit="return BFTValidate(this);">
+<p class="newsletter"><label>Votre nom et prénom :</label><br /> <input type="text" name="user_name"></p>
+<p class="newsletter"><label>Votre email:</label><br /> <input  type="text" name="email"></p>
+<p align="center"><input class="inscription" type="submit" value="S'inscrire"></p>
+<p><input type="hidden" name="bft" value="register"><br />
+</form>
+</div><a href="#close" class="close-cjpopup"><span>x</span></a></div><div id="backdrop-cjpopup-19777" class="cjbackdrop cjpopup-no-tablet cjpopup-no-phone cjpopup-hidden"></div><!-- Powered by WPtouch: 4.0.3 --><script type="text/javascript">
+            if (window.wp_product_version === undefined) {
+                window.wp_product_version = "wpf-1.3.1";
+            }
+
+            if (window.wp_blog_version === undefined) {
+                window.wp_blog_version = "4.3.3";
+            }
+
+            if (window.addthis_plugin_info === undefined) {
+                window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","cms_version":"4.3.3","plugin_name":"AddThis Follow Buttons","plugin_version":"1.3.1"};
+            }
+        </script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5332f2de7ad3f48c"></script><script type="text/javascript">
+//<![CDATA[
+var podpressL10 = {
+	openblogagain : 'back to:',
+	theblog : 'the blog',
+	close : 'close',
+	playbutton : 'Play &gt;'
+}
+//]]>
+</script>
+<script type="text/javascript" src="http://blog.xebia.fr/wp-content/plugins/podpress/players/1pixelout/1pixelout_audio-player.js"></script>
+<script type="text/javascript">//<![CDATA[
+	var podPressPlayerFile = "1pixelout_player.swf";
+	var podPressPopupPlayerOpt = new Object();
+	podPressPopupPlayerOpt["bg"] = "E5E5E5";
+	podPressPopupPlayerOpt["text"] = "333333";
+	podPressPopupPlayerOpt["leftbg"] = "CCCCCC";
+	podPressPopupPlayerOpt["lefticon"] = "333333";
+	podPressPopupPlayerOpt["volslider"] = "666666";
+	podPressPopupPlayerOpt["voltrack"] = "FFFFFF";
+	podPressPopupPlayerOpt["rightbg"] = "B4B4B4";
+	podPressPopupPlayerOpt["rightbghover"] = "999999";
+	podPressPopupPlayerOpt["righticon"] = "333333";
+	podPressPopupPlayerOpt["righticonhover"] = "FFFFFF";
+	podPressPopupPlayerOpt["loader"] = "009900";
+	podPressPopupPlayerOpt["track"] = "FFFFFF";
+	podPressPopupPlayerOpt["border"] = "CCCCCC";
+	podPressPopupPlayerOpt["tracker"] = "DDDDDD";
+	podPressPopupPlayerOpt["skip"] = "666666";
+	podPressPopupPlayerOpt["slider"] = "666666";
+	podPressPopupPlayerOpt["initialvolume"] = "70";
+	podPressPopupPlayerOpt["buffer"] = "5";
+	podPressPopupPlayerOpt["checkpolicy"] = "no";
+	podPressPopupPlayerOpt["animation"] = "yes";
+	podPressPopupPlayerOpt["remaining"] = "no";
+	podpressAudioPlayer.setup("http://blog.xebia.fr/wp-content/plugins/podpress/players/1pixelout/" + podPressPlayerFile, {bg:"E5E5E5", text:"333333", leftbg:"CCCCCC", lefticon:"333333", volslider:"666666", voltrack:"FFFFFF", rightbg:"B4B4B4", rightbghover:"999999", righticon:"333333", righticonhover:"FFFFFF", loader:"009900", track:"FFFFFF", border:"CCCCCC", tracker:"DDDDDD", skip:"666666", slider:"666666", initialvolume:"70", buffer:"5", checkpolicy:"no", animation:"yes", remaining:"no",  pagebg:"FFFFFF", transparentpagebg:"yes", encode: "no"} );
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+var podPressBlogURL = "http://blog.xebia.fr/";
+var podPressBackendURL = "http://blog.xebia.fr/wp-content/plugins/podpress/";
+var podPressDefaultPreviewImage = "http://blog.xebia.fr/wp-content/plugins/podpress/images/vpreview_center.png";
+var podPressMP3PlayerWrapper = false;
+var podPress_cortado_signed = false;
+var podPressOverwriteTitleandArtist = false;
+var podPressHTML5 = true;
+var podPressHTML5_showplayersdirectly = false;
+var podPressText_PlayNow = "Play Now";
+var podPressText_HidePlayer = "Hide Player";
+//]]></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<link rel='stylesheet' id='yarppRelatedCss-css'  href='http://blog.xebia.fr/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.3.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://blog.xebia.fr/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/themes/xebiav0.3/js/html5.js?ver=3.5'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/themes/xebiav0.3/js/jquery.flexslider.js?ver=1.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"fr-FR","strings":{"Close":"Fermer","Fullscreen":"Plein \u00e9cran","Download File":"T\u00e9l\u00e9charger le fichier","Download Video":"T\u00e9l\u00e9charger la vid\u00e9o","Play\/Pause":"Lecture\/Pause","Mute Toggle":"Couper le son","None":"Aucun","Turn off Fullscreen":"Quitter le plein \u00e9cran","Go Fullscreen":"Passer en plein \u00e9cran","Unmute":"R\u00e9activer le son","Mute":"Muet","Captions\/Subtitles":"L\u00e9gendes\/Sous-titres"}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.17.0'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/themes/xebiav0.3/js/mediaelementplayer.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-includes/js/masonry.min.js?ver=3.1.2'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/themes/xebiav0.3/js/jquery.imagesloaded.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/themes/xebiav0.3/js/trigger.js?ver=1.0'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-includes/js/comment-reply.min.js?ver=4.3.3'></script>
+<script type='text/javascript' src='http://blog.xebia.fr/wp-content/plugins/wordpress-23-related-posts-plugin/static/js/pinterest.js?ver=3.6'></script>
+<script type="text/javascript">
+            function AI_responsive_widget() {
+                jQuery('object.StefanoAI-youtube-responsive').each(function () {
+                    var width = jQuery(this).parent().innerWidth();
+                    var maxwidth = jQuery(this).css('max-width').replace(/px/, '');
+                    var pl = parseInt(jQuery(this).parent().css('padding-left').replace(/px/, ''));
+                    var pr = parseInt(jQuery(this).parent().css('padding-right').replace(/px/, ''));
+                    width = width - pl - pr;
+                    if (maxwidth < width) {
+                        width = maxwidth;
+                    }
+                    jQuery(this).css('width', width + "px");
+                    jQuery(this).css('height', width / (16 / 9) + "px");
+                    jQuery(this).children('iframe').css('width', width + "px");
+                    jQuery(this).children('iframe').css('height', width / (16 / 9) + "px");
+                });
+            }
+            if (typeof jQuery !== 'undefined') {
+                jQuery(document).ready(function () {
+                    var tag = document.createElement('script');
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                    AI_responsive_widget();
+                });
+                jQuery(window).resize(function () {
+                    AI_responsive_widget();
+                });
+            }
+                </script><!--wp_footer-->
+</body>
+</html>

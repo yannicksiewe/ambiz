@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="ie7 oldie" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 oldie" lang="fr"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 oldie" lang="fr"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class=" js csstransitions" lang="fr"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8"><script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/bdf2dde951" type="text/javascript"></script><script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/nr-768.js"></script><script async="" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/cbgapi.loaded_0"></script><script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/analytics.js" async="" type="text/javascript"></script><script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/widgets.js" id="twitter-wjs"></script><script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/all.js" async="" type="text/javascript" id="facebook-jssdk"></script><script gapi_processed="true" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/plusone.js" async="" type="text/javascript"></script><script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/gtm.js" async=""></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+    <link rel="shortcut icon" href="http://www.ekino.com/favicon.ico">
+                        <meta name="description" content="ekino est la filiale technique du groupe FullSIX. Grâce à ses 250 collaborateurs en France, Ekino conçoit et réalise des solutions innovantes basées sur les technologies : Java, .NET, PHP, HTML5, Javascript, CSS, Flash/Flex, Objective C">
+            
+    <meta name="google-site-verification" content="_HO30pGtUi7sBreiN285l4Fz9fMOog8RSdAj6y49aFw">
+    <meta name="robots" content="index, follow">
+
+    <!--REWRITE BY YOAST PLUGIN-->
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+
+    <link rel="stylesheet" href="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/styles.css" type="text/css" title="Styles">
+
+
+    <script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/modernizr.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<script type="text/javascript" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "ur-25138f79-3d90-6b91-a1b-6f39f669e32b", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+	
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Une app mobile hybride en HTML5 performante, Yes we can !!! - ekino</title>
+<meta name="description" content="Retour d'expérience sur la création d'une App Android HTML5 utilisant AngularJS + Phonegap ; nos écueils en terme de performance et nos bonnes impressions.">
+<link rel="canonical" href="http://www.ekino.com/une-app-mobile-hybride-en-html5-performante-yes-we-can/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Une app mobile hybride en HTML5 performante, Yes we can !!! - ekino">
+<meta property="og:description" content="Retour d'expérience sur la création d'une App Android HTML5 utilisant AngularJS + Phonegap ; nos écueils en terme de performance et nos bonnes impressions.">
+<meta property="og:url" content="http://www.ekino.com/une-app-mobile-hybride-en-html5-performante-yes-we-can/">
+<meta property="og:site_name" content="ekino">
+<meta property="article:author" content="florian.harmel">
+<meta property="article:tag" content="Android,angularjs,hybride,mobile,virtual-scroll-list">
+<meta property="article:section" content="Frontov">
+<meta property="article:published_time" content="2013-04-25T18:57:40+00:00">
+<meta property="article:modified_time" content="2013-12-12T16:20:17+00:00">
+<meta property="og:updated_time" content="2013-12-12T16:20:17+00:00">
+<meta property="og:image" content="http://www.ekino.com/wp-content/uploads/2013/04/test.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Retour d'expérience sur la création d'une App Android HTML5 utilisant AngularJS + Phonegap ; nos écueils en terme de performance et nos bonnes impressions.">
+<meta name="twitter:title" content="Une app mobile hybride en HTML5 performante, Yes we can !!! - ekino">
+<meta name="twitter:domain" content="ekino">
+<meta name="twitter:image:src" content="http://www.ekino.com/wp-content/uploads/2013/04/test.jpg">
+<meta name="twitter:creator" content="@florianharmel">
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/www.ekino.com\/","name":"ekino"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="ekino » Une app mobile hybride en HTML5 performante, Yes we can !!! Flux des commentaires" href="http://www.ekino.com/une-app-mobile-hybride-en-html5-performante-yes-we-can/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.ekino.com\/core\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script type="text/javascript" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/wp-emoji-release.js"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="crayon-group-css" href="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/a.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.0","is_admin":"0","ajaxurl":"http:\/\/www.ekino.com\/core\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Faites %s pour copier, %s pour coller","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/a.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ekino.com/core/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ekino.com/core/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="http://www.ekino.com/?p=2061">
+	
+<script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/getAllAppDefault.esi" type="text/javascript"></script><script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/checkOAuth.esi" type="text/javascript"></script><link href="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/buttons.css" type="text/css" rel="stylesheet"><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body class="single single-post postid-2061 single-format-standard">
+    <header>
+        <a href="http://www.ekino.com/" id="logo" title="ekino">
+            <img src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/logo_3.png" alt="ekino" height="23" width="83">
+        </a>
+
+		<a class="linkMenu" href="#menuNavigation">
+            <button class="navbar-toggle" data-target=".bs-navbar-collapse" data-toggle="collapse" type="button">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+        </a>
+        <nav id="menuNavigation">
+            <ul id="menu-pages_internes" class="menu"><li id="nav-menu-item-5531" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a title="Expertises" href="http://www.ekino.com/#bl-project" class="menu-link main-menu-link">expertises</a></li>
+<li id="nav-menu-item-5529" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a title="dossiers" href="http://www.ekino.com/dossiers" class="menu-link main-menu-link">dossiers</a></li>
+<li id="nav-menu-item-5533" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><a title="Recrutement" href="http://www.ekino.com/recrutement/" class="menu-link main-menu-link">carrières</a></li>
+<li id="nav-menu-item-5535" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><a title="Le blog d’Ekino" href="http://www.ekino.com/blog/" class="menu-link main-menu-link">blog</a></li>
+<li id="nav-menu-item-5527" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a title="Contact" href="#contact" class="menu-link main-menu-link">contact</a></li>
+</ul>        </nav>
+    </header>
+    
+    
+    	<section id="mea_blog">
+        <div class="diapo_mea blog_header">
+            
+        </div>
+    </section>
+    <section class="contentSection articleZone" id="heading">
+        <div class="searchBox">
+<form method="get" id="searchform" action="http://www.ekino.com/">
+	<label for="s">Rechercher</label>
+	<input class="field" name="s" id="s" placeholder="Rechercher …" type="text">
+	<input name="search-type" value="normal" type="hidden">
+	<button type="button" title="Lancer la recherche" onclick="this.form.submit()">Lancer la recherche</button>
+</form>
+</div>        <div class="title">
+            <h1>Une app mobile hybride en HTML5 performante, Yes we can !!!</h1>
+            <h2>Actualité ekino - <time>25 avril 2013</time></h2>
+                            <h2>Notre retour d'expérience sur la création d'une App Android HTML5 avec AngularJS et Phonegap</h2>
+                    </div>
+    </section>
+
+    <section class="contentSection articleZone" id="articles">
+        <article>
+            <aside>
+
+                                <div class="profile">
+                                        <figure>
+						<a href="http://www.ekino.com/author/harmel/">
+                        <img alt="Florian Harmel" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/Florian-Harmel_avatar-80x80.jpg" class="avatar avatar-80 photo" height="80" width="80">					</a>
+                    </figure>
+                                        <h3><a href="http://www.ekino.com/author/harmel/" title="Articles par Florian Harmel" rel="author">Florian Harmel</a></h3>
+                    <h4>Creative Technologist</h4>
+                </div>
+                            </aside>
+            <div class="info_section mobile">
+                <span class="title">Article paru le : </span><time>25 avril 2013</time>
+            </div>
+                <figure class="article_figure"><img src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/test.jpg" class="attachment-post-thumbnail wp-post-image" alt="Une app mobile hybride en HTML5 performante, Yes we can !!!" height="507" width="802"></figure>            <div class="article_desc">
+                <div class="info_section">
+                   <span class="title">Article paru le : </span><time>25 avril 2013</time>
+					<div class="socialBlog">
+						<span st_processed="yes" class="st_twitter_large" st_title="Une app mobile hybride en HTML5 performante, Yes we can !!!" st_url="http://www.ekino.com/une-app-mobile-hybride-en-html5-performante-yes-we-can/" displaytext="twitter"><span class="stButton" style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;"><span style="background-image: url(&quot;http://w.sharethis.com/images/twitter_32.png&quot;);" class="stLarge"></span></span></span>
+						<span st_processed="yes" class="st_facebook_large" st_title="Une app mobile hybride en HTML5 performante, Yes we can !!!" st_url="http://www.ekino.com/une-app-mobile-hybride-en-html5-performante-yes-we-can/" displaytext="facebook"><span class="stButton" style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;"><span style="background-image: url(&quot;http://w.sharethis.com/images/facebook_32.png&quot;);" class="stLarge"></span></span></span>
+					</div>
+                </div>
+                <div class="preview_section">
+                    <div class="articleContent">
+                        <h2>Introduction / Contexte</h2>
+<h3>Introduction</h3>
+<p>HTML5 et mobile ne font pas toujours bon ménage lorsqu’il s’agit de 
+faire des applications métiers relativement complexes ou demandant un 
+rendu graphique et motion léché.</p>
+<p>C’est du moins ce que nos précédentes expériences&nbsp;mobiles autour
+ de la technologie phare du W3C (&nbsp;à base de jQuery Mobile / Pure 
+MVC / Titanium /&nbsp;the-m-project / etc…)&nbsp;nous avaient laissé 
+comme arrière goût.</p>
+<p>De fortes compétences en interne en Flash et Flex avaient qui plus 
+est parachevées d’invalider HTML5 dans le cadre de nos 
+projets&nbsp;d’applications&nbsp;mobiles hybrides.</p>
+<p>Mes pérégrinations webesques m’ont néanmoins rendu à l’évidence d’un 
+fait important, il n’y a jamais de vérité parfaite et 
+terminale&nbsp;concernant&nbsp;le bon choix technologique sur mobile. 
+Les avis varient selon la période, les modes voir des anticyclones qui 
+s’approchent.</p>
+<p>Les propos de certains noms du net et des exemples probant 
+d’intégration remettant le sujet en question, mais aussi un de nos 
+clients&nbsp;ayant une aversion pour Flash,&nbsp;nous avons décidé qu’il
+ était temps de remettre les pieds à l’étrier et de re-tester 
+l’expérimentation d’HTML5 pour du mobile.</p>
+<p>Dans le cadre d’un proto cependant afin de ne pas affecter un projet devant être mis en production.</p>
+<h3>Application témoin</h3>
+<p>Comme tout prototype qui se respecte, nous avons décidé de nous 
+mettre dans un contexte projet réaliste. Une application métier assez 
+lourde&nbsp;présentant une interface de type : “sliding panels 
+layout”&nbsp;dans l’esprit de&nbsp;<a href="https://itunes.apple.com/fr/app/jasmine-youtube-client/id554937050?mt=8">Jasmine</a>.</p>
+<p>Chaque panneau représentant ainsi une vue avec un principe de navigation en entonnoir.</p>
+<p>Une petite subtilité, la liste apparaissant dans l’étape 3 devait 
+contenir quelques éléments afin de valider les problématiques de 
+fluidité de scroll, environ 10 000 histoire&nbsp;d’être&nbsp;sûrs :-). 
+(on sort un peu du principe d’application réaliste mais il était 
+très&nbsp;important&nbsp;pour nous de statuer sur ce point.)</p>
+<p>Un petit mockup de l’application pour présenter les successions d’écrans :</p>
+<p><a href="http://www.ekino.com/wp-content/uploads/2013/04/xxxTouch_3.png"><img class="aligncenter size-large wp-image-2111" alt="xxxTouch_3" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/xxxTouch_3-451x1024.png" height="1024" width="451"></a></p>
+<p>Afin de d’accentuer le côté réaliste du proto, nous nous sommes donné une contrainte de temps : ~2 jours.</p>
+<p>J’ai ainsi clairement fait l’impasse sur une partie de l’application.
+ Chaque vue aurait un contenu statique en dehors de la vue liste.</p>
+<p>Nous avons&nbsp;priorisé&nbsp;en fonction des éléments nécessaire à la validation du proto :</p>
+<ol>
+<li>Animations</li>
+<li>Listes</li>
+<li>Vues multiples</li>
+<li>Routing</li>
+</ol>
+<h3>Support</h3>
+<p>Il fallait un vrai challenge à ce test , à savoir un support 
+improbable sur une tablette complètement “outdated” avec des demandes 
+abusives en terme de réactivité de l’interface.&nbsp;Seul moyen de 
+satisfaire ma chère team leader dubitative sur cette technologie souvent
+ qualifiée d’immature.</p>
+<p>Choix évident compte tenu des problèmes perçus depuis le début de 
+notre histoire avec le mobile, la tablette qui nous est apparue comme la
+ plus sujette à nous pourrir la vie s’est trouvée être la Galaxy Tab 2 
+10.1.</p>
+<h2>Choix du framework</h2>
+<p>En&nbsp;préambule&nbsp;de la réalisation de ce POC, un mot d’ordre de ma&nbsp;hiérarchie&nbsp;m’avait été donné.</p>
+<p>Utiliser un framework applicatif avec si possible des composants UI. 
+Quelque chose de réutilisable et validé par une partie de la communauté.</p>
+<h3>Phonegap / Cordova</h3>
+<p>Côté framework de création d’app hybride, la communauté s’entendant 
+autour de phonegap/cordova et celui-ci séant à notre problématique, nous
+ avons&nbsp;plutôt mis l’accent sur le reste, le framework applicatif.</p>
+<h3>Le choix d’Angular</h3>
+<p>Angular n’était pas un mot d’ordre mais une forte probabilité, 
+j’avais envie de me faire une idée sur ce framework dans un 
+environnement mobile limité.</p>
+<p>Forts de compétences en Flex, il s’agissait en effet d’un framework captant l’attention des architectes de l’équipe.</p>
+<p>Un de nos architectes avait d’ailleurs été conquit lors de la 
+réalisation d’une application web responsive mais nous n’avions 
+toutefois pas encore poussé Angular sur de l’application mobile.</p>
+<p>La grande force&nbsp;d’Angular, selon moi est son extraordinaire 
+vitalité au sein de la communauté. On peut ajouter à ça les notions de 
+data-binding et de routing qui&nbsp;simplifient grandement la 
+réalisation d’applications métier.</p>
+<p>Je ne vais pas m’étaler sur Angular car il constitue selon moi un sujet (voir plusieurs) à part entière.</p>
+<p>Angular n’ayant pas de composants UI, j’ai cherché à lui associer un toolkit fourni à cet effet.</p>
+<p>2 toolkits/frameworks retenaient alors mon attention :</p>
+<ol>
+<li>JqUI</li>
+<li>Sencha</li>
+<li>Compte tenu de nos&nbsp;échecs (en terme de performance) avec jQuery mobile, je ne l’avait pas mis en concurrence.</li>
+</ol>
+<p>Que dire si ce n’est que j’ai essayé. Mais que rien ne m’a vraiment&nbsp;satisfait.</p>
+<p>Entre&nbsp;récupérer&nbsp;un framework complet comme&nbsp;Sencha dont
+ la philosophie ne me semblait que partiellement compatible avec 
+celle&nbsp;d’Angular ou JqUI qui finalement ne proposait pas grand chose
+ de plus, j’ai préféré arrêter les frais et faire quelque chose de plus 
+custom.</p>
+<p>J’avais donc ma base : Angular et rien d’autres.</p>
+<p>Je conseille pour la suite du billet la lecture d’articles 
+sur&nbsp;Angular. Ce framework est assez spécifique et je vais aborder 
+certains points très particuliers.</p>
+<ul>
+<li><a href="http://angularjs.org/">http://angularjs.org/</a></li>
+<li><a href="http://www.blogduwebdesign.com/javascript-presentation/presentation-angular-js/737">http://www.blogduwebdesign.com/javascript-presentation/presentation-angular-js/737</a></li>
+<li><a href="http://data-prez.appspot.com/deck/id=agtzfmRhdGEtcHJlenIRCxIJU2xpZGVEZWNrGPvJBAw&amp;slide=4">http://data-prez.appspot.com/deck/id=agtzfmRhdGEtcHJlenIRCxIJU2xpZGVEZWNrGPvJBAw&amp;slide=4</a></li>
+</ul>
+<h2>angular-ui/ui-router</h2>
+<h3>Angular et les vues multiples</h3>
+<p>Sans rentrer trop dans les détails, Angular impose l’utilisation 
+d’une seule vue par écran, et chaque vue est associée à une route.</p>
+<p>Dans le cadre de mon proto, je voulais avoir plusieurs vue ayant un 
+rapport de parent/enfant afin de respecter ma logique de navigation en 
+entonnoir, et cela dans un écran unique.</p>
+<p>Mon brief indiquait qui plus est que les vues devaient être animées au chargement et au déchargement de chacune d’entre elle.</p>
+<p>Une recherche sur google : “angular multiple view” et la lecture d’un billet de blog : “<a href="http://www.bennadel.com/blog/2441-Nested-Views-Routing-And-Deep-Linking-With-AngularJS.htm">http://www.bennadel.com/blog/2441-Nested-Views-Routing-And-Deep-Linking-With-AngularJS.htm</a>” plus tard, je me retrouvait avec un choix cornélien entre deux solutions :</p>
+<ol>
+<li>Celle du blog : utiliser des ngSwitch</li>
+<li>Celle révélée par un des commentaires : ui-router</li>
+</ol>
+<p>La solution de ngSwitch étant plus custom et celle&nbsp;d’ui-router plus déclarative mais plus “fermée”.</p>
+<p>Je me suis néanmoins rapproché de la solution 2 étant donnée ma contrainte de temps et le dynamisme de ses développeurs.</p>
+<h3>UI-router&nbsp;<a href="https://github.com/angular-ui/ui-router">lien</a></h3>
+<p>Cette approche déclarative permet d’associer à des états de l’application des “routes”, des “contrôleurs” et des “vues”.</p>
+<p>Fonctionnalités du module :<br>
+Je traduis ici basiquement les propos de l’équipe en charge du projet</p>
+<ul>
+<li>Un state manager$stateProvider&nbsp;and&nbsp;$state, pour séparer les notions d’état et de routing</li>
+<li>États imbriqués (relations parent/enfant).</li>
+<li>Gestion de vue multiple via un système de&nbsp;hommage spécifique. Directive&nbsp;ui-view.</li>
+<li>Routing d’URL</li>
+<li>Etc…</li>
+</ul>
+<p>Une démo est disponible ici :&nbsp;<a href="http://angular-ui.github.io/ui-router/sample/#/">http://angular-ui.github.io/ui-router/sample/#/</a></p>
+<p>Et la doc :&nbsp;<a href="https://github.com/angular-ui/ui-router/wiki">https://github.com/angular-ui/ui-router/wiki</a></p>
+<p>La mise en place de la solution, dans mon cas, chacun des états correspondant à une étape et donc un volet de mon application.</p>
+<p>Les liens entre chacun des volets&nbsp;pouvaient se faire très simplement avec le système de&nbsp;routing.</p>
+<p>Chaque&nbsp;vue étant gérée par son propre contrôleur et disponible dans son propre template HTML.</p>
+<p>[code lang=”js”]&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;$stateProvider&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;.state(‘app’, {&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  url: ‘/app’,&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  views: {&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    ” : {&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      templateUrl: ‘partials/app.html’,&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      controller : [‘$scope’ , ‘$stateParams’ , ‘$state’, ‘$rootScope’, 
+Controller]&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    },&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  },&amp;amp;amp;amp;lt;br /&amp;amp;amp;amp;gt;})&amp;amp;amp;amp;lt;br
+ /&amp;amp;amp;amp;gt;.state(‘app.userId’, {&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  url: ‘/userId’,&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  views: {&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    ”: {&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      templateUrl: ‘partials/user.html’,&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      controller : [‘$scope’ , ‘$stateParams’ , ‘$state’, ‘$rootScope’, 
+Controller]&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    },&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  }&amp;amp;amp;amp;lt;br /&amp;amp;amp;amp;gt;})&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;.state(‘app.userId.detail’, {&amp;amp;amp;amp;lt;br
+ 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  url: ‘/detail’,&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  views: {&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    ”: {&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      templateUrl: ‘partials/user.detail.html’,&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      controller : [‘$scope’ , ‘$stateParams’ , ‘$state’, ‘$rootScope’, 
+Controller]&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    },&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  },&amp;amp;amp;amp;lt;br /&amp;amp;amp;amp;gt;})&amp;amp;amp;amp;lt;br
+ /&amp;amp;amp;amp;gt;.Etc…;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;[/code]</p>
+<p>Et&nbsp;bim !!!&nbsp;J’avais une application avec des écrans factices fonctionnels en un temps record.</p>
+<p>Le vrai problème de ce système de “nested views”, c’est que dans mon 
+cas, mes vues devaient être côte à côte et non l’une dans l’autre.</p>
+<h3>Côté CSS</h3>
+<p>S’en est suivi un joyeux&nbsp;mic-mac&nbsp;du côté des feuilles de 
+style, il fallait en effet que mes vues qui étaient inclues les unes 
+dans les autres apparaissent les unes à côté des autres.</p>
+<p>Je n’ai pas d’avis à donner concernant ce point là car il s’agit sans doute d’un problème de conception de notre côté.</p>
+<p>Avoir un rapport&nbsp;hiérarchique&nbsp;entre les vues d’accord, mais pas avec un aspect visuel qui ne le reflète pas.</p>
+<p>Ça aurait sans doute pu être simplifié par l’absence de transition au
+ chargement et déchargement des vues&nbsp;mais je me devais de respecter
+ cette partie du brief qui était primordiale pour valider la solution 
+finale.</p>
+<h3>Un point sur les animations</h3>
+<p>Avec Angular, un changement de classe peut être bindé sur un 
+changement du model. Il était donc simple d’introduire une animation au 
+chargement des vues.</p>
+<p>Au moment où une nouvelle route est détectée, le contrôleur de la vue
+ associée est exécuté et un flag d’ouverture peut être &nbsp;ajouté au 
+modèle.</p>
+<p>La directive ngClass nous permet alors d’ajouter une classe à l’élément DOM nouvellement chargé.</p>
+<p>Il suffit que cette classe contienne une animation CSS3 et l’animation se fait au chargement de l’élément.</p>
+<p>En exemple :</p>
+<p>Contrôleur :</p>
+<p>[code lang=”js”]&amp;amp;amp;amp;lt;br /&amp;amp;amp;amp;gt;Ctrl = 
+function($scope, $stateParams, $state){&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+   $scope.isOpen = true;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;}&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;[/code]</p>
+<p>HTML :</p>
+<p>[code lang=”html”]&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;div ng-scope 
+ng-class="{animationOuverture:isOpen}"&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;br
+ /&amp;amp;amp;amp;gt;[/code]</p>
+<p>Persiste en revanche une problématique et non des moindre, animer la fermeture de l’élément.</p>
+<p>Une modification de l’URL entraine&nbsp;irrémédiablement une mise à 
+jour de l’état et donc la&nbsp;disparition&nbsp;du contenu de ma vue 
+à&nbsp;fermer.</p>
+<p>Le jeu était donc de trouver comment bloquer 
+le&nbsp;changement&nbsp;d’état une fois celui-ci instancié et relancer 
+le digest ANgular une fois l’animation de fermeture terminée.</p>
+<p>J’ai trouvé une solution&nbsp;…&nbsp;sale mais qui m’a donné pleine satisfaction&nbsp;dans&nbsp;le cadre de mon POC.</p>
+<p>Un évènement est levé sur chaque&nbsp;changement&nbsp;d’état $stateChangeStart&nbsp;&nbsp;et il y a la possibilité de faire un <i>preventDefault()</i> et de bloquer&nbsp;l’exécution&nbsp;du digest. Nous avons ainsi tout ce qu’il faut pour notre “truc”.</p>
+<p>[code lang=”js”]&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;$scope.open = true;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;$scope.$on(‘$stateChangeStart’, function(e, 
+next){&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  // Dans mon cas, on vérifie que la vue est ouverte et que l’état qui 
+suit soit bien le parent&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  if ($scope.isOpen &amp;amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp;amp; 
+next.name == previousState){&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    //block state change&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    e.preventDefault();&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    //animate&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    $scope.isOpen = false;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    $timeout(function(){&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      //relaunch state change&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      $state.transitionTo(next.name);&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      //reset model&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+      $rootScope.$digest();&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+    },$rootScope.delayClose);  //temps d’éxécution de 
+l’animation&amp;amp;amp;amp;lt;br 
+/&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;%%KEEPWHITESPACE%%&amp;amp;amp;amp;gt;
+  }&amp;amp;amp;amp;lt;br /&amp;amp;amp;amp;gt;});&amp;amp;amp;amp;lt;br
+ /&amp;amp;amp;amp;gt;[/code]</p>
+<p>HTML :</p>
+<p>[code lang=”js”]&amp;amp;amp;amp;amp;lt;div ng-scope 
+ng-class="{animationOuverture:isOpen, 
+animationFermeture:!isOpen}"&amp;amp;amp;amp;amp;gt;[/code]</p>
+<p>À ce moment là, j’avais une application 
+pleinement&nbsp;fonctionnelle, il ne me restait plus qu’à monter les 
+vues et faire enfin un test de performance.</p>
+<p>1/2 journée et un petit millier de lignes de CSS plus tard, 
+mon&nbsp;application&nbsp;prenait forme, animations entre les vues et 
+branchements compris.</p>
+<p>Toutes les vues étant statiques mise à part la petite liste de 100 éléments pour commencer.</p>
+<h2>Une histoire de liste … virtuelle</h2>
+<h3>Mise en route de l’application</h3>
+<p>Premier apk et premiers sentiments&nbsp;…&nbsp;mitigés. Le chargement
+ de l’application est instantané. Les transitions entre 
+les&nbsp;panneaux&nbsp;sont fluides. Tout fonctionne relativement 
+correctement, sauf la liste. Celle-ci ne scroll tout bonnement pas sur 
+Android (pas de problème sous chrome ni iPad cependant).</p>
+<p>Il s’avère que la fluidité de l’animation entre les panneaux et le scroll de la liste étaient intimement liés.</p>
+<h3>Animation-fill-mode</h3>
+<p>Afin de m’assurer que l’animation applique bien les valeurs des 
+keyframes en début et en fin d’animation à l’élément cible, j’utilisais 
+la propriété animation-fill-mode=”forwards” dans un cas et 
+“backwards”&nbsp;dans&nbsp;l’autre.</p>
+<p>Il semblerait que la version de mon navigateur cible ne supportait 
+pas bien ces propriétés et qu’il valait mieux s’en passer dans le cas de
+ l’ouverture. ( Pour la fermeture, c’était en revanche impératif que le 
+panneau reste caché entre la fin de l’animation et sa suppression du DOM
+ par le digest d’Angular)</p>
+<p>Enlever le forward à l’ouverture a tout simplement supprimé mon 
+problème, j’avais désormais une liste fonctionnelle et scrollable. Après
+ quelques recherche, j’ai constaté que Android ne supporte pas du tout 
+cette propriété et qu’il arrivait quelle&nbsp;occasionne&nbsp;des 
+comportement&nbsp;gênants&nbsp;aléatoires.</p>
+<p><em>Note </em>: La mise à jour hasardeuse de la tablette à corrigé le bug (4.0.3 &gt; 4.0.4)</p>
+<h3>Angular Virtual Scroll</h3>
+<p>L’application était désormais terminée et fonctionnelle, &nbsp;mais 
+avec 100 éléments dans la liste. Or, je m’étais fixé 10000 afin de 
+satisfaire toute personne dubitative.</p>
+<p>Un pattern simple&nbsp;existe pour palier à ce type de problématiques, les listes virtuelles.</p>
+<p>Le concept étant de ne charger dans le DOM que ce qui est vu et ce 
+qui est nécessaire au scroll au dessus et en dessous de la zone visible.</p>
+<p><a href="http://www.ekino.com/wp-content/uploads/2013/04/Capture-d%E2%80%99%C3%A9cran-2013-04-19-%C3%A0-15.05.16.png"><img class="size-full wp-image-2065 aligncenter" alt="Capture d’écran 2013-04-19 à 15.05.16" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/Capture-dcran-2013-04-19--15.png" height="223" width="231"></a></p>
+<p>Le temps pressant, je me suis tourné vers un 
+module&nbsp;existant&nbsp;en naviguant sur le très 
+bon&nbsp;annuaire&nbsp;de modules Angular :&nbsp;<a href="http://ngmodules.org/">ngmodules.org</a></p>
+<p>Trois clics plus tard, j’avais trouvé ce que je cherchais, le module : angular-virtual-scroll&nbsp;<a href="http://blog.stackfull.com/">http://blog.stackfull.com/</a></p>
+<p>En terme d’implémentation, c’est très simple, il suffit de remplacer 
+la directive ng-repeat par une de leur sauce :&nbsp;sf-virtual-repeat. 
+Le tout fonctionne comme un ng-repeat.</p>
+<p>Le résultat a été rapide et surprenant, ma liste de 10000 éléments, 
+outre le temps de chargement du JSON associé 
+était&nbsp;extrêmement&nbsp;fluide pour mes premiers tests sous chrome.</p>
+<p>Il ne restait alors qu’à tester en condition réelle sous Android.</p>
+<p>… encore une mauvaise surprise, les mobiles ont selon les versions 
+pas mal de problème avec l’évènement scroll, hors celui-ci est à la base
+ du fonctionnement du module. ( Le chargement dans le DOM 
+des&nbsp;nouveaux éléments de liste étant “bindé” sur l’évènement scroll
+ en fonction du scrollTop&nbsp;de la&nbsp;zone scrollable )</p>
+<p>Une chose à savoir sur&nbsp;l’event&nbsp;scroll sur mobile est qu’il 
+n’est pas&nbsp;déclenché&nbsp;au&nbsp;fûr et à mesure mais 
+qu’à&nbsp;l’arrêt&nbsp;du scroll voir au tap sur Android ( Android &lt;=
+ 4.0 &amp; iOS ). Si on ajoute à ça le “momentum”, le défilement 
+inertiel que l’on retrouve souvent sur les périphériques mobiles, on 
+risque d’attendre longtemps la fin du scroll.</p>
+<p>Un bon lien &nbsp;pour comprendre cette problématique :&nbsp;<a href="http://barrow.io/overflow-scrolling">http://barrow.io/overflow-scrolling</a>&nbsp;et qui fournit une démo du problème :&nbsp;<a href="http://barrow.io/lab/overflow/">http://barrow.io/lab/overflow/</a></p>
+<p><b>=&gt; iOS</b></p>
+<p>Le contournement est simple bien que un petit peu décéptif, 
+désactiver le momentum en n’ajoutant pas à l’élément qui a l’overflow la
+ propriété : -webkit-overflow-scrolling: touch.</p>
+<p>À cela, il faut modifier légèrement le script pour qu’il mette à jour
+ le scroll pendant&nbsp;l’événement&nbsp;“touchmove” de scroll de la 
+liste.</p>
+<p>iOS7 corrigera enfin ce problème et le workaround ne sera plus nécessaire.</p>
+<p><b>=&gt; Android</b></p>
+<p>Le problème a été traité dans Jelly Bean 4.1, plus besoin de faire un touch sur la zone pour générer&nbsp;l’event&nbsp;scroll.</p>
+<p>Merci Samsung, une nouvelle mise à jour (2 en 2 jours <img src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/1f609.png" alt="😉" draggable="false" class="emoji"> ) ayant apporté Jelly Bean à la galaxy tab, je n’avais plus de&nbsp;problème&nbsp;majeur&nbsp;de scroll sur Android.</p>
+<p>J’espère néanmoins que ces informations seront utiles à d’autres.</p>
+<h2>Conclusion</h2>
+<p>Durant ces quelques jours de développement, je suis passé par différents stades.</p>
+<p>La communauté Angular m’a surpris par sa réactivité et par la qualité des modules que j’ai trouvé ici et là.</p>
+<p>J’ai découvert des bugs improbables souvent déjà pris en compte par 
+des frameworks que je m’était&nbsp;imposé de ne pas utiliser.</p>
+<p>Nous avons ainsi validé notre prototype. Angular est taillé pour le 
+mobile et la tablette, et HTML5 est viable si on s’affranchit notamment 
+de jQuery mobile dans un contexte d’application hybride.</p>
+<p>Bien que nos idées ne changent pas du tout au tout concernant 
+l’utilisation de HTML5 vs. Air mobile pour de l’hybride, elles ont 
+sacrément évolué et je pense que nous sommes prêt à retenter 
+l’expérience si le sujet s’y prête.</p>
+<p>Les bons points de l’expérience :</p>
+<ul>
+<li>Le framework Angular m’a donné pleine satisfaction pour du mobile</li>
+<li>Les listes ne font plus peur, on peut avoir quelque chose de fluide, même avec un nombre d’éléments indécent.</li>
+<li>On a invalidé un thèse récurrente en interne selon laquelle HTML5 ne pouvait pas faire d’application hybride lourde mais fluide.</li>
+</ul>
+<p>Les éléments qui peuvent être améliorés d’après moi :</p>
+<ul>
+<li>La gestion des animations entre les vues me semble un peu “tricky” à mettre en place et pas forcément pérenne.</li>
+<li>L’interface est fluide mais pourrait sans doute l’être encore plus (on&nbsp;atteins toutefois les limitations de la tablette)</li>
+<li>Encore trop de différences entre les navigateurs (et les webviews 
+qui en découlent) qui occasionnent bugs et difficulté de prise en main.</li>
+</ul>
+<h3>Code et démo de l’application</h3>
+<p><a title="Github du projet" href="https://github.com/florianharmel/angular-app" target="_blank">https://github.com/florianharmel/angular-app</a></p>
+<h3>Pour la suite</h3>
+<p>Pour aller plus loin, je pense qu’il faudrait :</p>
+<ul>
+<li>“Brancher” toute l’application et voir ce qu’on en ressort.</li>
+<li>Ajouter la couche tactile à l’interface pour la gestion des “gesture”</li>
+<li>Porter l’application sur mobile ( j’ai commencé mais ce n’est pas encore parfait )</li>
+</ul>
+                    </div>
+                    <ul class="tags"><li>Tags :</li><li><a href="http://www.ekino.com/tag/android/" rel="tag">Android</a></li><li><a href="http://www.ekino.com/tag/angularjs/" rel="tag">angularjs</a></li><li><a href="http://www.ekino.com/tag/hybride/" rel="tag">hybride</a></li><li><a href="http://www.ekino.com/tag/mobile/" rel="tag">mobile</a></li><li><a href="http://www.ekino.com/tag/virtual-scroll-list/" rel="tag">virtual-scroll-list</a></li></ul>                </div>
+            </div>
+           
+        </article>
+
+        <!--
+<div class="comments">
+    <div class="title">Commentaires (2)</div>
+        <div class="comment" id="old-comment-805">
+        <div class="author_infos">
+            <figure>
+                <img alt='' src='http://2.gravatar.com/avatar/5dfeee35dfe49db0fa908fa2a9bea38a?s=32&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5dfeee35dfe49db0fa908fa2a9bea38a?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />            </figure>
+            <h4>Kriss</h4>
+            <time datetime="2013-07-23">23 juillet 2013 &agrave; 16:56 </time>
+        </div>
+                <div class="commentContent">
+            <p>Et du coup , vous n&#8217;avez pas essayé phonegap alors ?<br />
+Ou du moins comparer les 2 ?<br />
+Cordialement</p>
+        </div>
+    </div>
+        <div class="comment" id="old-comment-2331">
+        <div class="author_infos">
+            <figure>
+                <img alt='' src='http://0.gravatar.com/avatar/ff329bfc200acb1f5f2180fbfa485935?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/ff329bfc200acb1f5f2180fbfa485935?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />            </figure>
+            <h4>Florian</h4>
+            <time datetime="2013-11-04">4 novembre 2013 &agrave; 09:47 </time>
+        </div>
+                <div class="commentContent">
+            <p>Kriss, deux mois pour répondre désolé.</p>
+<p>Ce que j&#8217;essaie de dire dans l&#8217;article c&#8217;est que pour faire une App hybride en HTML5, la coquille employée est la plupart du temps Cordova/Phonegap.</p>
+<p>Phonegap n&#8217;est pas à proprement parler un framework mais juste un &#8220;layer&#8221; entre une application HTML5 et le périphérique<br />
+Il n&#8217;y a pas vraiment de concurrents à Phonegap si ce n&#8217;est Titanium qui lui offre une approche totalement différente.</p>
+<p>Dans mon article j&#8217;ai plutôt mis l&#8217;accent sur le framework UI / RIA qui est ici Angular car à mon sens c&#8217;est de ce côté là qu&#8217;il y a des tests à faire. </p>
+<p>Mais pour résumer, l&#8217;application est développée en Angular et déployée sur le device en utilisant le jeu d&#8217;API de Cordova/Phonegap.</p>
+<p>Florian</p>
+        </div>
+    </div>
+    </div>
+
+-->
+
+
+
+	<div class="comments">
+		<div class="title">Commentaires (2)</div>
+
+	    <ol>
+			        <li class="comment even thread-even depth-1" id="comment-805">
+        <div class="author_infos">
+            <figure>
+                <img alt="" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/5dfeee35dfe49db0fa908fa2a9bea38a.jpeg" srcset="http://2.gravatar.com/avatar/5dfeee35dfe49db0fa908fa2a9bea38a?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32">            </figure>
+            <h4>Kriss</h4>
+            <time datetime="2013-07-23">23 juillet 2013 à 16:56 </time>
+        </div>
+        <div class="reply">
+            <a rel="nofollow" class="comment-reply-login" href="http://www.ekino.com/core/wp-login.php?redirect_to=http%3A%2F%2Fwww.ekino.com%2Fune-app-mobile-hybride-en-html5-performante-yes-we-can%2F">Connectez-vous pour répondre</a>        </div>
+
+        <div class="commentContent">
+        <p>Et du coup , vous n’avez pas essayé phonegap alors ?<br>
+Ou du moins comparer les 2 ?<br>
+Cordialement</p>
+
+
+        
+    <ol>        <li class="comment odd alt depth-2" id="comment-2331">
+        <div class="author_infos">
+            <figure>
+                <img alt="" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/ff329bfc200acb1f5f2180fbfa485935.jpeg" srcset="http://0.gravatar.com/avatar/ff329bfc200acb1f5f2180fbfa485935?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32">            </figure>
+            <h4>Florian</h4>
+            <time datetime="2013-11-04">4 novembre 2013 à 09:47 </time>
+        </div>
+        <div class="reply">
+            <a rel="nofollow" class="comment-reply-login" href="http://www.ekino.com/core/wp-login.php?redirect_to=http%3A%2F%2Fwww.ekino.com%2Fune-app-mobile-hybride-en-html5-performante-yes-we-can%2F">Connectez-vous pour répondre</a>        </div>
+
+        <div class="commentContent">
+        <p>Kriss, deux mois pour répondre désolé.</p>
+<p>Ce que j’essaie de dire dans l’article c’est que pour faire une App 
+hybride en HTML5, la coquille employée est la plupart du temps 
+Cordova/Phonegap.</p>
+<p>Phonegap n’est pas à proprement parler un framework mais juste un “layer” entre une application HTML5 et le périphérique<br>
+Il n’y a pas vraiment de concurrents à Phonegap si ce n’est Titanium qui lui offre une approche totalement différente.</p>
+<p>Dans mon article j’ai plutôt mis l’accent sur le framework UI / RIA 
+qui est ici Angular car à mon sens c’est de ce côté là qu’il y a des 
+tests à faire. </p>
+<p>Mais pour résumer, l’application est développée en Angular et 
+déployée sur le device en utilisant le jeu d’API de Cordova/Phonegap.</p>
+<p>Florian</p>
+
+
+        
+    </div></li></ol></div></li>	    </ol>
+	</div>
+
+    
+
+
+
+
+
+
+	
+		
+	<div id="respond">
+		<h3 class="title" id="reply-title">Laisser un commentaire <span><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.ekino.com/une-app-mobile-hybride-en-html5-performante-yes-we-can/#respond" style="display: none;">Annuler la réponse.</a></span></h3>	
+		<form action="http://www.ekino.com/core/wp-comments-post.php" id="commentform" method="post">
+		     
+
+	        <p class="formEl comment-form-author">
+	            <label for="author">Nom (nécessaire)</label>
+	            <input id="author" name="author" type="text">
+	        </p>
+			<p class="formEl comment-form-email">
+	            <label for="email">Mail (ne sera pas publié)(nécessaire)</label>
+	            <input id="email" name="email" type="text">
+	        </p>
+	        <p class="formEl comment-form-url">
+	            <label for="url">Site Web</label>
+	            <input id="url" name="url" type="text">
+	        </p>
+
+	        
+	        <p class="formEl comment-form-comment">
+	            <label for="comment">Commentaire (nécessaire)</label>
+	            <textarea id="comment" name="comment" cols="30" rows="8" aria-required="true"></textarea>
+	        </p>
+	        <p class="form-submit">
+	            <input name="submit" id="submit" value="Poster votre commentaire" type="submit">
+	            <input name="comment_post_ID" value="2061" type="hidden">
+				<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+	        </p>
+	        	    <div style="display: none;" class="error errorlabels"></div></form>
+	</div>
+
+
+        </section>
+
+    
+<footer id="footer">
+    <!-- Start f-top -->
+    <!-- End f-top -->
+    <div class="footerContent">
+        <div style="height: 320px;" class="footerItem">
+
+            <h3 class="title">ekino.</h3>
+            <ul>
+                <li><a href="http://www.ekino.com/les-actualites">Actualités</a></li>
+                <li><a href="http://www.ekino.com/recrutement">Carrières</a></li>
+                <li><a href="http://www.ekino.com/blog">Blog</a></li>
+                <li>
+                    <a class="sitemap" href="http://www.ekino.com/sitemap/">Plan du site</a>                </li>
+            </ul>
+
+        </div>
+        <div style="height: 320px;" class="footerItem">
+            <h3 class="title">Carrières</h3>
+
+            
+
+                        <ul>
+
+                             <li><a href="http://www.ekino.com/recrutement#job7373">Bordeaux : Ingénieur – HTML / CSS / Javascript</a></li>
+                            <li><a href="http://www.ekino.com/recrutement#job7371">Bordeaux : Ingénieur – Java / SQL / NoSQL</a></li>
+                            <li><a href="http://www.ekino.com/recrutement#job154">Paris : Consultant technique</a></li>
+                            <li><a href="http://www.ekino.com/recrutement#job156">Paris : Ingénieur – HTML / CSS / Javascript</a></li>
+                            <li><a href="http://www.ekino.com/recrutement#job4177">Paris : Ingénieur – Java / SQL / NoSQL</a></li>
+                            <li><a href="http://www.ekino.com/recrutement#job4825">Paris : Ingénieur – PHP / Symfony</a></li>
+                            <li><a href="http://www.ekino.com/recrutement#job1723">Paris : Ingénieur – Système / DevOps</a></li>
+                            <li><a href="http://www.ekino.com/recrutement#job4459">Paris : Stage – Consultant Technique</a></li>
+                            <li><a href="http://www.ekino.com/recrutement#job4463">Paris : Stage – Ingénieur</a></li>
+                        </ul>
+                </div>
+        <div style="height: 320px;" class="footerItem">
+            <h3 class="title">Social</h3>
+            <ul>
+                <li><a target="_blank" href="https://twitter.com/3k1n0">Twitter</a></li>
+                <li><a target="_blank" href="http://fr.slideshare.net/3k1n0/">Slideshare</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/company/ekino-paris">Linkedin</a></li>
+                <li><a target="_blank" href="https://www.facebook.com/3k1n0">Facebook</a></li>
+            </ul>
+
+        </div>
+        <div style="height: 320px;" class="footerItem">
+
+            <h3 class="title">Produits</h3>
+            <ul>
+                <li><a target="_blank" href="http://www.ekinocms.com/">ekino CMS</a></li>
+                <li><a target="_blank" href="http://ghostwriterjs.com/">GhostwriterJS</a></li>
+                <li><a target="_blank" href="http://datacrunch.ekino.com/">Datacrunch</a></li>
+            </ul>
+            <h3 class="title">Contributions OpenSource</h3>
+            <ul>
+                <li><a target="_blank" href="http://sonata-project.org/">Sonata Project</a></li>
+                <li><a href="http://open.ekino.com/" target="_blank">Open Source technologies</a></li>
+            </ul>
+        </div>
+        <div style="height: 320px;" id="contact" class="footerItem">
+
+            <h3 class="title">Contact</h3>
+
+            <p>ekino. <br>
+                157 rue Anatole France<br>
+                92300 Levallois Perret <br>
+                +33 1 49 68 73 00<br>
+                <a href="mailto:contact@ekino.com">contact@ekino.com</a>
+            </p>
+
+        </div>
+        <div style="height: 320px;" class="footerItem circle"></div>
+    </div>
+    <div class="note">
+        <a href="http://partners.opquast.com/fr/declarations/2" target="_blank"><img alt="opquast website" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/opquast.png"></a>
+        <span class="text">Soucieux de la qualité de votre expérience sur notre site, nous avons veillé au respect des critères de qualité Opquast Website.
+        <br>Cette mise en conformité est vérifiable sur notre <a href="http://partners.opquast.com/fr/declarations/2" target="_blank">déclaration
+                publique</a> et vérifiée régulièrement.</span>
+    </div>
+    <div class="note2">
+        <span>Ce site utilise des « cookies » relatifs à la mesure 
+d'audience et à l'authentification - seule cette dernière serait 
+impactée par le refus des « cookies ».</span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+    <!-- Link media queries and JS-->
+    <div class="mq"></div>
+    <!-- /Link media queries and JS-->
+
+    <!-- Link Facebook like button and JS -->
+    <div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0pt; width: 0pt;"><div><iframe src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/xd_arbiter.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_http" scrolling="no" frameborder="0"></iframe><iframe src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/xd_arbiter_002.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" scrolling="no" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0pt; width: 0pt;"><div><iframe src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/ping.html" style="display: none;" allowfullscreen="true" allowtransparency="true" name="f2e4112d20d57fe" scrolling="no" frameborder="0"></iframe></div></div></div>
+    <!-- /Link Facebook like button and JS -->
+
+    
+	<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NMZW5K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NMZW5K');</script>
+<!-- End Google Tag Manager -->
+	
+    <!-- For cachebusting, change timestamp each time the minified script was generated -->
+	<script src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/scripts.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bdf2dde951","applicationID":"12407301","transactionName":"NlVVYBFUXUICU0IICQ8fdlcXXFxfTENfDwENVQ==","queueTime":0,"applicationTime":764,"atts":"GhJWFllOTkw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script>
+<meta name="google-site-verification" content="yZCp_vk8y8Hr5eHKzbcNtIlIFyU7XlwcMe5mTi-6_fU"><div style="position: absolute; top: -1999px; left: -1988px;" id="stcpDiv">ShareThis Copy and Paste</div><iframe style="display: none;" src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/getSegment.html" name="stSegmentFrame" id="stSegmentFrame" scrolling="no" frameborder="0" height="0px" width="0px"></iframe><iframe style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0pt; border: medium none;" allowfullscreen="true" allowtransparency="true" id="rufous-sandbox" scrolling="no" frameborder="0"></iframe><div style="display: none;" class="stwrapper stwrapper4x" id="stwrapper"><iframe src="Une%20app%20mobile%20hybride%20en%20HTML5%20performante,%20Yes%20we%20can%20%21%21%21%20-%20ekino_files/index.html" name="stLframe" class="stLframe" id="stLframe" allowtransparency="true" scrolling="no" frameborder="0"></iframe></div><div onclick="javascript:stWidget.closeWidget();" id="stOverlay"></div></body></html>

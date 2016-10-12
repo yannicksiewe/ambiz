@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html lang="fr" dir="ltr" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="fr" dir="ltr" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" class="no-js js" lang="fr"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <meta charset="utf-8">
+<link rel="shortcut icon" href="http://www.audaxis.com/sites/all/themes/theme613/favicon.ico" type="image/vnd.microsoft.icon">
+<meta name="description" content="Depuis le boom des tablettes et des smartphones sous Android, les sociétés sont amenées à faire un choix dans la technologie à utiliser pour déployer leurs applications mobiles.&nbsp;Tentons de définir les différentes stratégies possibles pour aborder la mobilité.">
+<meta name="keywords" content="Audaxis, ERP, erp open source, erp opensource, erp saas, ERP open source, BI open source, CMS open source, Compiere, OpenERP, ez publish, drupal, jasper, jaspersoft, jaspersoft bi, dpi247, expert opensource, expertise erp opensource, web media, SSLL, partenaire openerp">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="http://www.audaxis.com/Actualites/Developpement-mobile-web-ou-natif">
+<link rel="shortlink" href="http://www.audaxis.com/node/6036">
+<meta property="og:site_name" content="Audaxis">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.audaxis.com/Actualites/Developpement-mobile-web-ou-natif">
+<meta property="og:title" content="Application mobile : web, natif ou hybride ?">
+<meta property="og:description" content="Depuis le boom des tablettes et des smartphones sous Android, les sociétés sont amenées à faire un choix dans la technologie à utiliser pour déployer leurs applications mobiles.&nbsp;Tentons de définir les différentes stratégies possibles pour aborder la mobilité.">
+<meta name="dcterms.title" content="Application mobile : web, natif ou hybride ?">
+<meta name="dcterms.type" content="Text">
+<meta name="dcterms.format" content="text/html">
+<meta name="dcterms.identifier" content="http://www.audaxis.com/Actualites/Developpement-mobile-web-ou-natif">
+  
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="T1pbg_wTj9djdF7js7PX6a8yQmmy4GuHHkDYJEzvN20">
+  <!--[if lte IE 7]> <div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
+  
+  <title>Application mobile : web, natif ou hybride ?</title>
+  
+  <!--[if LT IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <!--[if lte IE 8]>
+	<style type="text/css">
+    	.poll .bar, .poll .bar .foreground,
+		.view-slider .views-row .textbox .read_more a,
+		.view-slider .views-row .textbox,
+		.view-slider .skin-default,
+		.views-jqfx-controls-bottom,
+		#views_jqfx_cycle_main_slider-block,
+		.region-menu,
+		#superfish-1 > li.sf-item-1 > a,
+		#quicktabs-default_tabs .quicktabs-tabs li.first a,
+		#quicktabs-default_tabs,
+		#quicktabs-default_tabs .quicktabs-tabs li.last a,
+		#content #block-block-7 .content a,
+		.how_it_works ul li span,
+		ul.pager li.pager-current,
+		ul.pager li a,
+		.form-submit { behavior:url(/sites/all/themes/theme613/js/PIE.php); zoom:1}
+	</style>
+<![endif]-->
+
+	<link href="Developpement-mobile-web-ou-natif_files/css.css" rel="stylesheet" type="text/css">
+  <style type="text/css" media="all">
+@import url("http://www.audaxis.com/modules/system/system.base.css?o1ysg7");
+@import url("http://www.audaxis.com/modules/system/system.menus.css?o1ysg7");
+@import url("http://www.audaxis.com/modules/system/system.messages.css?o1ysg7");
+@import url("http://www.audaxis.com/modules/system/system.theme.css?o1ysg7");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.audaxis.com/misc/ui/jquery.ui.core.css?o1ysg7");
+@import url("http://www.audaxis.com/misc/ui/jquery.ui.theme.css?o1ysg7");
+@import url("http://www.audaxis.com/misc/ui/jquery.ui.accordion.css?o1ysg7");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.audaxis.com/sites/all/modules/custom/audaxis_forms/css/audaxis_forms.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/calendar/css/calendar_multiday.css?o1ysg7");
+@import url("http://www.audaxis.com/modules/comment/comment.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/date/date_api/date.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/date/date_popup/themes/datepicker.1.7.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/date/date_repeat_field/date_repeat_field.css?o1ysg7");
+@import url("http://www.audaxis.com/modules/field/theme/field.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/mollom/mollom.css?o1ysg7");
+@import url("http://www.audaxis.com/modules/node/node.css?o1ysg7");
+@import url("http://www.audaxis.com/modules/search/search.css?o1ysg7");
+@import url("http://www.audaxis.com/modules/user/user.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/views/css/views.css?o1ysg7");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.audaxis.com/sites/all/modules/third/ctools/css/ctools.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/panels/css/panels.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/views_jqfx_cycle/views_jqfx_cycle.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/themes/theme613/plugins/twocol_20_80/twocol_20_80.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/modules/third/feedback_simple/feedback_simple.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/libraries/superfish/css/superfish.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/libraries/superfish/css/superfish-vertical.css?o1ysg7");
+</style>
+<style type="text/css" media="screen">
+@import url("http://www.audaxis.com/sites/all/themes/theme613/css/boilerplate.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/themes/theme613/css/style.css?o1ysg7");
+@import url("http://www.audaxis.com/sites/all/themes/theme613/css/audaxis.css?o1ysg7");
+</style>
+<style type="text/css" media="print">
+@import url("http://www.audaxis.com/sites/all/themes/theme613/css/print.css?o1ysg7");
+</style>
+<style type="text/css" media="all">
+@import url("http://www.audaxis.com/sites/all/themes/theme613/css/newsite.css?o1ysg7");
+</style>
+  <script src="Developpement-mobile-web-ou-natif_files/piwik.js" async="" defer="defer" type="text/javascript"></script><script src="Developpement-mobile-web-ou-natif_files/analytics.js" async=""></script><script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/jquery-1.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/third/jquery_update/replace/jquery/1.5/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/jquery_002.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/drupal.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/jquery_006.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/jquery_003.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/jquery_005.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/contentanalysis.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/contentoptimizer.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/cookieControl-5.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/fr_Xhl776Ku1yZG3iQgJM82iplvit1lWNMMP5waj5vquJQ.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/jquery.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/views_jqfx_cycle.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/textarea.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/mollom.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/googleanalytics.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-202402-7", {"cookieDomain":"auto"});ga("require", "displayfeatures");ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(document).ready(function(){jQuery("#accordion").accordion();});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(document).ready(function(){jQuery("#accordion_fonctionnels").accordion();});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(document).ready(function(){jQuery("#accordion_techniques").accordion();});
+//--><!]]>
+</script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/superfish_002.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/superfish.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/theme613.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/jquery_004.js"></script>
+<script type="text/javascript" src="Developpement-mobile-web-ou-natif_files/scripts.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"theme613","theme_token":"bExXtbz7UIOlCT3bDumEBgLZzsRx2o-CjjtVDysWd7w","js":{"0":1,"1":1,"2":1,"3":1,"\/\/code.jquery.com\/jquery-1.5.2.min.js":1,"4":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"misc\/ui\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/third\/contentanalysis\/contentanalysis.js":1,"sites\/all\/modules\/third\/contentoptimizer\/contentoptimizer.js":1,"sites\/all\/modules\/third\/cookiecontrol\/js\/cookieControl-5.1.min.js":1,"public:\/\/languages\/fr_Xhl776Ku1yZG3iQgJM82iplvit1lWNMMP5waj5vquJQ.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.min.js":1,"sites\/all\/modules\/third\/views_jqfx_cycle\/views_jqfx_cycle.js":1,"misc\/textarea.js":1,"sites\/all\/modules\/third\/mollom\/mollom.js":1,"sites\/all\/modules\/third\/google_analytics\/googleanalytics.js":1,"5":1,"6":1,"7":1,"8":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/modules\/third\/superfish\/superfish.js":1,"sites\/all\/themes\/theme613\/js\/theme613.core.js":1,"sites\/all\/themes\/theme613\/js\/jquery.loader.js":1,"sites\/all\/themes\/theme613\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/custom\/audaxis_forms\/css\/audaxis_forms.css":1,"sites\/all\/modules\/third\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/third\/date\/date_api\/date.css":1,"sites\/all\/modules\/third\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/third\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/third\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/third\/views\/css\/views.css":1,"sites\/all\/modules\/third\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/third\/panels\/css\/panels.css":1,"sites\/all\/modules\/third\/views_jqfx_cycle\/views_jqfx_cycle.css":1,"sites\/all\/themes\/theme613\/plugins\/twocol_20_80\/twocol_20_80.css":1,"sites\/all\/modules\/third\/feedback_simple\/feedback_simple.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-vertical.css":1,"sites\/all\/themes\/theme613\/css\/boilerplate.css":1,"sites\/all\/themes\/theme613\/css\/style.css":1,"sites\/all\/themes\/theme613\/css\/audaxis.css":1,"sites\/all\/themes\/theme613\/css\/print.css":1,"sites\/all\/themes\/theme613\/css\/newsite.css":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"urlIsAjaxTrusted":{"\/Actualites\/Developpement-mobile-web-ou-natif":true},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":false,"disableHI":false},"plugins":{"supposition":false,"bgiframe":false}}}});
+//--><!]]>
+</script>
+  
+<style type="text/css">div#cccwr div{font:11px/16px sans-serif;margin:0;text-align:left}div#cccwr #ccc-icon{cursor:pointer;display:none;z-index:9999;bottom:0;left:0;position:fixed}div#ccc-icon button{background:transparent url(data:image/png;base64,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) no-repeat 0 0;*background-image:url(http://www.civicuk.com/cookie-law/images/ccc-icons.gif);border:0;height:62px;width:62px}div#ccc-icon button span{visibility:hidden}.ccc-left #ccc-icon.ccc-triangle button{background-position:-62px 0!important}.ccc-left .ccc-go #ccc-icon.ccc-triangle button{background-position:-62px -62px!important}.ccc-right #ccc-icon.ccc-triangle button{background-position:-124px 0!important}.ccc-right .ccc-go #ccc-icon.ccc-triangle button{background-position:-124px -62px!important}div#cccwr #ccc-icon.ccc-diamond button{background-position:10px 0!important}div#cccwr .ccc-go #ccc-icon.ccc-diamond button{background-position:10px -62px!important}div#cccwr.ccc-right{left:auto;right:0}div#cccwr.ccc-right .ccc-go #ccc-icon.ccc-diamond button{background-position:0 -62px!important}div#cccwr.ccc-right #ccc-icon.ccc-diamond button{background-position:10px 0!important}div#cccwr.ccc-right #ccc-icon{left:auto;right:0}.ccc-widget{position:fixed;bottom:35px;left:70px;z-index:9999;display:none}div#cccwr.ccc-right .ccc-widget{left:auto;right:70px}.ccc-outer{background:#fff;border:1px solid #f0942b;border-radius:5px;box-shadow:0 0 5px rgba(0,0,0,0.3);color:#888;left:70px;width:200px;bottom:30px}.ccc-expand,.ccc-close,.ccc-inner h2{background:transparent url(data:image/png;base64,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) no-repeat 0 0;*background-image:url(http://www.civicuk.com/cookie-law/images/widget-x.gif);border:0}.ccc-inner{background:#fff;border-radius:5px 5px 5px 0;position:relative;z-index:2}.ccc-content{padding:5px 10px 10px 10px}.ccc-icon{background-position:0 -18px;height:34px;left:0;position:absolute;text-indent:-999em;top:0;width:40px}.ccc-close{background-position:0 -40px;border:0;height:13px;position:absolute;right:11px;text-indent:-999em;top:11px;width:13px}.ccc-inner h2{background-color:#f0942b;background-position:9px 6px;border-radius:3px 3px 0 0;color:#fff;font-size:1.3em;font-weight:bold;margin:0;padding:10px 9px 8px 44px}.ccc-inner p{margin:5px 0 8px;padding:0}.ccc-inner ul{margin:8px 0;padding:0 0 0 12px}.ccc-inner a{color:#f0942b}.ccc-inner a,.ccc-inner a:hover{text-decoration:none}#cccwr button{cursor:pointer}.ccc-inner .ccc-button{background-color:#666;border:1px solid #666;border-radius:3px;box-shadow:inset 0 0 2px #fff;color:#fff;display:block;font-size:1em;font-weight:bold;padding:3px;text-align:center;text-decoration:none;text-shadow:none}.ccc-inner .ccc-browser{background-color:#f0942b;border-color:#f0942b;width:100%}.ccc-expanded{display:none}.ccc-expand{background:#f0942b;border:0;border-radius:0 0 5px 5px;box-shadow:0 0 5px rgba(0,0,0,0.3);color:#fff;bottom:-25px;cursor:pointer;font-size:1em;left:50%;line-height:25px;margin-left:-40px;position:absolute;text-align:center;text-indent:0;width:80px;z-index:1}.ccc-inner .ccc-about{margin:0;position:relative;text-align:right;top:5px}.ccc-about small{font-size:10px}#cccwr.ccc-left .ccc-outer,#cccwr.ccc-left .ccc-inner{border-radius:5px 5px 5px 0}#cccwr.ccc-left .ccc-expand{left:0;margin-left:0;right:auto}#cccwr.ccc-right .ccc-outer,#cccwr.ccc-right .ccc-inner{border-radius:5px 5px 0 5px}#cccwr.ccc-right .ccc-expand{left:auto;right:0}#cccwr.ccc-dark .ccc-outer{background:#333;background-color:rgba(20,20,20,0.9);*background-color:#141414;border-radius:5px 5px 5px 0;border-color:#000;color:#fff}#cccwr.ccc-dark.ccc-right .ccc-outer{border-radius:5px 5px 0 5px}#cccwr.ccc-dark .ccc-inner{background:transparent}#cccwr.ccc-dark .ccc-inner p{color:#fff}#cccwr.ccc-dark .ccc-inner h2{background-color:transparent;background-position:9px -54px;background-repeat:no-repeat}#cccwr.ccc-dark .ccc-content{padding-top:0}#cccwr.ccc-dark .ccc-expand{height:27px;border:1px solid #000;border-top:0;padding-top:0;background:#333;background-color:rgba(20,20,20,0.9);*background-color:#141414}#cccwr.ccc-dark .ccc-close{background-position:0 -100px}#cccwr #ccc-cookies-switch{width:180px;height:30px;overflow:hidden;display:none}#cccwr #cctoggle{display:inline-block;width:180px;height:30px;background:url(data:image/png;base64,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) no-repeat;*background-image:url(http://www.civicuk.com/cookie-law/images/switch.png);*background-repeat:no-repeat;line-height:28px;font-size:13px;color:white}.cctoggle-on{background-position:100% 0!important}#cccwr #ccc-implicit-warning{display:none}#cccwr #ccc-explicit-checkbox{display:none}#cccwr .cctoggle-text-off{padding-left:20px}#cccwr .cctoggle-text-on{padding-left:70px}</style></head>
+<body id="body" class="html not-front not-logged-in no-sidebars page-node page-node- page-node-6036 node-type-news with-navigation with-subnav page-developpement-mobile-web-ou-natif section-actualites"><div class="ccc-left ccc-light" id="cccwr"><div id="ccc-state" class="ccc-go"><div style="display: block;" class="ccc-triangle" id="ccc-icon"><button><span>Cookie Control</span></button></div><div style="display: none;" class="ccc-widget"><div class="ccc-outer"><div class="ccc-inner"><h2>Cookie Control</h2><div class="ccc-content"><p class="ccc-intro"><p>Ce site utilise des <a href="http://audaxis-drupal.dev.audaxis.com/cookies">Cookies</a></p></p><div class="ccc-expanded"><p>Nous utilisons des cookies, tant pour le fonctionnement du site, que pour des aspects web analytics.</p><p>Si
+ vous ne désirez pas que des cookies soient stockés sur votre 
+ordinateur, vous pouvez à tout moment les bloquer. Pour en savoir plus 
+plus sur les cookies que nous employons, ainsi que pour les refuser: <a href="http://audaxis-drupal.dev.audaxis.com/cookies">consultez notre page à cet effet</a></p><p>En utilisant ce site vous acceptez les termes de nos <a href="http://www.audaxis.com/Actualites/mentions-l%C3%A9gales">Mentions légales</a></p></div><div id="ccc-cookies-switch" style="background-position-x: 0;"><a id="cctoggle" href="#" style="" name="cctoggle"><span class="cctoggle-text-on" id="cctoggle-text">Cookies are on</span></a></div><div id="ccc-implicit-warning">(Un cookie sera mis pour stocker vos préférences)</div><div id="ccc-explicit-checkbox"><label><input id="cchide-popup" name="ccc-hide-popup" value="Y" type="checkbox"> Do not ask me again<br></label> (Ticking this sets a cookie to hide this popup if you then hit close. This will not store any personal information)</div><p class="ccc-about"><small><a href="http://www.civicuk.com/cookie-law" target="_blank">À propos de cet outil</a></small></p><a class="ccc-icon" href="http://www.civicuk.com/cookie-law" target="_blank" title="About Cookie Control">About Cookie Control</a><button class="ccc-close">Close</button></div></div></div><button class="ccc-expand">En savoir plus</button></div></div></div>
+
+    
+<div id="page">
+  <header id="header">
+     <div class="container">
+        
+                    <a href="http://www.audaxis.com/" title="Accueil" rel="home" id="logo">
+            <img src="Developpement-mobile-web-ou-natif_files/audaxis_logo_79x79_0.jpg" alt="Accueil">
+          </a>
+                   <!-- /logo -->
+        <div id="utils">
+            <div class="region region-user-menu">
+    <div id="block-audtoolbox-audtoolbox-id" class="block block-audtoolbox block-odd">
+
+      
+  <div class="content">
+    <div><ul>
+  <li><a href="https://twitter.com/audaxis" target="_blank"><img src="Developpement-mobile-web-ou-natif_files/twitter-icon-alt.png" alt="Twitter"></a></li>
+  <li><a href="http://www.linkedin.com/company/audaxis" target="_blank"><img src="Developpement-mobile-web-ou-natif_files/linkedin-icon-alt.png" alt="LinkedIn"></a></li>
+  <li><a href="http://www.youtube.com/user/AudaxisSA?feature=mhee" target="_blank"><img src="Developpement-mobile-web-ou-natif_files/youtube-icon-alt.png" alt="Youtube"></a></li>
+  <li><a href="http://www.slideshare.net/audaxis" target="_blank"><img src="Developpement-mobile-web-ou-natif_files/slideshare-icon-alt.png" alt="Slideshare"></a></li>
+</ul></div>  </div><!-- /.content -->
+
+</div><!-- /.block -->  </div>
+        </div> <!-- /utils -->
+     </div>
+  </header><!-- /header -->
+  <div id="banner" role="banner">
+    <div class="container nav-primary">
+              <!-- main-menu -->
+          <div class="region region-menu">
+    <div id="block-block-12" class="block block-block block-even">
+
+      
+  <div class="content">
+    <div class="top_menu"><a href="http://www.audaxis.com/Agenda">Evénements</a>&nbsp;<span style="font-size: 13.008px; line-height: 20.0063px;">|</span><span style="font-size: 13.008px; line-height: 1.538em;">&nbsp;</span><a href="http://www.audaxis.com/Le-groupe/Adresses" style="font-size: 13.008px; line-height: 1.538em;">Adresses</a><span style="font-size: 13.008px; line-height: 1.538em;">&nbsp;|&nbsp;</span><a href="http://www.audaxis.com/Actualites" style="font-size: 13.008px; line-height: 1.538em;">News </a><span style="font-size: 13.008px; line-height: 1.538em;">|&nbsp;</span><a href="http://www.audaxis.com/Outils/Contact" style="font-size: 13.008px; line-height: 20.0063px;">Contact</a><span style="font-size: 13.008px; line-height: 20.0063px;">&nbsp;</span></div>
+  </div><!-- /.content -->
+
+</div><!-- /.block --><div id="block-audmenu-audmenu" class="block block-audmenu block-odd">
+
+      
+  <div class="content">
+    <nav><ul id="nav"><li class=""><a href="http://www.audaxis.com/" id="218" class="">Home</a></li><li class="expanded"><a href="http://www.audaxis.com/Expertise/expertise-audaxis" id="495" class="">Expertise</a></li><li class="expanded"><a href="http://www.audaxis.com/Solutions/le-portefeuille-de-solutions-audaxis" id="496" class="">Solutions</a></li><li class="expanded"><a href="http://www.audaxis.com/Marches" id="452" class="">Marchés</a></li><li class="expanded"><a href="http://www.audaxis.com/audaxis" id="443" class="">Société</a></li></ul><div style="display: none;" id="panel-495" class="panel"><nav class="nav-secondary"><ul class="menu clearfix"><li class="first leaf cloud-business-software mid-2801"><a href="http://www.audaxis.com/Expertise/cloud-business-software">Cloud Business Software</a></li>
+<li class="leaf data-intelligence mid-918"><a href="http://www.audaxis.com/Expertise/data-intelligence">Data Intelligence</a></li>
+<li class="leaf web-technologies mid-919"><a href="http://www.audaxis.com/Expertise/Web-Technologies">Web Technologies</a></li>
+<li class="leaf custom-business-solutions mid-917"><a href="http://www.audaxis.com/Expertise/custom-business-solutions">Custom Business Solutions</a></li>
+<li class="last leaf consulting-auditing-amp-training mid-2802"><a href="http://www.audaxis.com/Expertise/consulting-auditing-training">Consulting, Auditing &amp; Training</a></li>
+</ul></nav></div><div style="display: none;" id="panel-496" class="panel"><nav class="nav-secondary"><ul class="menu clearfix"><li class="first expanded netsuite mid-2863"><a href="http://www.audaxis.com/Solutions/netsuite-la-solution-erp-cloud">NetSuite</a><ul class="menu clearfix"><li class="first leaf fonctionnalites mid-3050"><a href="http://www.audaxis.com/fonctionnalites-netsuite-erpcloud">Fonctionnalités</a></li>
+<li class="leaf nos-services mid-3052"><a href="http://www.audaxis.com/nos-services-sur-netsuite" title="">Nos services</a></li>
+<li class="last leaf suitecloud mid-3055"><a href="http://www.audaxis.com/suitecloud" title="">SuiteCloud</a></li>
+</ul></li>
+<li class="expanded compiere mid-921"><a href="http://www.audaxis.com/Compiere-ERP-Opensource">Compiere</a><ul class="menu clearfix"><li class="first collapsed fonctionnalites mid-504"><a href="http://www.audaxis.com/Compiere/Fonctionnalites">Fonctionnalités</a></li>
+<li class="leaf erp-sur-mesure mid-2357"><a href="http://www.audaxis.com/Compiere/erp-sur-mesure">ERP sur mesure</a></li>
+<li class="leaf erp-multi mid-1526"><a href="http://www.audaxis.com/Compiere/erp-multi">ERP multi</a></li>
+<li class="leaf erp-java mid-506"><a href="http://www.audaxis.com/Compiere/ERP-Java">ERP Java</a></li>
+<li class="collapsed services mid-508"><a href="http://www.audaxis.com/Compiere/integrateur-compiere">Services</a></li>
+<li class="leaf evaluer mid-1427"><a href="http://www.audaxis.com/Solutions/Compiere/evaluer-un-erp-opensource">Evaluer</a></li>
+<li class="last leaf avantages mid-505"><a href="http://www.audaxis.com/Compiere/Avantages">Avantages</a></li>
+</ul></li>
+<li class="expanded odoo-openerp- mid-922"><a href="http://www.audaxis.com/Odoo-OpenERP">Odoo (OpenERP)</a><ul class="menu clearfix"><li class="first collapsed fonctionnalites mid-512"><a href="http://www.audaxis.com/Odoo-OpenERP/Fonctionnalites">Fonctionnalités</a></li>
+<li class="leaf services mid-2358"><a href="http://www.audaxis.com/Odoo-OpenERP/Integrateur">Services</a></li>
+<li class="leaf assistance mid-2367"><a href="http://www.audaxis.com/assistance-odoo">Assistance</a></li>
+<li class="collapsed formations mid-513"><a href="http://www.audaxis.com/Odoo-OpenERP/Formations-Odoo">Formations</a></li>
+<li class="leaf performance mid-1296"><a href="http://www.audaxis.com/Odoo-OpenERP/Benchmark-de-performance">Performance</a></li>
+<li class="leaf faq mid-1297"><a href="http://www.audaxis.com/Odoo-OpenERP/Posez-vos-questions">FAQ</a></li>
+<li class="last leaf odoo-e-commerce mid-2361"><a href="http://www.audaxis.com/Odoo-OpenERP/e-commerce">Odoo E-commerce</a></li>
+</ul></li>
+<li class="expanded drupal mid-924"><a href="http://www.audaxis.com/Solutions/Drupal">Drupal</a><ul class="menu clearfix"><li class="first last leaf versions mid-1342"><a href="http://www.audaxis.com/Solutions/Drupal/versions">Versions</a></li>
+</ul></li>
+<li class="expanded talend mid-502"><a href="http://www.audaxis.com/Talend">Talend</a><ul class="menu clearfix"><li class="first leaf fonctionnalites mid-1028"><a href="http://www.audaxis.com/Talend/fonctionnalites">Fonctionnalités</a></li>
+<li class="leaf services mid-2359"><a href="http://www.audaxis.com/integrateur-talend">Services</a></li>
+<li class="leaf data-integration mid-2365"><a href="http://www.audaxis.com/talend-data-integration">Data Integration</a></li>
+<li class="leaf data-quality mid-2366"><a href="http://www.audaxis.com/talend-data-quality">Data Quality</a></li>
+<li class="leaf talend-big-data mid-2362"><a href="http://www.audaxis.com/talend-big-data">Talend Big Data</a></li>
+<li class="leaf talend-esb mid-2364"><a href="http://www.audaxis.com/talend-enterprise-service-bus">Talend ESB</a></li>
+<li class="last leaf talend-mdm mid-2363"><a href="http://www.audaxis.com/talend-master-data-management">Talend MDM</a></li>
+</ul></li>
+<li class="expanded jaspersoft-bi mid-923"><a href="http://www.audaxis.com/Jaspersoft-BI-Suite">Jaspersoft BI</a><ul class="menu clearfix"><li class="first leaf fonctionnalites mid-515"><a href="http://www.audaxis.com/Jaspersoft-BI-Suite/Fonctionnalites">Fonctionnalités</a></li>
+<li class="leaf editions mid-523"><a href="http://www.audaxis.com/Jaspersoft-BI-Suite/Editions">Editions</a></li>
+<li class="last leaf l-editeur mid-516"><a href="http://www.audaxis.com/Jaspersoft-BI-Suite/Editeur">L'éditeur</a></li>
+</ul></li>
+<li class="last leaf timi-suite mid-2864"><a href="http://www.audaxis.com/Solutions/timi-suite">TIMi Suite</a></li>
+</ul></nav></div><div style="display: none;" id="panel-452" class="panel"><nav class="nav-secondary"><ul class="menu clearfix"><li class="first leaf presse-amp-media mid-913"><a href="http://www.audaxis.com/Marches/Presse-Media">Presse &amp; Média</a></li>
+<li class="leaf edition mid-458"><a href="http://www.audaxis.com/Marches/Edition">Edition</a></li>
+<li class="leaf retail mid-1026"><a href="http://www.audaxis.com/Marches/Retail">Retail</a></li>
+<li class="leaf negoce mid-1027"><a href="http://www.audaxis.com/Marches/Negoce">Négoce</a></li>
+<li class="leaf industrie mid-914"><a href="http://www.audaxis.com/Marches/Industrie-Distribution">Industrie</a></li>
+<li class="leaf ong mid-455"><a href="http://www.audaxis.com/Marches/ONG">ONG</a></li>
+<li class="leaf association mid-1031"><a href="http://www.audaxis.com/Marches/Association">Association</a></li>
+<li class="last leaf habitat-et-logement-social mid-1617"><a href="http://www.audaxis.com/Marches/habitat-et-logement-social">Habitat et Logement social</a></li>
+</ul></nav></div><div style="display: none;" id="panel-443" class="panel"><nav class="nav-secondary"><ul class="menu clearfix"><li class="first leaf les-valeurs mid-2360"><a href="http://www.audaxis.com/Le-groupe/les-valeurs-audaxis">Les valeurs</a></li>
+<li class="leaf adresses mid-910"><a href="http://www.audaxis.com/Le-groupe/Adresses">Adresses</a></li>
+<li class="last expanded rejoignez-nous mid-911"><a href="http://www.audaxis.com/Le-groupe/Rejoignez-nous">Rejoignez-nous</a><ul class="menu clearfix"><li class="first leaf chefs-de-projet-drupal-h-f- mid-1596"><a href="http://www.audaxis.com/Le-groupe/Rejoignez-nous/chefs-de-projet-drupal" title="">Chefs de projet Drupal (H/F)</a></li>
+<li class="leaf developpeurs-php-drupal-h-f- mid-3048"><a href="http://www.audaxis.com/Le-groupe/Rejoignez-nous/developpeurs-php-drupal-hf" title="">Développeurs PHP/Drupal (H/F)</a></li>
+<li class="leaf developpeurs-data-intelligence mid-3046"><a href="http://www.audaxis.com/Le-groupe/Rejoignez-nous/developpeurs-data-intelligence-hf" title="Audaxis recherche pour son siège de Braine L’Alleud (Belgique) plusieurs développeurs en Gouvernance de données dans les logiciels Talend">Développeurs Data Intelligence</a></li>
+<li class="last leaf stages mid-1620"><a href="http://www.audaxis.com/Le-groupe/Rejoignez-nous/offres-de-stages">Stages</a></li>
+</ul></li>
+</ul></nav></div><div style="display: none;" id="panel-third-2863" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Solutions/netsuite-la-solution-erp-cloud">NetSuite</a></span><ul class="menu clearfix"><li class="first leaf fonctionnalites mid-3050"><a href="http://www.audaxis.com/fonctionnalites-netsuite-erpcloud">Fonctionnalités</a></li>
+<li class="leaf nos-services mid-3052"><a href="http://www.audaxis.com/nos-services-sur-netsuite" title="">Nos services</a></li>
+<li class="last leaf suitecloud mid-3055"><a href="http://www.audaxis.com/suitecloud" title="">SuiteCloud</a></li>
+</ul></nav></div><div style="display: none;" id="panel-third-932" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Solutions/eZ-Publish">eZ Publish</a></span></nav></div><div style="display: none;" id="panel-third-503" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Solutions/dpi247-plateforme-de-publication-digitale">dpi24/7</a></span></nav></div><div style="display: none;" id="panel-third-921" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Compiere-ERP-Opensource">Compiere</a></span><ul class="menu clearfix"><li class="first collapsed fonctionnalites mid-504"><a href="http://www.audaxis.com/Compiere/Fonctionnalites">Fonctionnalités</a></li>
+<li class="leaf erp-sur-mesure mid-2357"><a href="http://www.audaxis.com/Compiere/erp-sur-mesure">ERP sur mesure</a></li>
+<li class="leaf erp-multi mid-1526"><a href="http://www.audaxis.com/Compiere/erp-multi">ERP multi</a></li>
+<li class="leaf erp-java mid-506"><a href="http://www.audaxis.com/Compiere/ERP-Java">ERP Java</a></li>
+<li class="collapsed services mid-508"><a href="http://www.audaxis.com/Compiere/integrateur-compiere">Services</a></li>
+<li class="leaf evaluer mid-1427"><a href="http://www.audaxis.com/Solutions/Compiere/evaluer-un-erp-opensource">Evaluer</a></li>
+<li class="last leaf avantages mid-505"><a href="http://www.audaxis.com/Compiere/Avantages">Avantages</a></li>
+</ul></nav></div><div style="display: none;" id="panel-third-922" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Odoo-OpenERP">Odoo (OpenERP)</a></span><ul class="menu clearfix"><li class="first collapsed fonctionnalites mid-512"><a href="http://www.audaxis.com/Odoo-OpenERP/Fonctionnalites">Fonctionnalités</a></li>
+<li class="leaf services mid-2358"><a href="http://www.audaxis.com/Odoo-OpenERP/Integrateur">Services</a></li>
+<li class="leaf assistance mid-2367"><a href="http://www.audaxis.com/assistance-odoo">Assistance</a></li>
+<li class="collapsed formations mid-513"><a href="http://www.audaxis.com/Odoo-OpenERP/Formations-Odoo">Formations</a></li>
+<li class="leaf performance mid-1296"><a href="http://www.audaxis.com/Odoo-OpenERP/Benchmark-de-performance">Performance</a></li>
+<li class="leaf faq mid-1297"><a href="http://www.audaxis.com/Odoo-OpenERP/Posez-vos-questions">FAQ</a></li>
+<li class="last leaf odoo-e-commerce mid-2361"><a href="http://www.audaxis.com/Odoo-OpenERP/e-commerce">Odoo E-commerce</a></li>
+</ul></nav></div><div style="display: none;" id="panel-third-2862" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Solutions/le-portefeuille-de-solutions-audaxis">Solutions Audaxis</a></span></nav></div><div style="display: none;" id="panel-third-924" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Solutions/Drupal">Drupal</a></span><ul class="menu clearfix"><li class="first last leaf versions mid-1342"><a href="http://www.audaxis.com/Solutions/Drupal/versions">Versions</a></li>
+</ul></nav></div><div style="display: none;" id="panel-third-502" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Talend">Talend</a></span><ul class="menu clearfix"><li class="first leaf fonctionnalites mid-1028"><a href="http://www.audaxis.com/Talend/fonctionnalites">Fonctionnalités</a></li>
+<li class="leaf services mid-2359"><a href="http://www.audaxis.com/integrateur-talend">Services</a></li>
+<li class="leaf data-integration mid-2365"><a href="http://www.audaxis.com/talend-data-integration">Data Integration</a></li>
+<li class="leaf data-quality mid-2366"><a href="http://www.audaxis.com/talend-data-quality">Data Quality</a></li>
+<li class="leaf talend-big-data mid-2362"><a href="http://www.audaxis.com/talend-big-data">Talend Big Data</a></li>
+<li class="leaf talend-esb mid-2364"><a href="http://www.audaxis.com/talend-enterprise-service-bus">Talend ESB</a></li>
+<li class="last leaf talend-mdm mid-2363"><a href="http://www.audaxis.com/talend-master-data-management">Talend MDM</a></li>
+</ul></nav></div><div style="display: none;" id="panel-third-923" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Jaspersoft-BI-Suite">Jaspersoft BI</a></span><ul class="menu clearfix"><li class="first leaf fonctionnalites mid-515"><a href="http://www.audaxis.com/Jaspersoft-BI-Suite/Fonctionnalites">Fonctionnalités</a></li>
+<li class="leaf editions mid-523"><a href="http://www.audaxis.com/Jaspersoft-BI-Suite/Editions">Editions</a></li>
+<li class="last leaf l-editeur mid-516"><a href="http://www.audaxis.com/Jaspersoft-BI-Suite/Editeur">L'éditeur</a></li>
+</ul></nav></div><div style="display: none;" id="panel-third-2864" class="panel third"><nav class="nav-secondary"><span class="title"><a href="http://www.audaxis.com/Solutions/timi-suite">TIMi Suite</a></span></nav></div></nav>  </div><!-- /.content -->
+
+</div><!-- /.block -->  </div>
+          </div>
+      </div> <!-- /banner -->
+  <div id="main" role="main">
+    <div class="container">
+                    <div id="breadcrumb" class="clearfix"><a href="http://www.audaxis.com/">Home</a> » <a href="http://www.audaxis.com/Actualites">Actualités</a></div>
+                          
+                
+                
+                
+                  <div class="tabs"></div>
+                
+                
+                
+                  <div class="region region-content">
+    <div id="block-system-main" class="block block-system block-even">
+
+      
+  <div class="content">
+    <div class="panel-2col-stacked clearfix panel-display">
+  
+  <div id="main-content">
+    	<h1 class="pane-node-title">Application mobile : web, natif ou hybride ?</h1>
+<div class="panel-separator"></div><h2 class="content">L'expansion du 
+marché mobile contraint la presse comme les marques à s'interroger sur 
+leur stratégie digitale : quelle application choisir ?</h2><div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-body">
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>
+<paragraph style="line-height: 1.538em;">Depuis le boom des tablettes et
+ des smartphones sous Android, les sociétés sont amenées à faire un 
+choix dans la technologie à utiliser pour déployer leurs applications 
+mobiles.&nbsp;</paragraph><paragraph style="line-height: 1.538em;">Tentons de définir les différentes stratégies possibles pour aborder la mobilité. </paragraph></p>
+<h4>
+<paragraph style="line-height: 1.538em;">Application native </paragraph></h4>
+<p>
+<paragraph style="line-height: 1.538em;">Chaque système d'exploitation a
+ son langage : une application native IOS se fait en Objective-C (qui 
+nécessite l'utilisation de X-Code), alors qu'une application native 
+Android sera écrite en Java. Ces langages font appel aux couches basses 
+du smartphone, soit les fonctions matérielles (GPS, affichage système 
+type push, cache local,…). Généralement, ces applications exprimées en 
+code natif sont exécutées rapidement et sont choisies aussi pour leur 
+stabilité. </paragraph><paragraph>Un autre avantage important de 
+l'application native est qu'elle se trouve sur les stores tels que 
+l'Apple Store et Google Play, ce qui aujourd'hui garantit le trafic.</paragraph></p>
+<h4>
+<paragraph>Application web </paragraph></h4>
+<p>
+<paragraph>Aussi appelées « responsive design », les web-applications 
+ont évolués avec l'entrée du langage HTLM5 qui est très orienté mobile 
+et répond à la fragmentation du marché : multitude de navigateurs, d'OS,
+ de formats d'écran, etc… Cette évolution du html permet au navigateur 
+du smartphone d'interpréter des instructions riches pour donner un 
+résultat assez similaire à celui d'une application native. </paragraph><paragraph>Les
+ web-applications sont indiscutablement orientées vers la mobilité : 
+affichage de boutons, transitions entre écran, navigation en mode 
+déconnecté, accès aux données GPS, etc…</paragraph></p>
+<h4>
+<paragraph>Application hybride </paragraph></h4>
+<p>
+<paragraph>Cette technologie permet d'appeler les couches basses du 
+smartphone qui embarquent des containers ( ou webview à base de html, 
+CSS et JS). Le contenu xml est interprété comme une application native, 
+sauf que dans ce cas les webview sont nécessaires pour l'affichage. A 
+l'heure actuelle, la puissance des smartphones réduit de plus en plus la
+ différence de performance entre ces deux architectures. De plus les 
+webview peuvent être mis à jour par le biais de flux sans passer par une
+ mise à jour du code natif, ce qui évite le passage par les stores.</paragraph><paragraph>L'application
+ hybride permet aussi une présence optimale et plus rapide sur les 
+différents terminaux par rapport à une application native.</paragraph></p>
+<p>
+<paragraph></paragraph><paragraph>En résumé, chaque application a ses 
+avantages et inconvénients, mais il semblerait que la technologie de 
+l'avenir soit la technologie hybride.&nbsp;</paragraph><span style="line-height: 1.538em;">Pour en savoir plus, retrouvez l'intégralité de l'article du Journal du Net ainsi qu'un arbre de décision du site Ekito.</span></p>
+</div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-node-links">
+  
+      
+  
+  <div class="pane-content">
+    <ul class="links inline"><li class="audtoolbox_print first last"><span class=""><a title="Imprimer" href="#" onclick="window.print();return false;">
+    <img alt="Imprimer" src="Developpement-mobile-web-ou-natif_files/print.png"></a></span></li>
+</ul>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1">
+  
+      
+  
+  <div class="pane-content">
+    <p><a class="more lsf-icon" href="http://www.audaxis.com/Actualites" title="right">Toutes les actualités</a></p>
+  </div>
+
+  
+  </div>
+  </div>
+
+  <aside role="complementary">
+    <div class="panel-pane pane-views-panes pane-prochain-v-nement-attach-a-une-solution-panel-pane-1">
+  
+        <h2 class="pane-title">
+      Agenda    </h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-prochain-v-nement-attach-a-une-solution view-id-prochain_v_nement_attach_a_une_solution view-display-id-panel_pane_1 view-dom-id-7a102a978061bb2baac49693e1fe5842">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    <div class="datebox">
+	<div class="month"><div class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-03-03T09:00:00+01:00">Mar</span></div></div>
+	<div class="day"><div class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-03-03T09:00:00+01:00">3</span></div></div>
+</div>
+<div class="views-field views-field-title"><span class="field-content"><a href="http://www.audaxis.com/Agenda/seminaire-decouvrir-la-derniere-version-de-jaspersoft-2016-03-03-080000-2016-03-03-150000">Séminaire : Découvrir la dernière version de Jaspersoft</a></span></div><div class="views-field views-field-body"><div class="field-content"><p>Venez
+ découvrir la solution Jaspersoft lors d'une journée avec des experts 
+d'Audaxis et de l'éditeur Tibco Jaspersoft le 03 mars 2016 à Bruxelles 
+dans les bureaux du Groupe Rossel. La journée sera divisée en deux. 
+Premièrement, un séminaire aura lieu durant lequel des consultants vous 
+présenteront les nouveautés de la version 6.2 de Jaspersoft. Ensuite, il
+ y aura un workshop pour vous permettre de faire un démarrage réussi de 
+Jaspersoft BI. </p>
+</div></div>	
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-derni-re-actualit-d-une-solution-panel-pane-1">
+  
+        <h2 class="pane-title">
+      Actualités    </h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-derni-re-actualit-d-une-solution view-id-derni_re_actualit_d_une_solution view-display-id-panel_pane_1 view-dom-id-6476da2a8ad08ff711ffbe7a2ba2b911">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="http://www.audaxis.com/Actualites/audaxis-partenariat-projet-bees-coop"><img typeof="foaf:Image" src="Developpement-mobile-web-ou-natif_files/bees_coop.png" alt="logo coopérative bees coop " height="61" width="61"></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.audaxis.com/Actualites/audaxis-partenariat-projet-bees-coop">Audaxis soutient le projet collaboratif BEES coop</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Grâce
+ à son expertise démontrée dans les logiciels de gestion d’entreprise, 
+Audaxis est partenaire de BEES coop, un projet citoyen de supermarché 
+coopératif et participatif.</p>
+</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="http://www.audaxis.com/actualites/solution/all" title="right" class="more lsf-icon">Toutes les actualités</a></p>
+    </div>
+  
+  
+</div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-audaxis-forms-plus-informations-id">
+  
+        <h2 class="pane-title">
+      Plus d'informations ?    </h2>
+    
+  
+  <div class="pane-content">
+    <form action="/Actualites/Developpement-mobile-web-ou-natif" method="post" id="audaxis-forms-form-reducecontact" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-nom">
+ <input placeholder="Nom" id="edit-nom" name="nom" size="20" maxlength="128" class="form-text required" type="text">
+</div>
+<div class="form-item form-type-textfield form-item-email">
+ <input placeholder="E-mail" id="edit-email" name="email" size="20" maxlength="128" class="form-text required" type="text">
+</div>
+<div class="form-item form-type-select form-item-solution">
+ <select id="edit-solution" name="solution" class="form-select required"><option value="" selected="selected">Choisissez une Solution</option><option value="Netsuite">Netsuite</option><option value="ERP open source Compiere">ERP open source Compiere</option><option value="Odoo">Odoo</option><option value="Drupal">Drupal</option><option value="Talend">Talend</option><option value="Jaspersoft BI">Jaspersoft BI</option><option value="TIMi Suite">TIMi Suite</option><option value="dpi24/7, plateforme de publication digitale">dpi24/7, plateforme de publication digitale</option></select>
+</div>
+<div class="form-item form-type-textarea form-item-message">
+ <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea placeholder="Message" id="edit-message" name="message" cols="60" rows="5" class="form-textarea"></textarea><div class="grippie"></div></div>
+</div>
+<input name="form_build_id" value="form-2rBQwmbSlZMgOWKubia5BGjHZPVJUgVpxungzVDnUtI" type="hidden">
+<input name="form_id" value="audaxis_forms_form_reducecontact" type="hidden">
+<input class="mollom-content-id" name="mollom[contentId]" value="" type="hidden">
+<input class="mollom-captcha-id" name="mollom[captchaId]" value="" type="hidden">
+<div style="display: none;"><div class="form-item form-type-textfield form-item-mollom-homepage">
+  <label for="edit-mollom-homepage">Page d'accueil </label>
+ <input autocomplete="off" id="edit-mollom-homepage" name="mollom[homepage]" size="60" maxlength="128" class="form-text" type="text">
+</div>
+</div><input id="edit-valider" name="op" value="Envoyer" class="form-submit" type="submit"></div></form>  </div>
+
+  
+  </div>
+  </aside>
+
+  </div>
+  </div><!-- /.content -->
+
+</div><!-- /.block -->  </div>
+        
+         <!-- /aside -->
+    </div>
+  </div> <!-- /main -->
+  <footer role="contentinfo">
+    <div class="container">
+                <div class="region region-footer-top">
+    <section id="block-superfish-1" class="block block-superfish block-odd">
+
+        <h2>Navigation</h2>
+    
+  <div class="content">
+    <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-vertical sf-style-none sf-total-items-5 sf-parent-items-0 sf-single-items-5 superfish-processed sf-js-enabled"><li id="menu-218-1" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="http://www.audaxis.com/" class="sf-depth-1">Home</a></li><li id="menu-495-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="http://www.audaxis.com/Expertise/expertise-audaxis" class="sf-depth-1">Expertise</a></li><li id="menu-496-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="http://www.audaxis.com/Solutions/le-portefeuille-de-solutions-audaxis" class="sf-depth-1">Solutions</a></li><li id="menu-452-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="http://www.audaxis.com/Marches" class="sf-depth-1">Marchés</a></li><li id="menu-443-1" class="last odd sf-item-5 sf-depth-1 sf-no-children"><a href="http://www.audaxis.com/audaxis" class="sf-depth-1">Société</a></li></ul>  </div><!-- /.content -->
+
+</section><!-- /.block --><section id="block-block-3" class="block block-block block-even">
+
+        <h2>Réseaux Sociaux</h2>
+    
+  <div class="content">
+    <div class="social-icons">
+<ul><li><a class="twitter" href="https://twitter.com/audaxis" target="_blank" title="Twitter">Twitter</a></li>
+<li><a class="linkedin" href="http://www.linkedin.com/company/audaxis" target="_blank" title="LinkedIn">LinkedIn</a></li>
+<li><a class="youtube" href="http://www.youtube.com/user/AudaxisSA?feature=mhee" target="_blank" title="Youtube">YouTube</a></li>
+<li><a class="slideshare" href="http://www.slideshare.net/audaxis" target="_blank" title="Slideshare">Slideshare</a></li>
+</ul></div>
+<p>&nbsp;</p>
+  </div><!-- /.content -->
+
+</section><!-- /.block --><section id="block-block-4" class="block block-block block-odd">
+
+        <h2>Adresses</h2>
+    
+  <div class="content">
+    <ul><li><a href="http://www.audaxis.com/Le-groupe/Adresses#belgique" title="Belgique - Adresse">Belgique</a></li>
+<li><a href="http://www.audaxis.com/Le-groupe/Adresses#france" title="France - Adresse">France</a></li>
+<li><a href="http://www.audaxis.com/Le-groupe/Adresses#luxembourg" title="Luxembourg">Luxembourg</a></li>
+<li><a href="http://www.audaxis.com/Le-groupe/Adresses#suisse">Suisse</a></li>
+</ul>  </div><!-- /.content -->
+
+</section><!-- /.block --><section id="block-block-5" class="block block-block block-even">
+
+        <h2>Mentions Légales</h2>
+    
+  <div class="content">
+    <ul><li><a href="http://www.audaxis.com/Outils/Contact" title="Contact">Contact</a></li>
+<li><a href="http://www.audaxis.com/Mentions-legales" title="Mentions Legales">Mentions Legales</a></li>
+<li><a href="http://www.audaxis.com/cookie">Cookies</a></li>
+<li><a href="http://www.audaxis.com/Plan-du-site" title="Plan du Site">Plan du site</a></li>
+</ul>  </div><!-- /.content -->
+
+</section><!-- /.block -->  </div>
+              <div class="region region-footer">
+    <div id="block-azaleadtag-azaleadtag" class="block block-azaleadtag block-odd">
+
+      
+  <div class="content">
+    
+	<!-- Azalead Tracking Code -->
+	<script src="Developpement-mobile-web-ou-natif_files/tag" type="application/javascript"></script>
+	<!-- End Azalead Tracking Code -->
+    </div><!-- /.content -->
+
+</div><!-- /.block --><div id="block-block-7" class="block block-block block-even">
+
+      
+  <div class="content">
+    <p style="text-align: center;"><u><strong>Nos pôles d'expertise</strong></u></p>
+<p style="text-align: center;"><a href="http://www.audaxis.com/Expertise/cloud-business-software">Cloud Business Software</a>&nbsp;•&nbsp;<a href="http://www.audaxis.com/Expertise/BI">Data Intelligence</a>&nbsp;•&nbsp;<a href="http://www.audaxis.com/Expertise/Web-Technologies" style="font-size: 13.008px; line-height: 1.538em;">Web Technologies</a>&nbsp;•<span style="font-size: 13.008px; line-height: 1.538em;">&nbsp;</span><a href="http://www.audaxis.com/Expertise/ERP-opensource" style="font-size: 13.008px; line-height: 1.538em;">Custom Business Solutions</a>&nbsp;•<span style="font-size: 13.008px; line-height: 1.538em;">&nbsp;</span><a href="http://www.audaxis.com/Expertise/consulting-auditing-training" style="font-size: 13.008px; line-height: 1.538em;">Consulting, Auditing &amp; Training</a></p>
+<p style="text-align: center;"><u><strong>Notre portefeuille de solutions</strong></u></p>
+<p style="text-align: center;"><a href="http://www.audaxis.com/Solutions/netsuite">NetSuite</a> • <a href="http://www.audaxis.com/Compiere-ERP-Opensource">Compiere</a> • <a href="http://www.audaxis.com/Odoo-OpenERP">Odoo</a> • <a href="http://www.audaxis.com/Solutions/Drupal">Drupal</a> • <a href="http://www.audaxis.com/Talend">Talend</a> • <a href="http://www.audaxis.com/Jaspersoft-BI-Suite">JaspersoftBI </a>• <a href="http://www.audaxis.com/Solutions/timi-suite">TIMi Suite</a></p>
+  </div><!-- /.content -->
+
+</div><!-- /.block -->  </div>
+    </div>
+  </footer> <!-- /footer -->
+</div>
+    <div class="region region-page-bottom">
+    <div id="feedback_simple">
+  <a href="http://www.audaxis.com/Expertise/DemandeDeRenseignement" target="_self" class="feedback_simple-right feedback_simple" style="top: 75%; height: 100px; width: 35px;">
+      <img alt="Contact" src="Developpement-mobile-web-ou-natif_files/feedback_simple.gif" height="100" width="35">
+  </a>
+</div>
+  </div>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+    jQuery(document).ready(function($) {
+    cookieControl({
+        introText: '<p>Ce site utilise des <a href=\"http://audaxis-drupal.dev.audaxis.com/cookies\">Cookies</a></p>',
+        fullText: '<p>Nous utilisons des cookies, tant pour le fonctionnement du site, que pour des aspects web analytics.</p><p>Si vous ne désirez pas que des cookies soient stockés sur votre ordinateur, vous pouvez à tout moment les bloquer. Pour en savoir plus plus sur les cookies que nous employons, ainsi que pour les refuser: <a href=\"http://audaxis-drupal.dev.audaxis.com/cookies\">consultez notre page à cet effet</a></p><p>En utilisant ce site vous acceptez les termes de nos <a href="mentions-légales">Mentions légales</a></p>',
+        theme: 'light',
+        html: '<div id="cccwr"><div id="ccc-state" class="ccc-pause"><div id="ccc-icon"><button><span>Cookie Control</span></button></div><div class="ccc-widget"><div class="ccc-outer"><div class="ccc-inner"><h2>Cookie Control</h2><div class="ccc-content"><p class="ccc-intro"></p><div class="ccc-expanded"></div><div id="ccc-cookies-switch" style="background-position-x: 0;"><a id="cctoggle" href="#" style="background-position-x: 0;" name="cctoggle"><span id="cctoggle-text">Cookies test</span></a></div><div id="ccc-implicit-warning">(Un cookie sera mis pour stocker vos préférences)</div><div id="ccc-explicit-checkbox"><label><input id="cchide-popup" type="checkbox" name="ccc-hide-popup" value="Y" /> Do not ask me again<br /></label> (Ticking this sets a cookie to hide this popup if you then hit close. This will not store any personal information)</div><p class="ccc-about"><small><a href="http://www.civicuk.com/cookie-law" target="_blank">À propos de cet outil</a></small></p><a class="ccc-icon" href="http://www.civicuk.com/cookie-law" target="_blank"title="About Cookie Control">About Cookie Control</a><button class="ccc-close">Close</button></div></div></div><button class="ccc-expand">En savoir plus</button></div></div></div>',
+        position: 'left',
+        shape: 'triangle',
+        startOpen: true,
+        autoHide: 60000,
+        onAccept: function(cc){cookiecontrol_accepted(cc)},
+        onReady: function(){},
+        onCookiesAllowed: function(cc){cookiecontrol_cookiesallowed(cc)},
+        onCookiesNotAllowed: function(cc){cookiecontrol_cookiesnotallowed(cc)},
+        countries: '',
+        subdomains: true,
+        cookieName: 'audaxis_cookiecontrol',
+        iconStatusCookieName: 'ccShowCookieIcon',
+        consentModel: 'information_only'
+        });
+      });
+    
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function cookiecontrol_accepted(cc) {
+
+}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function cookiecontrol_cookiesallowed(cc) {
+
+}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function cookiecontrol_cookiesnotallowed(cc) {
+
+}
+//--><!]]>
+</script>
+ 
+
+</body></html>

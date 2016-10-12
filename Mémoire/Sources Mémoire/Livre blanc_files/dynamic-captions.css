@@ -1,0 +1,18 @@
+.tp-caption.boxed_large_light {
+position:absolute;
+font-size:38px;
+line-height:38px;
+color:#fff;
+background:rgba(0,0,0,.5);
+padding:8px 12px 12px;
+}
+
+.tp-caption.boxed_medium_light {
+position:absolute;
+font-size:28px;
+line-height:28px;
+color:#fff;
+background:rgba(0,0,0,.5);
+padding:10px 12px 12px;
+}
+

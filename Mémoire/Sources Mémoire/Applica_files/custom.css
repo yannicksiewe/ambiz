@@ -1,0 +1,60 @@
+/******************************************  
+ CUSTOM STYLESHEET
+*******************************************/
+
+/*
+* You can place your custom CSS statements in this file, after this message.
+* It is better to write everything custom here
+* because this file won't be replaced during updates.
+* 
+* Simply copy an existing style from style.css to this file, 
+* and modify it to your liking.
+*/
+
+body{
+	border-top:none;
+}
+
+.wrapper{
+	margin:auto;
+}
+
+#aside{
+	float:right;
+	margin-top:0;
+	padding-top:60px;
+	background:url(images/texture.jpg) repeat center right;
+	border-bottom-right-radius: 50px;
+	-moz-border-bottom-right-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+}
+
+#main{
+	float:right;
+}
+
+#welcome {
+	margin:0;
+}
+
+#welcome img {
+	width: 744px;
+	max-width: 100%;
+	height:auto;
+	margin: auto;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+#content {
+	margin-top: 0;
+}
+
+.entry img {
+	border:none;
+}
+
+.entry .aligncenter {
+	display:inline-block;
+}

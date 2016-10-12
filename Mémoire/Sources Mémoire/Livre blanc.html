@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="csstransforms no-csstransforms3d csstransitions" prefix="og: http://ogp.me/ns#" lang="fr-FR"><!--<![endif]--><!-- head --><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!-- meta -->
+<meta name="google-site-verification" content="loDWp1ocUykeX7FtCahO-ygUqSGJGph4AyKIDvLjevA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Livre blanc Architecture Mobile : Web, native et hybride"Ippon – Java Experts</title>
+
+<link rel="stylesheet" href="Livre%20blanc_files/language-selector.css" type="text/css" media="all">
+
+
+<link rel="shortcut icon" href="http://ippon.us.com/wp-content/uploads/2014/01/favicon_32x32.png" type="image/x-icon">	
+
+<!-- wp_head() -->
+<script style="" src="Livre%20blanc_files/analytics.js" async="" type="text/javascript"></script><script src="Livre%20blanc_files/458425.js" id="hs-analytics"></script><script src="Livre%20blanc_files/gtm.js" async=""></script><script>
+//<![CDATA[
+window.mfn_slider_vertical	= { autoplay:0 	};
+window.mfn_slider_portfolio 	= { autoPlay:0 };
+//]]>
+</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Ce livre blanc Architecture Mobile aborde divers environnements techniques ainsi que la distribution, l'intégration et l'industrialisation des applications.">
+<meta name="robots" content="noodp">
+<meta name="keywords" content="Ippon, Ippon Technologies, white paper, ressources, architecture mobile, web, native, hybride, livre blanc mobile, livre blanc, architecture mobile, livre blanc architecture mobile, distribution, industrialisation, intégration, ios, android, smartphone, tablette, application mobile, créer une application mobile">
+<link rel="canonical" href="http://www.ippon.fr/livreblanc/architecture-mobile/">
+<link rel="publisher" href="https://plus.google.com/u/0/106753560954832510210/posts">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Livre blanc Architecture Mobile : Web, native et hybride&quot;">
+<meta property="og:description" content="Ce livre blanc Architecture Mobile aborde divers environnements techniques ainsi que la distribution, l'intégration et l'industrialisation des applications.">
+<meta property="og:url" content="http://www.ippon.fr/livreblanc/architecture-mobile/">
+<meta property="og:site_name" content="Ippon - Java Experts">
+<meta property="article:publisher" content="https://www.facebook.com/ippon.technologies">
+<meta property="og:image" content="http://www.ipponusa.com/wp-content/uploads/2014/11/Livre-Blanc-Architecture-Mobile1.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Ce livre blanc Architecture Mobile aborde divers environnements techniques ainsi que la distribution, l'intégration et l'industrialisation des applications.">
+<meta name="twitter:title" content="Livre blanc Architecture Mobile : Web, native et hybride&quot;">
+<meta name="twitter:site" content="@ippontech">
+<meta name="twitter:image" content="http://www.ipponusa.com/wp-content/uploads/2014/11/Livre-Blanc-Architecture-Mobile1.jpg">
+<meta name="twitter:creator" content="@ippontech">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Ippon - Java Experts » Flux" href="http://www.ippon.fr/feed/">
+<link rel="alternate" type="application/rss+xml" title="Ippon - Java Experts » Flux des commentaires" href="http://www.ippon.fr/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script type="text/javascript" src="Livre%20blanc_files/wp-emoji-release.js"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="yarppWidgetCss-css" href="Livre%20blanc_files/widget.css" type="text/css" media="all">
+<link rel="stylesheet" id="mailchimpSF_main_css-css" href="Livre%20blanc_files/a.css" type="text/css" media="all">
+<!--[if IE]>
+<link rel='stylesheet' id='mailchimpSF_ie_css-css'  href='/wp-content/plugins/mailchimp/css/ie.css?ver=4.4.2' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="usernoise-button-group-css" href="Livre%20blanc_files/a_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookielawinfo-style-css" href="Livre%20blanc_files/cli-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-settings-css" href="Livre%20blanc_files/settings.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-captions-css" href="Livre%20blanc_files/dynamic-captions.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-static-css" href="Livre%20blanc_files/static-captions.css" type="text/css" media="all">
+<link rel="stylesheet" id="ssbaFont-css" href="Livre%20blanc_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-colors-php-css" href="Livre%20blanc_files/style-colors.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-php-css" href="Livre%20blanc_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="Varela-css" href="Livre%20blanc_files/css_002.css" type="text/css" media="all">
+<script type="text/javascript" src="Livre%20blanc_files/jquery_002.js"></script>
+<script type="text/javascript" src="Livre%20blanc_files/jquery-migrate.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var usernoiseButton = {"text":"Feedback","style":"background-color: #FF4E00; color: #FFFFFF","class":"un-left","windowUrl":"\/wp-admin\/admin-ajax.php?action=un_load_window","showButton":"1","disableOnMobiles":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Livre%20blanc_files/a.js"></script>
+<script type="text/javascript" src="Livre%20blanc_files/cookielawinfo.js"></script>
+<script type="text/javascript" src="Livre%20blanc_files/jquery_003.js"></script>
+<script type="text/javascript" src="Livre%20blanc_files/jquery.js"></script>
+<link rel="https://api.w.org/" href="http://www.ippon.fr/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ippon.fr/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ippon.fr/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.4.2">
+<link rel="shortlink" href="http://www.ippon.fr/?p=12342">
+<link rel="alternate" type="application/json+oembed" href="http://www.ippon.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.ippon.fr%2Flivreblanc%2Farchitecture-mobile%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://www.ippon.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.ippon.fr%2Flivreblanc%2Farchitecture-mobile%2F&amp;format=xml">
+<style type="text/css">	.ssba {
+									
+									
+									
+									
+								}
+								.ssba img
+								{
+									width: 35px !important;
+									padding: 6px;
+									border:  0;
+									box-shadow: none !important;
+									display: inline !important;
+									vertical-align: middle;
+								}
+								.ssba, .ssba a
+								{
+									text-decoration:none;
+									border:0;
+									background: none;
+									font-family: Indie Flower;
+									font-size: 	20px;
+									
+									
+								}</style><meta name="generator" content="WPML ver:3.2.7 stt:1,4;">
+<link rel="stylesheet" href="Livre%20blanc_files/custom.css" media="all">
+<style>
+.info_box_wrapper .desc ul li { background: url("/wp-content/uploads/2014/03/bulett.png") no-repeat left center; }
+
+			   @media only screen and (min-width: 510px) and (max-width: 779px) {
+			 		  #rev_slider_3_1, #rev_slider_3_1_wrapper { display:none;}	
+			   }
+			
+						
+			   @media only screen and (min-width: 0px) and (max-width: 509px) {
+			 		  #rev_slider_3_1, #rev_slider_3_1_wrapper { display:none;}	
+			   }
+</style>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+//<![CDATA[
+jQuery(window).load(function(){
+var retina = window.devicePixelRatio > 1 ? true : false;if(retina){var retinaEl = jQuery("#logo img");var retinaLogoW = retinaEl.width();var retinaLogoH = retinaEl.height();retinaEl.attr("src","http://www.ipponusa.com/wp-content/uploads/2014/03/logo2_IpponTechnologies130912.png").width(retinaLogoW).height(retinaLogoH)}});
+//]]>
+</script>
+
+
+<!-- Knowledge Graph -->
+
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "Organization",
+	"name" : "IPPON Techologies",
+	"url" : "http://www.ippon.fr",
+	"logo": "http://www.ippon.fr/wp-content/uploads/2014/12/logo_IpponGroupe.png",
+	"founder" : "Stéphane Nomis",
+	"foundingDate" : "2002",
+	"foundingLocation" : "Paris",
+	"contactPoint" : [{
+		"@type" : "ContactPoint",
+		"telephone" : "+33 146124848",
+		"contactType" : "customer service"
+	}],
+	"sameAs" : [
+		"http://www.facebook.com/ippon.technologies",
+		"http://www.twitter.com/ippontech",
+		"http://plus.google.com/+ippontechnologies",
+		"http://www.linkedin.com/company/ippon-technologies"
+	]
+}
+</script>
+
+<!-- End Knowledge Graph -->
+<script src="Livre%20blanc_files/common.js" charset="UTF-8" type="text/javascript"></script><script src="Livre%20blanc_files/util.js" charset="UTF-8" type="text/javascript"></script><script src="Livre%20blanc_files/stats.js" charset="UTF-8" type="text/javascript"></script></head>
+
+<!-- body -->
+<body class="single single-whitepaper postid-12342  color-custom layout-boxed sticky-header" itemscope="" itemtype="http://schema.org/Article">
+    
+<!-- Google Analytics Stuff by SLAP -->
+
+<!-- Google Tag Manager for ippon.fr -->
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KFDLFS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KFDLFS');</script>
+
+<!-- End Google Tag Manager -->	
+	<!-- #Wrapper and add microdata -->
+	<div id="Wrapper">
+	
+			
+<!-- .header_placeholder 4sticky  -->
+<div style="margin-top: 213px;" class="header_placeholder"></div>
+
+<!-- #Header -->
+<header class="is-sticky" id="Header">
+
+	<div class="container">
+		<div class="column one">
+                
+			<!-- .social -->
+			<div class="social">
+				<ul>
+																																																	</ul>
+			</div>
+			
+			<div class="addons">
+				
+								<form method="get" id="searchform" action="http://www.ippon.fr/">
+					<span class="ico"></span>
+					<input class="field" name="s" id="s" placeholder="Recherche" type="text">
+					<input class="submit" value="" style="display: none;" type="submit">
+				</form>
+				
+									<div class="language">
+						<a href="#"><span class="ico"></span><span class="menu_name">Langues</span></a>
+						<div class="language_select">
+							<span class="arrow"></span>
+							<ul id="menu-langues" class=""><li id="menu-item-12205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-12205"><a href="http://www.ippon.fr/">Français</a></li>
+<li id="menu-item-12206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12206"><a href="http://www.ipponusa.com/">English</a></li>
+</ul>						</div>
+					</div>
+								
+				<div class="language_menu">
+					<div class="menu-navigation-haute-container"><ul id="menu-navigation-haute" class="menu"><li id="menu-item-11228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11228"><a href="http://www.ippon.fr/contact/">Contact</a></li>
+<li id="menu-item-11227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11227"><a href="http://blog.ippon.fr/">Blog</a></li>
+</ul></div>				</div>
+
+			</div>
+		
+			<!-- .logo -->
+			<div class="logo">
+								<a id="logo" href="http://www.ippon.fr/" title="Ippon – Java Experts">
+					<img class="scale-with-grid" src="Livre%20blanc_files/logo_Ippontech14011.png" alt="Ippon – Java Experts">
+				</a>
+							</div>
+			
+			<!-- #menu -->
+			<nav id="menu" class="menu-menu-francais-container"><ul id="menu-menu-francais" class="menu"><li id="menu-item-11201" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.ippon.fr/services/">Services</a></li>
+<li id="menu-item-11252" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.ippon.fr/nous-rejoindre/">Nous Rejoindre</a></li>
+<li id="menu-item-12369" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.ippon.fr/ressources/">Ressources</a></li>
+<li id="menu-item-11207" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.ippon.fr/clients/">Clients</a></li>
+<li id="menu-item-11203" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.ippon.fr/projets/">Projets</a></li>
+<li id="menu-item-11250" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.ippon.fr/formation/">Formation</a></li>
+<li id="menu-item-11254" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.ippon.fr/we-are-ippon/">#WeAreIppon</a></li>
+</ul></nav>	
+			<a class="responsive-menu-toggle" href="#"><i class="fa-bars"></i></a>
+
+		</div>		
+	</div>
+	
+</header>		
+		<div id="Subheader"><div class="container"><div class="column one"><h1 class="title"><span itemprop="name">Livre blanc "Architecture Mobile : Web, native et hybride"</span></h1><ul class="breadcrumbs"><li class="home"><i class="fa-home"></i> <a href="http://www.ippon.fr/"> Accueil</a> <span>/</span></li><li><a href="http://www.ippon.fr/ressources/">Ressources</a> <span>/</span></li><li><a href="http://www.ippon.fr/livreblanc/architecture-mobile/">Livre blanc "Architecture Mobile : Web, native et hybride"</a></li></ul></div></div></div>
+<!-- #Content -->
+<div id="Content">
+	<div class="content_wrapper clearfix">
+
+		<!-- .sections_group -->
+		<div class="sections_group">
+			
+<div class="single-portfolio" id="portfolio-item-12342">	
+
+	<div class="section section-portfolio-header">
+		<div class="section_wrapper clearfix">
+            <div class="column two-third whitepaper-content-holder">
+                
+                
+                <!-- Main content -->
+                <div itemprop="description">
+            	<div class="section the_content"><div class="section_wrapper"><div class="the_content_wrapper"><h2>Livre blanc Architecture Mobile : Web, native et hybride</h2>
+<p><strong>Ce que vous allez apprendre dans ce livre blanc Architecture Mobile :</strong></p>
+<p>– Forces et faiblesses des différents environnements techniques :<br>
+1. Les applications natives<br>
+2. Les applications web mobiles<br>
+3. Les applications hybrides<br>
+4. L’environnement technique d’une application native<br>
+5. L’environnement technique d’une application web mobile<br>
+6. L’environnement technique d’une application hybride</p>
+<p>– La distributions des applications :<br>
+1. Dans le cas d’applications natives ou hybrides<br>
+2. Le cas des sites mobiles</p>
+<p>– Intégration des applications avec le système d’information :<br>
+1. Les Contraintes de sécurité<br>
+2. Les services web</p>
+<p>–&nbsp; L’industrialisation des applications mobiles</p>
+<p>– Équipe et organisation</p>
+<p><a href="http://www.ipponusa.com/wp-content/uploads/2014/11/Livre-Blanc-Architecture-Mobile1.jpg"><img class="aligncenter wp-image-12403" src="Livre%20blanc_files/Livre-Blanc-Architecture-Mobile1.jpg" alt="Livre-Blanc-Architecture-Mobile" height="231" width="350"></a><br>
+Ce livre blanc «&nbsp;Architecture Mobile&nbsp;» vous a donné envie 
+d’aller plus loin ? Ippon vous propose des formations «&nbsp;<a href="http://www.ippon.fr/formation/android/">Android</a>&nbsp;» et «&nbsp;<a href="http://www.ippon.fr/formation/tech-day-digital-mobilite-web/">Etat de l’art mobile</a>&nbsp;».</p>
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a data-site="linkedin" class="ssba_linkedin_share ssba_share_link" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.ippon.fr/livreblanc/architecture-mobile/" target="_blank"><img src="Livre%20blanc_files/linkedin.png" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn"></a><a data-site="reddit" class="ssba_reddit_share" href="http://reddit.com/submit?url=http://www.ippon.fr/livreblanc/architecture-mobile/&amp;title=Livre%20blanc%20%C2%AB%C2%A0Architecture%20Mobile%20:%20Web,%20native%20et%20hybride%C2%A0%C2%BB" target="_blank"><img src="Livre%20blanc_files/reddit.png" title="Reddit" class="ssba ssba-img" alt="Share on Reddit"></a><a data-site="" class="ssba_twitter_share" href="http://twitter.com/share?url=http://www.ippon.fr/livreblanc/architecture-mobile/&amp;text=Livre+blanc+%C2%AB%C2%A0Architecture+Mobile+%3A+Web%2C+native+et+hybride%C2%A0%C2%BB+" target="_blank"><img src="Livre%20blanc_files/twitter.png" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter"></a></div></div></div></div></div>                
+                </div>   
+                <div class="recent-publications">
+                    <h3>Découvrir nos autres publications</h3>
+                	
+<div class="mosaic-item whitepaper" data-event="false">
+    <a href="http://www.ippon.fr/livreblanc/big-data-opportunites-de-lecosysteme-hadoop-pour-2016/">	
+               <h4>Big Data – Opportunités de l’écosystème Hadoop pour 2016</h4>
+                    <p class="author">Auteur: Christophe Parageaud</p>
+                            <p class="year">Année: 2015</p>
+           </a>
+    
+</div>
+
+
+
+<div class="mosaic-item whitepaper" data-event="false">
+    <a href="http://www.ippon.fr/livreblanc/livre-blanc-industrialisation-javascript/">	
+               <h4>Livre blanc – Industrialisation JavaScript</h4>
+                    <p class="author">Auteur: Alvin Berthelot &amp; Harold Capitaine</p>
+                            <p class="year">Année: 2015</p>
+           </a>
+    
+</div>
+
+
+
+<div class="mosaic-item whitepaper" data-event="false">
+    <a href="http://www.ippon.fr/livreblanc/comment-livrer-une-application-strategique-avec-un-time-market-reduit/">	
+               <h4>Comment livrer une application stratégique avec un Time To Market réduit?</h4>
+                    <p class="author">Auteur: Olivier Catta</p>
+                            <p class="year">Année: 2015</p>
+           </a>
+    
+</div>
+
+
+
+
+
+
+                    <div>
+                        <a class="see_more_link" href="http://www.ippon.fr/ressources//#whitepaper">Voir toutes nos publications <i class="fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="column one-third whitepaper-sidebar">
+                
+                <!-- Download -->
+                <div id="reserve" class="reserve-block whitepaper-sidebar-element">
+                    <a href="javascript:void(0)" class="reserve-button">
+                        <h4 class="reserve_title">Télécharger</h4>
+                        <p><small>Remplissez le formulaire et recevez ce livre blanc directement dans votre boîte mail.</small></p>
+                    </a>
+                    <div style="display: none;" class="contact-form">
+                        <!-- <a href="#" class="morphbutton-close right"><i class="fa fa-close"></i></a> -->
+                        <br><div role="form" class="wpcf7" id="wpcf7-f13152-p12342-o1" dir="ltr" lang="fr-FR">
+<div class="screen-reader-response"></div>
+<form action="/livreblanc/architecture-mobile/#wpcf7-f13152-p12342-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input name="_wpcf7" value="13152" type="hidden">
+<input name="_wpcf7_version" value="4.3.1" type="hidden">
+<input name="_wpcf7_locale" value="fr_FR" type="hidden">
+<input name="_wpcf7_unit_tag" value="wpcf7-f13152-p12342-o1" type="hidden">
+<input name="_wpnonce" value="f103bb8945" type="hidden">
+</div>
+<p><label for="your-first">Votre prénom*</label><span class="wpcf7-form-control-wrap your-first-name"><input name="your-first-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" id="your-first-name" aria-required="true" aria-invalid="false" type="text"></span> </p>
+<p><label for="your-last-name">Votre nom*</label><span class="wpcf7-form-control-wrap your-last-name"><input name="your-last-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" id="your-last-name" aria-required="true" aria-invalid="false" type="text"></span> </p>
+<p><label for="your-email">Votre email*</label><span class="wpcf7-form-control-wrap your-email"><input name="your-email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" id="your-email" aria-required="true" aria-invalid="false" type="email"></span> </p>
+<p><label for="your-phone">Votre numéro de téléphone</label><span class="wpcf7-form-control-wrap your-phone"><input name="your-phone" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" id="your-phone" aria-invalid="false" type="tel"></span></p>
+<p><label for="your-company">Nom de société*</label><span class="wpcf7-form-control-wrap your-company"><input name="your-company" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" id="your-company" aria-required="true" aria-invalid="false" type="text"></span></p>
+<p><input name="whitepaper" value="Livre blanc &quot;Architecture Mobile : Web, native et hybride&quot;" id="whitepaper-name" type="hidden"></p>
+<p><input value="Télécharger" class="wpcf7-form-control wpcf7-submit" type="submit"><img style="visibility: hidden;" alt="Envoi en cours ..." src="Livre%20blanc_files/ajax-loader.gif" class="ajax-loader"></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div><input name="_wpcf7_download_id" value="2" type="hidden"></form></div><div id="wpm_download_2" style="display:none;">  </div>                    </div>
+                </div>
+
+                <!-- Sidebar photo -->
+                <div class="whitepaper-sidebar-element whitepaper_photo">
+                                    </div>
+
+
+                <!-- The Author -->
+                                <div itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <div class="author-block whitepaper-sidebar-element">
+                        <h4 class="author_title"><i class="fa-new fa-mortar-board"></i> Auteur</h4>
+                                            </div>
+                    <div class="author_accordion">
+                        <div class="accordion"><div class="mfn-acc accordion_wrapper "><div class="question"><h5 itemprop="name">Lorys Pognon<span class="icon"></span></h5><div class="answer">Ingénieur
+ en système de communication, Lorys a plusieurs années d’expériences 
+dans le développement et la mise en place des services et d’applications
+ mobiles. </div></div></div></div>
+                    </div>
+                </div>
+                                
+                
+                
+                <!-- Need help ? -->
+                <div class="help-block whitepaper-sidebar-element">
+                    <h4 class="help_title"><i class="fa fa-question-circle"></i> Besoin d'aide ?</h4>
+                    <p>Vous voulez nous parlez à propos de ce livre blanc ? Vous avez des questions sur ce sujet ou sur un autre ?</p>
+                                        <a class="call" href="http://www.ippon.fr/contact/"><i class="fa fa-phone"></i> Appel</a>
+                    <a class="email" href="http://www.ippon.fr/contact/"><i class="fa fa-envelope"></i> Email</a>
+                        
+                </div>                
+                
+                
+              
+           </div>     
+        </div>
+	</div>
+    
+	
+
+	
+	
+	
+</div>		</div>
+		
+		<!-- .four-columns - sidebar -->
+		
+			
+	</div>
+	
+</div>
+
+
+</div>
+
+<!-- #Footer -->		
+<footer id="Footer" class="clearfix">
+    
+    	<div class="networks-wrapper">
+        <div class="networks-banner">
+            <div class="container">
+                    <div id="text-5" class="widget widget_text"><h2 class="widgettitle">Nos réseaux</h2>
+			<div class="textwidget"><div class="column one last">
+<ul class="networks">
+<li><a href="http://twitter.com/ipponusa" target="_blank"><i class="fa-twitter"></i> Twitter</a></li>
+<li><a href="http://www.slideshare.net/ippontech" target="_blank"><i class="fa-new fa-slideshare"></i> Slideshare</a></li>
+<li><a href="http://github.com/ippontech" target="_blank"><i class="fa-github"></i> Github</a></li>
+<li><a href="http://www.linkedin.com/company/ippon-technologies" target="_blank"><i class="fa-linkedin"></i> LinkedIn</a></li>
+<li><a href="http://www.youtube.com/user/ippontechtv" target="_blank"><i class="fa-new fa-youtube"></i> YouTube</a></li>
+<li><a href="http://ippontech.eventbrite.fr/" target="_blank"><span class="icon"><img src="Livre%20blanc_files/eventbrite-logo.png"></span> Eventbrite</a></li>
+</ul>
+</div></div>
+		</div>        
+            </div>
+        </div>
+    </div>
+    
+	<div class="widgets_wrapper">
+		<div class="container">
+						
+			<div class="one-third column footer-widgets-1"><aside id="widget_mfn_company-2" class="widget widget_mfn_company"><div class="company_box"><div class="logo"><img class="scale-with-grid" src="Livre%20blanc_files/Logo-Ippon-White.png" alt=""></div></div></aside><aside id="text-2" class="widget widget_text"><h4>A propos d’Ippon</h4>			<div class="textwidget"><p>Nous
+ aimons relever les défis les plus ardus proposés par nos clients, et 
+nous croyons sincèrement que la technologie est un facteur clé de 
+changements sociaux et de succès en affaires.</p>
+<p>Nous sommes une entreprise de conseil et de solutions logicielles. Comme des milliers d'autres.</p>
+<p>MAIS, nous sommes aussi une communauté de personnes passionnées et compétentes.<br>
+Comme aucune autre.</p>
+</div>
+		</aside></div><div class="one-third column footer-widgets-2"><aside id="text-3" class="widget widget_text"><h4>Nos bureaux</h4>			<div class="textwidget"><h5><a href="http://www.ippon.fr/contact/#paris">Paris</a></h5>
+<p>43, avenue de la Grande Armée – 75116 Paris<br>+33 1 46 12 48 48</p>
+<h5><a href="http://www.ippon.fr/contact/#newyork">New York</a></h5>
+<p>25 Broadway, New York, NY 10004, United States of America<br>
++1 844-477-6687</p>
+<h5><a href="http://www.ippon.fr/contact/#richmond">Richmond</a></h5>
+<p>2700 East Cary Street, Suite C – Richmond, VA 23223, United States of America<br>
++1 844-477-6687</p>
+<h5><a href="http://www.ippon.fr/contact/#nantes">Nantes</a></h5>
+<p>1 Rue Du Guesclin – 44019 Nantes Cedex<br> +33 2 40 48 28 06</p>
+<h5><a href="http://www.ippon.fr/contact/#bordeaux">Bordeaux</a></h5>
+<p>61 cours de l’Intendance – 33000 Bordeaux<br>+33 5 56 30 69 31</p></div>
+		</aside></div><div class="one-third column footer-widgets-3 last"><aside id="nav_menu-2" class="widget widget_nav_menu"><h4>Nos sites</h4><div class="menu-nos-sites-container"><ul id="menu-nos-sites" class="menu"><li id="menu-item-11395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-11395"><a href="http://www.ippon.fr/">ippon.fr</a></li>
+<li id="menu-item-11396" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11396"><a href="http://ippon-hosting.fr/">ippon-hosting.fr</a></li>
+<li id="menu-item-11397" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11397 last"><a href="http://ippon-digital.fr/">ippon-digital.fr</a></li>
+</ul></div></aside><aside id="mailchimpsf_widget-2" class="widget widget_mailchimpsf_widget"><h4>Rejoignez-nous !</h4>
+<style>
+	.widget_mailchimpsf_widget .widget-title {
+		line-height: 1.4em;
+		margin-bottom: 0.75em;
+	}
+	#mc_subheader {
+		line-height: 1.25em;
+		margin-bottom: 18px;
+	}
+	.mc_merge_var {
+		margin-bottom: 1.0em;
+	}
+	.mc_var_label,
+	.mc_interest_label {
+		display: block;
+		margin-bottom: 0.5em;
+	}
+	.mc_input {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	.mc_input.mc_phone {
+		width: auto;
+	}
+	select.mc_select {
+		margin-top: 0.5em;
+		width: 100%;
+	}
+	.mc_address_label {
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+		display: block;
+	}
+	.mc_address_label ~ select {
+		width: 100%;		
+	}
+	.mc_list li {
+		list-style: none;
+		background: none !important;
+	}
+	.mc_interests_header {
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+	}
+	.mc_interest label,
+	.mc_interest input {
+		margin-bottom: 0.4em;
+	}
+	#mc_signup_submit {
+		margin-top: 1.5em;
+		width: 80%;
+	}
+	#mc_unsub_link a {
+		font-size: 0.75em;
+	}
+	#mc_unsub_link {
+		margin-top: 1.0em;
+	}
+	.mc_header_address,
+	.mc_email_format {
+		display: block;
+		font-weight: bold;
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+	}
+	.mc_email_options {
+		margin-top: 0.5em;
+	}
+	.mc_email_type {
+		padding-left: 4px;
+	}
+</style>
+
+<div id="mc_signup">
+	<form method="post" action="#mc_signup" id="mc_signup_form">
+		<input id="mc_submit_type" name="mc_submit_type" value="html" type="hidden">
+		<input name="mcsf_action" value="mc_submit_signup_form" type="hidden">
+		<input id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="3a96fd772d" type="hidden">		
+			<div id="mc_subheader">
+			Inscrivez-vous à notre mailing list et restez au courant de nos dernières actualités.		</div><!-- /mc_subheader -->
+			
+	<div class="mc_form_inside">
+		
+		<div class="updated" id="mc_message">
+					</div><!-- /mc_message -->
+
+		
+<div class="mc_merge_var">
+		<label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">Email</label>
+	<input size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input" type="text">
+</div><!-- /mc_merge_var -->		<div class="mergeRow">
+			<label class="mc_email_format">Preferred Format</label>
+		    <div class="field-group groups mc_email_options">
+		        <ul class="mc_list">
+			        <li><input name="email_type" id="email_type_html" value="html" checked="checked" type="radio"><label for="email_type_html" class="mc_email_type">HTML</label></li>
+			        <li><input name="email_type" id="email_type_text" value="text" type="radio"><label for="email_type_text" class="mc_email_type">Text</label></li>
+		        </ul>
+			</div>
+		</div>	
+
+		
+		<div class="mc_signup_submit">
+			<input name="mc_signup_submit" id="mc_signup_submit" value="Je m'inscris !" class="button" type="submit">
+		</div><!-- /mc_signup_submit -->
+	
+	
+				
+	</div><!-- /mc_form_inside -->
+	</form><!-- /mc_signup_form -->
+</div><!-- /mc_signup_container -->
+	</aside></div>	
+		</div>
+	</div>
+
+	<div class="footer_menu">
+		<div class="container">
+
+        	<div class="ippon-copyright">
+                <p>Copyright © 2015 Ippon Technologies - All Right Reserved – Powered by Ippon and WordPress</p>
+	            </div>
+			<ul id="menu-menu-footer" class="menu"><li id="menu-item-12802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12802"><a href="http://www.ippon.fr/mentions-legales/">Mentions légales</a></li>
+<li id="menu-item-12801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12801"><a href="http://www.ippon.fr/cookies/">Politique d’utilisation de cookies</a></li>
+</ul>			
+		</div>
+	</div>
+	
+	<div class="container"><a id="back_to_top" href="#"><span></span></a></div>
+	
+</footer>
+<!-- Google Maps Script (which is broken by the plugin Relative URLs in the brandon theme) -->
+<script type="text/javascript" src="Livre%20blanc_files/js"></script>
+
+<!-- wp_footer() -->
+
+<div style="display: block; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: inherit; top: 0pt; border-bottom: 4px solid rgb(68, 68, 68);" id="cookie-law-info-bar"><span>Ce
+ site utilise des cookies afin d'améliorer votre expérience. En 
+continuant à naviguer sur ce site, vous acceptez l'utilisation de ces 
+cookies. <a style="color: rgb(255, 255, 255); background-color: rgb(255, 78, 0);" href="#" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button">Accepter</a> <a style="color: rgb(255, 78, 0);" href="http://www.ippon.fr/cookies/" id="CONSTANT_OPEN_URL" target="_blank" class="cli-plugin-main-link">En savoir plus</a></span></div>		
+		<script type="text/javascript">
+			//<![CDATA[
+			jQuery(document).ready(function() {
+				cli_show_cookiebar({
+					settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":true,"button_1_button_colour":"#ff4e00","button_1_button_hover":"#cc3e00","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#ff4e00","button_2_as_button":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"top","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
+				});
+			});
+			//]]>
+		</script>
+		
+		<div id="un-thankyou" style="display: none;">
+	<h2>Thank you / Merci</h2>
+	<p>
+		Your feedback has been received.
+
+Votre feedback a été envoyé !	</p>
+	<a href="#" id="un-feedback-close"><img src="Livre%20blanc_files/ok.png" id="thankyou-image" alt="Close" height="32" width="32"></a>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.ippon.fr\/wp-content\/themes\/brandon-child\/img\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Envoi en cours ...","cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var icl_vars = {"current_language":"fr","icl_home":"http:\/\/www.ippon.fr\/","ajax_url":"http:\/\/\/wp-admin\/admin-ajax.php","url_type":"2"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Livre%20blanc_files/a_002.js"></script>
+
+
+<!-- Start of Async HubSpot Analytics Code -->
+ <script type="text/javascript">
+   (function(d,s,i,r) {
+     if (d.getElementById(i)){return;}
+     var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+     n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/458425.js';
+     e.parentNode.insertBefore(n, e);
+   })(document,"script","hs-analytics",300000);
+ </script>
+<!-- End of Async HubSpot Analytics Code -->
+
+
+
+
+
+
+<a style="background-color: rgb(255, 78, 0); color: rgb(255, 255, 255); margin-top: 32.5px; left: -6px;" class="un-left css3" href="#" id="un-button">Feedback</a></body></html>
+<!-- Dynamic page generated in 2.946 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-02-17 02:39:51 -->
+<!-- super cache -->

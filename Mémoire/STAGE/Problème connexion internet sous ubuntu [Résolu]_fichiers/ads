@@ -1,0 +1,85 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CUG1hkzUQVq3uNIj77Abx-JOYA_3OrKEH3fij3JkCwI23ARABIMn3rQYoBGB5oAG71JbGA8gBAakCXc60398dhT6oAwGqBLcBT9AyGsOUuYZMIKqR_bH9E2VsJvvqV_X1EyubrhTvS6z_PtFWO8IxBzgJnZ86Jb7veK2LU94p7cYe1zZclx_KoQMvktEEzQBiz013aIT_5VKPNNkL3k32FZ8g74Vg97Tl5xdWUkJXCNnhVonevR4jigBjuN-ba6av7gJf3Nj_VXl6AZi1ARla63bZzWVOzrOWUPbzbaNhG2bSMlnf49NYuaRno4mYlATPFBQslz8GUQGc8bbW_YoNiAYBgAetq-k5qAemvhuoB7XBG9gHAQ&amp;num=1&amp;cid=5Gj2FwVO4AMgLzK5cbU2trFl&amp;sig=AOD64_0UZ0XQF28rSGsy1iOEMZ23tj58sw&amp;client=ca-pub-6969989765125400&amp;adurl=http://www.360totalsecurity.com/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_term%3DFR_ADW_Generic"; 
+google_ad.visible_url = "www.360totalsecurity.com"; 
+google_ad.log_info = "BFGL5kzUQVq3uNIj77Abx-JOYAwDd-KPcmQIAABABOAHIAQHCExsQgAEYu9SWxgMY5aGy7AMYuM3i7gMYsa3-3gM";
+google_ad.activeview_cid = "5Gj2FwVO4AMgLzK5cbU2trFlDL4";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_js_tos_enabled = "true";
+google_ad.activeview_metadata = "ud=1&la=0&";
+google_ad.line1 = "Antivirus Gratuit"; 
+google_ad.line2 = "Prot\x26#233;ger et Boost PC pour libre"; 
+google_ad.line3 = "360 Total Security"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = {}; 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=C_4JZkzUQVq3uNIj77Abx-JOYA9C-hoII-Pmp0ZYCjIuFngsQAiDJ960GKARgeaAB5aGy7APIAQGoAwGqBLoBT9ByFtmUuoZMIKqR_bH9E2VsJvvqV_X1EyubrhTvS6z_PtFWO8IxBzgJnZ86Jb7veK2LU94p7cYe1zZclx_KoQMvktEEzQBiz013aIT_5VKPNNkL3k32FZ8g74Vg97Tl5xdWUkJXCNnhVonevR4jigBjuN-ba6av7gJf3Nj_VXl6AZi1ARFaSm8DQFHsF159s0QZmxdjr-XWhtrbF9BYTadnVoqYYQfP4RcsYjxGpALcEbBTu1vnox-biAYBgAegjIEtqAemvhuoB7XBG9gHAQ&amp;num=2&amp;cid=5Gj2FwVO4AMgLzK5cbU2trFl&amp;sig=AOD64_1mm3Jf5hjrnnLbk3I_O0pc4VvnjQ&amp;client=ca-pub-6969989765125400&amp;adurl=http://www.facebook.com/campaign/landing.php%3F%26campaign_id%3D680489048629149%26extra_1%3Dcdio2sg8J%7Cc%7C74666761272%7C%7C%7Cwww.commentcamarche.net%7C8095li148625%26placement%3Dwww.commentcamarche.net%26creative%3D74666761272%26keyword%3D%26partner_id%3Dgooglesem%26extra_2%3Dnetwork%253Dd%2526matchtype%253D%2526target%253D%252Fcomputers%2520%2526%2520electronics%2526source%253D%2526adposition%253Dnone%2526aceid%253D"; 
+google_ad.visible_url = "facebook.com"; 
+google_ad.log_info = "BFGL5kzUQVq3uNIj77Abx-JOYAwDd-KPcmQIAABABOAHIAQHCExsQgAEYu9SWxgMY5aGy7AMYuM3i7gMYsa3-3gM";
+google_ad.activeview_cid = "5Gj2FwVO4AMgLzK5cbU2trFlDL4";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_js_tos_enabled = "true";
+google_ad.activeview_metadata = "ud=1&la=0&";
+google_ad.line1 = "Cr\x26#233;er un profil Facebook"; 
+google_ad.line2 = "Ses amis, sa famille et"; 
+google_ad.line3 = "Copains de classe. Cr\x26#233;ez un profil!"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = {}; 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CEWDRkzUQVq3uNIj77Abx-JOYA9KivMIHos3m1HrEpoHdIhADIMn3rQYoBGB5oAG4zeLuA8gBAakC3mahrtN8qT6oAwGqBL0BT9BCPNuUvIZMIKqR_bH9E2VsJvvqV_X1EyubrhTvS6z_PtFWO8IxBzgJnZ86Jb7veK2LU94p7cYe1zZclx_KoQMvktEEzQBiz013aIT_5VKPNNkL3k32FZ8g74Vg97Tl5xdWUkJXCNnhVonevR4jigBjuN-ba6av7gJf3Nj_VXl6AeC2AVFaT2cDlkVP_B2pfKnyeKWJWVHUMlnfo1NcuaRnoomYlATPFBQslz9GUQGc5LMTW10338VodS-miAYBgAewsp0RqAemvhuoB7XBG9gHAQ&amp;num=4&amp;cid=5Gj2FwVO4AMgLzK5cbU2trFl&amp;sig=AOD64_2fIgJwAdTB6ZTHOp_wh-QtMyDajQ&amp;client=ca-pub-6969989765125400&amp;adurl=http://www.auctionexport.com/fr"; 
+google_ad.visible_url = "www.auctionexport.com"; 
+google_ad.log_info = "BFGL5kzUQVq3uNIj77Abx-JOYAwDd-KPcmQIAABABOAHIAQHCExsQgAEYu9SWxgMY5aGy7AMYuM3i7gMYsa3-3gM";
+google_ad.activeview_cid = "5Gj2FwVO4AMgLzK5cbU2trFlDL4";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_js_tos_enabled = "true";
+google_ad.activeview_metadata = "ud=1&la=0&";
+google_ad.line1 = "Achetez les autos d\x26#39;USA"; 
+google_ad.line2 = "200,000 v\x26#233;hicules \x26#224; choisir"; 
+google_ad.line3 = "Livraison en grands ports Africains"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_ad = {}; 
+google_ad.n = 4; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CbXHpkzUQVq3uNIj77Abx-JOYA-eGgO0H37H5krMBwI23ARAEIMn3rQYoBGB5oAGxrf7eA8gBAakC0LBo4KbLsj6oAwGqBLcBT9ByJ96Uu4ZMIKqR_bH9E2VsJvvqV_X1EyubrhTvS6z_PtFWO8IxBzgJnZ86Jb7veK2LU94p7cYe1zZclx_KoQMvktEEzQBiz013aIT_5VKPNNkL3k32FZ8g74Vg97Tl5xdWUkJXCNnhVonevR4jigBjuN-ba6av7gJf3Nj_VXl6AZi1ARla-Q-MumVOzrOWUPbzbaNhG2bSMlnf49NYuaRno4mYlATPFBQslz8GUQGc8baE2KQWiAYBgAe30oEhqAemvhuoB7XBG9gHAQ&amp;num=3&amp;cid=5Gj2FwVO4AMgLzK5cbU2trFl&amp;sig=AOD64_3_qcxMFTr5cy46Kp7TFhJw8yoGjA&amp;client=ca-pub-6969989765125400&amp;adurl=http://www.mit-university.net/index.php%3Foption%3Dcom_content%26view%3Darticle%26id%3D313%26Itemid%3D211"; 
+google_ad.visible_url = "www.mit-university.net"; 
+google_ad.log_info = "BFGL5kzUQVq3uNIj77Abx-JOYAwDd-KPcmQIAABABOAHIAQHCExsQgAEYu9SWxgMY5aGy7AMYuM3i7gMYsa3-3gM";
+google_ad.activeview_cid = "5Gj2FwVO4AMgLzK5cbU2trFlDL4";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.activeview_js_tos_enabled = "true";
+google_ad.activeview_metadata = "ud=1&la=0&";
+google_ad.line1 = "Formation Pro \x26#224; Distance"; 
+google_ad.line2 = "T\x26#233;l\x26#233;com - informatique -Management"; 
+google_ad.line3 = "Dipl\x26#244;mes et Certifications Pro"; 
+google_ad.regionname = ""; 
+google_ads[3] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.commentcamarche.net/forum/affich-26301789-probleme-connexion-internet-sous-ubuntu%26gl%3DCM%26hl%3Dfr%26client%3Dca-pub-6969989765125400%26ai0%3DCUG1hkzUQVq3uNIj77Abx-JOYA_3OrKEH3fij3JkCwI23ARABIMn3rQYoBGB5oAG71JbGA8gBAakCXc60398dhT6oAwGqBLcBT9AyGsOUuYZMIKqR_bH9E2VsJvvqV_X1EyubrhTvS6z_PtFWO8IxBzgJnZ86Jb7veK2LU94p7cYe1zZclx_KoQMvktEEzQBiz013aIT_5VKPNNkL3k32FZ8g74Vg97Tl5xdWUkJXCNnhVonevR4jigBjuN-ba6av7gJf3Nj_VXl6AZi1ARla63bZzWVOzrOWUPbzbaNhG2bSMlnf49NYuaRno4mYlATPFBQslz8GUQGc8bbW_YoNiAYBgAetq-k5qAemvhuoB7XBG9gHAQ%26ai1%3DC_4JZkzUQVq3uNIj77Abx-JOYA9C-hoII-Pmp0ZYCjIuFngsQAiDJ960GKARgeaAB5aGy7APIAQGoAwGqBLoBT9ByFtmUuoZMIKqR_bH9E2VsJvvqV_X1EyubrhTvS6z_PtFWO8IxBzgJnZ86Jb7veK2LU94p7cYe1zZclx_KoQMvktEEzQBiz013aIT_5VKPNNkL3k32FZ8g74Vg97Tl5xdWUkJXCNnhVonevR4jigBjuN-ba6av7gJf3Nj_VXl6AZi1ARFaSm8DQFHsF159s0QZmxdjr-XWhtrbF9BYTadnVoqYYQfP4RcsYjxGpALcEbBTu1vnox-biAYBgAegjIEtqAemvhuoB7XBG9gHAQ%26ai2%3DCEWDRkzUQVq3uNIj77Abx-JOYA9KivMIHos3m1HrEpoHdIhADIMn3rQYoBGB5oAG4zeLuA8gBAakC3mahrtN8qT6oAwGqBL0BT9BCPNuUvIZMIKqR_bH9E2VsJvvqV_X1EyubrhTvS6z_PtFWO8IxBzgJnZ86Jb7veK2LU94p7cYe1zZclx_KoQMvktEEzQBiz013aIT_5VKPNNkL3k32FZ8g74Vg97Tl5xdWUkJXCNnhVonevR4jigBjuN-ba6av7gJf3Nj_VXl6AeC2AVFaT2cDlkVP_B2pfKnyeKWJWVHUMlnfo1NcuaRnoomYlATPFBQslz9GUQGc5LMTW10338VodS-miAYBgAewsp0RqAemvhuoB7XBG9gHAQ%26ai3%3DCbXHpkzUQVq3uNIj77Abx-JOYA-eGgO0H37H5krMBwI23ARAEIMn3rQYoBGB5oAGxrf7eA8gBAakC0LBo4KbLsj6oAwGqBLcBT9ByJ96Uu4ZMIKqR_bH9E2VsJvvqV_X1EyubrhTvS6z_PtFWO8IxBzgJnZ86Jb7veK2LU94p7cYe1zZclx_KoQMvktEEzQBiz013aIT_5VKPNNkL3k32FZ8g74Vg97Tl5xdWUkJXCNnhVonevR4jigBjuN-ba6av7gJf3Nj_VXl6AZi1ARla-Q-MumVOzrOWUPbzbaNhG2bSMlnf49NYuaRno4mYlATPFBQslz8GUQGc8baE2KQWiAYBgAe30oEhqAemvhuoB7XBG9gHAQ\x26usg\x3dAFQjCNFBT8fLf9RgRPFMG7LqY9-V5wmnMw";
+var google_attribution_text = "Annonces Google";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

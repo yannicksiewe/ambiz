@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html class="js csstransforms no-csstransforms3d csstransitions" itemscope="itemscope" itemtype="http://schema.org/Article" lang="fr-FR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta charset="UTF-8">
+
+<title itemprop="name">Comment booster les performances d'une application mobile hybride ? | Neoxia.com</title>
+
+
+
+<link rel="apple-touch-icon" href="http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/wp-content/themes/grido-custom/images/app-icon-120.png">
+<link rel="apple-touch-icon-precomposed" href="http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/wp-content/themes/grido-custom/images/app-icon-120.png">
+
+<!-- wp_header -->
+<script src="Comment_files/analytics.js" async=""></script><script src="Comment_files/ga.js" async="" type="text/javascript"></script><script>document.documentElement.className += " js";</script>
+<!-- All in One SEO Pack 2.2.7.2 by Michael Torbert of Semper Fi Web Design[127,225] -->
+<meta name="description" content="Les applications hybrides sur mobile sont réputées lentes, pourtant avec quelques astuces et bonnes pratiques, il est possible de rendre ces applications">
+
+<meta name="keywords" content="mobile,hybride,html5,performance,blog">
+
+<link rel="canonical" href="http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/">
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-32819425-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Neoxia.com » Flux" href="http://blog.neoxia.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Neoxia.com » Flux des commentaires" href="http://blog.neoxia.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Neoxia.com » Comment booster les performances d’une application mobile hybride ? Flux des commentaires" href="http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/blog.neoxia.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script type="text/javascript" src="Comment_files/wp-emoji-release.js"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="juiz_sps_styles-css" href="Comment_files/juiz-social-post-sharer-4.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-pagenavi-css" href="Comment_files/pagenavi-css.css" type="text/css" media="all">
+<link rel="stylesheet" id="themify-framework-css" href="Comment_files/themify.css" type="text/css" media="all">
+<link rel="stylesheet" id="themify-builder-style-css" href="Comment_files/themify-builder-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="themify-animate-css" href="Comment_files/animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-style-css" href="Comment_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="themify-media-queries-css" href="Comment_files/media-queries.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-css" href="Comment_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-css" href="Comment_files/lightbox.css" type="text/css" media="all">
+<link rel="stylesheet" id="themify-skin-css" href="Comment_files/style_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="themify-icon-font-css" href="Comment_files/font-awesome.css" type="text/css" media="all">
+<script type="text/javascript" src="Comment_files/jquery_003.js"></script>
+<script type="text/javascript" src="Comment_files/jquery-migrate.js"></script>
+<script type="text/javascript" src="Comment_files/video.js"></script>
+<script type="text/javascript" src="Comment_files/bigvideo.js"></script>
+<script type="text/javascript" src="Comment_files/themify_004.js"></script>
+<script type="text/javascript" src="Comment_files/audio-player.js"></script>
+<script type="text/javascript" src="Comment_files/external-tracking.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.neoxia.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.neoxia.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Liens de la semaine #8" href="http://blog.neoxia.com/liens-de-la-semaine-8/">
+<link rel="next" title="Liens de la semaine #9" href="http://blog.neoxia.com/liens-de-la-semaine-9/">
+<meta name="generator" content="WordPress 4.3.1">
+<link rel="shortlink" href="http://blog.neoxia.com/?p=3775">
+
+
+
+
+<link href="http://blog.neoxia.com/wp-content/uploads/2015/03/favicon.ico" rel="shortcut icon"> 
+
+
+	<!-- media-queries.js -->
+	<!--[if lt IE 9]>
+		<script src="http://blog.neoxia.com/wp-content/themes/grido-custom/js/respond.js"></script>
+	<![endif]-->
+	
+	<!-- html5.js -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+	<!--[if lt IE 9]>
+	<script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script> 
+	<![endif]-->
+				<!--Themify Styling-->
+			<style type="text/css"></style>
+			<!--/Themify Styling-->
+		<!-- Google Analytics Tracking by Google Analyticator 6.4.9: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'disabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-32819425-1', 'auto');
+ 
+	ga('send', 'pageview');
+</script>
+
+</head>
+
+<body class="single single-post postid-3775 single-format-standard skin-gray gecko not-ie default_width sidebar1 no-home no-touch animation-on">
+
+<div id="pagewrap" class="hfeed site">
+
+	<div id="headerwrap">
+		<div id="menu-neoxia-hat">
+			<div class="pagewidth">
+				<nav>
+					<a href="http://blog.neoxia.com/"><div id="btn-accueil-mobile-only"><img src="Comment_files/neoxia-logo-blc.png"><p class="menu-libelle">le blog</p></div></a>
+					<a target="_blank" class="desktop-only" href="http://neoxia.com/apropos">A propos</a>
+					<a target="_blank" class="desktop-only" href="http://neoxia.com/">www.neoxia.com</a>
+					<a target="_blank" class="desktop-only" href="http://portfolio.neoxia.com/">Portfolio</a>
+				</nav>
+			</div>
+		</div>
+				<header style="top: 30px;" id="header">
+			<div class="pagewidth">
+	        			
+				<div id="main-nav-wrap">
+					<div id="menu-icon" class="mobile-button"></div>
+					<div id="menu-close-icon" class="mobile-close-button"></div>
+					<nav>
+						<ul id="main-nav" class="main-nav"><li id="menu-item-2814" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2814"><a title="NEWS" href="http://blog.neoxia.com/category/news-neoxia/">NEWS</a></li>
+<li id="menu-item-2813" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2813"><a title="TENDANCES &amp; REFLEXIONS" href="http://blog.neoxia.com/category/tendances-reflexions/">TENDANCES &amp; REFLEXIONS</a></li>
+<li id="menu-item-2815" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2815"><a title="RETOURS D’EXPERIENCE" href="http://blog.neoxia.com/category/retours-experience/">RETOURS D’EXPERIENCE</a></li>
+<li id="menu-item-2816" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2816"><a title="TUTORIELS" href="http://blog.neoxia.com/category/tutoriel/">TUTORIELS</a></li>
+<li id="menu-item-2817" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2817"><a title="VIDEOS" href="http://blog.neoxia.com/category/videos/">VIDEOS</a></li>
+<li id="menu-item-3955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3955"><a title="NOUS REJOINDRE" href="http://neoxia.com/recrutement">NOUS REJOINDRE</a></li>
+<li class="first-of-second-part menu-item menu-item-type-taxonomy menu-item-object-category mobile-only"><a class="nightblue" href="http://neoxia.com/">A propos</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category mobile-only"><a class="nightblue" href="http://neoxia.com/contact">Contact</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category mobile-only"><a class="nightblue" href="http://portfolio.neoxia.com/">Portfolio</a></li></ul>						
+					</nav>
+					<!-- /#main-nav --> 
+					<a href="http://blog.neoxia.com/"><div id="menu-neoxia-left-part"><img src="Comment_files/neoxia-logo.png"><p class="menu-libelle">le blog</p></div></a>
+				</div>
+				<!-- /#main-nav-wrap -->
+		
+				<div class="social-widget">
+							
+									</div>
+				<!-- /.social-widget -->
+
+								<div class="clearer"></div>
+			</div>
+		</header>
+		<!-- /#header -->
+        
+	</div>
+	<!-- /#headerwrap -->
+	
+	<div id="body" class="clearfix"> 
+	
+
+
+<!-- layout-container -->
+<div id="layout" class="pagewidth clearfix">
+
+		<!-- content -->
+	<div id="content" class="list-post">
+    					
+		
+
+<!-- post -->
+<article itemscope="" itemtype="http://schema.org/Article" id="post-3775" class="post clearfix gray cat-190 post-3775 type-post status-publish format-standard has-post-thumbnail hentry category-retours-experience tag-blog tag-html5 tag-hybride tag-mobile tag-performance">
+	
+	<div class="post-inner">
+		
+		<span class="post-icon"></span><!-- /post-icon -->
+	
+					<time datetime="2015-04-02" class="post-date entry-date updated" itemprop="datePublished">avr 2, 2015</time>
+			
+		<!-- post-title -->
+												<h1 class="post-title entry-title" itemprop="name">Comment booster les performances d’une application mobile hybride ?</h1>
+								    
+		<!-- /post-title -->
+		
+		
+<!-- post-image -->
+						<figure class="post-image ">
+									<img src="Comment_files/booster-application-hybride.jpg" alt="Comment booster les performances d’une application mobile hybride ?" width="670">							</figure>
+				<!-- /post-image -->
+
+<!-- post-content -->
+<div class="post-content">
+	<div class="entry-content" itemprop="articleBody">
+
+		
+		<h6>Les applications hybrides sur mobile sont réputées <strong>lentes</strong>, pourtant&nbsp;avec quelques astuces et bonnes pratiques, il est possible de rendre ces applications <strong>réactives et performantes</strong>.</h6><div class="trait"></div>
+<p style="text-align: justify;">Une application hybride sur mobile est 
+une application native créée à partir des technologies Web. De ce fait, 
+une application hybride tire parti des avantages des deux mondes Web et 
+Natif.&nbsp; Une application hybride est installée depuis un store 
+applicatif (App Store, Google Play, Windows Market place, Blackberry App
+ World, etc.) et peut accéder aux fonctionnalités natives d’un 
+smartphone mais implémentée en utilisant les technologies Web HTML5, CSS
+ et Javascript.</p>
+<p><a href="http://blog.neoxia.com/wp-content/uploads/2015/03/application-hybride1.jpg"><img class="alignnone wp-image-3781 size-full" src="Comment_files/application-hybride1.jpg" alt="" height="295" width="590"></a></p>
+<p style="text-align: justify;">L’avantage principal de l’approche 
+hybride est que le développement se fait une seule fois, respectant le 
+principe “WORA” (acronyme de Write Once Run Anywhere). Cependant, 
+l’approche hybride a ses inconvénients qu’il faut prendre en 
+considération avant de l’adopter notamment sur le volet performance. 
+Dans cet article, nous vous proposons des astuces et des bonnes 
+pratiques à suivre pour remédier aux soucis de lenteur des applications 
+hybrides sur mobile et pour booster leurs performances.</p>
+<h3><strong>#1 &nbsp;– Ne jamais générer la page à afficher sur le&nbsp;serveur</strong></h3>
+<p style="text-align: justify;">Le serveur doit seulement fournir les 
+données à votre application, à charge à cette dernière de mettre&nbsp;à 
+jour l’interface utilisateur.</p>
+<p style="text-align: justify;">La meilleure façon de faire cela est :</p>
+<ul>
+<li style="text-align: justify;">Afficher la page vide avec une image de chargement !</li>
+<li style="text-align: justify;">Récupérer les informations à afficher depuis le serveur</li>
+<li style="text-align: justify;">Ajouter, supprimer ou modifier aux DOM (Document Object Model)</li>
+</ul>
+<h3><strong>#2 – Une bonne approche à adopter : “Single Page Application”</strong></h3>
+<p style="text-align: justify;">Comme son nom l’indique, une SPA est une
+ application qui a une seule page contenant toute la couche de 
+présentation requise par l’application.</p>
+<p style="text-align: justify;">Une SPA dispose de plusieurs avantages qui améliorent&nbsp;les performances d’une application hybride, elle permet notamment :</p>
+<ul style="text-align: justify;">
+<li>De minimiser l’utilisation excessive de la bande passante</li>
+<li>De proposer une navigation rapide et fluide</li>
+<li>De permettre la&nbsp;récupération de données à la demande de l’utilisateur</li>
+</ul>
+<p style="text-align: justify;">AngularJS est le Framework le plus 
+répandu sur le marché des frameworks JavaScript FrontEnd, il permet de 
+créer aisément des applications mono-page. Dans sa prochaine Version, 
+AngularJS doit se focaliser sur les points suivants :</p>
+<ul style="text-align: justify;">
+<li>“Mobile First” : s’attaquer aux soucis de temps de chargement, de performance et d’autres challenges de l’environnement mobile.</li>
+<li>“Simplicity” : permettre aux développeurs de focaliser tous leurs efforts sur le développement de la logique business.</li>
+</ul>
+<h3 style="text-align: justify;"><strong>#3 – Utiliser le cache de données</strong></h3>
+<p style="text-align: justify;">L’utilisation des mécanismes du cache 
+peut considérablement améliorer l’expérience utilisateur. En effet, la 
+mise en cache des données permet de minimiser l’utilisation excessive de
+ la bande passante.</p>
+<p style="text-align: justify;">Un système de cache peut être mis en place comme suit :</p>
+<ul style="text-align: justify;">
+<li>Cacher les fichiers et les données statiques de l’application sur 
+les différents supports de stockage : AppCache, LocalStorage, Base de 
+données et fichiers.</li>
+<li>Cacher les données dynamiques avec une date d’expiration.</li>
+</ul>
+<h3 style="text-align: justify;"><strong>#4 – Minimiser les animations Javascript</strong></h3>
+<p style="text-align: justify;">Les animations CSS surpassent 
+celles&nbsp;de Javascript/Jquery en terme de performance en déléguant la
+ logique de l’animation au navigateur lui-même. Pour information,&nbsp; 
+les animations Javascript agissent sur le DOM, ce qui rend le rendu 
+visuel plus lent.</p>
+<p style="text-align: justify;">Les animations CSS n’utilisent pas le 
+GPU(Graphics Process Unit) par défaut , il faut donc le forcer en 
+utilisant les règles CSS adéquates pour ce besoin.</p>
+<p style="text-align: justify;">Exemple :</p>
+<table class="aligncenter" cellpadding="10" width="588">
+<tbody>
+<tr style="border-color: rgb(232, 232, 232);">
+<td style="width: 290px; padding: 10px; text-align: left; background-color: rgb(245, 245, 245);"><strong>&nbsp;&nbsp;Ne pas utiliser</strong></td>
+<td style="width: 290px; padding: 10px; text-align: left; background-color: rgb(245, 245, 245);"><strong>&nbsp;&nbsp;Mais utiliser</strong></td>
+</tr>
+<tr>
+<td style="width: 290px; padding: 10px; text-align: left; vertical-align: top; background-color: rgb(253, 253, 253);" rowspan="4">.cube {<br>
+-webkit-transform: translate3d(250px,250px,250px)<br>
+rotate3d(250px,250px,250px,-120deg)<br>
+scale3d(0.5, 0.5, 0.5);<br>
+}</td>
+<td style="width: 290px; padding: 10px; text-align: left; background-color: rgb(253, 253, 253);" rowspan="4">.cube {<br>
+-webkit-transform: translateZ(0);<br>
+-moz-transform: translateZ(0);<br>
+-ms-transform: translateZ(0);<br>
+-o-transform: translateZ(0);<br>
+transform: translateZ(0);<br>
+/* Other transform properties here */<br>
+}</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">L’idée est de forcer le navigateur à utiliser le “hardware acceleration” pour que l’animation soit plus fluide.</p>
+<h3 style="text-align: justify;"><strong>#5 – Eviter les 300ms ajoutées sur l’événement de clic</strong></h3>
+<p style="text-align: justify;">Ceci est l’un des points de performance 
+les plus marquants qui font la différence entre une application Hybride 
+et une autre native. En effet, la source de ce problème est qu’après 
+chaque clic sur le mobile, le navigateur attend 300ms pour décider qu’il
+ s’agit bien d’un simple clic, et que l’utilisateur ne souhaite pas 
+effectuer un double clic par la suite. Ce processus est comme suit :</p>
+<p style="text-align: justify;"><strong>Simple clic : </strong></p>
+<ul style="text-align: justify;">
+<li>touchstart</li>
+<li>touchend</li>
+<li>Temps d’attente de 300ms</li>
+<li>click</li>
+</ul>
+<p style="text-align: justify;"><strong>Double clic :</strong></p>
+<ul style="text-align: justify;">
+<li>touchstart</li>
+<li>touchend</li>
+<li>Temps d’attente &lt; de 300ms</li>
+<li>touchstart</li>
+<li>touchend</li>
+<li>double click</li>
+</ul>
+<p style="text-align: justify;">FastClick est une librairie permettant de lancer l’événement de clic juste après celui de&nbsp;<strong>touchend</strong>
+ afin de gagner en performance du clic. Il est donc fortement conseillé 
+d’utiliser FastClick au niveau des objets qui ne nécessitent pas un 
+double clic (liens, boutons, images, etc.).</p>
+<h3 style="text-align: justify;"><strong>#6 – Optimiser les images </strong></h3>
+<p style="text-align: justify;">L’utilisation de plusieurs images sur 
+une page web est cruciale pour la performance. En effet, chaque image 
+que vous ajoutez sur votre page à sa propre requête HTTP. Cela engendre 
+plus de charge au niveau du serveur et plus de temps de réponse au 
+niveau du client. La solution pour ce problème, est l’utilisation des 
+Sprites CSS.</p>
+<p style="text-align: justify;">Une Sprite est un fichier large contenant plusieurs images pour votre application.</p>
+<div id="attachment_3804" style="width: 590px" class="wp-caption alignnone"><a href="http://blog.neoxia.com/wp-content/uploads/2015/03/application-hybride-pictos.jpg"><img class="wp-image-3804 size-full" src="Comment_files/application-hybride-pictos.jpg" alt="application-hybride-pictos" height="200" width="580"></a><p class="wp-caption-text">Exemple d’une Sprite CSS.</p></div>
+<p style="text-align: justify;">Exemple : L’utilisation de l’image 
+ci-dessus pour vos icônes d’une application permet de réduire le nombre 
+de requêtes HTTP de 140 à une seule. Dans votre fichier CSS, vous allez 
+avoir une seule image que vous devez positionner selon vos besoins à 
+l’aide de background-position.</p>
+<p style="text-align: justify;">Pour plus d’information sur ce sujet visitez <a href="http://webdesign.tutsplus.com/articles/css-sprite-sheets-best-practices-tools-and-helpful-applications--webdesign-8340">ce lien</a><a href="http://webdesign.tutsplus.com/articles/css-sprite-sheets-best-practices-tools-and-helpful-applications--webdesign-8340">.</a></p>
+<p style="text-align: justify;">Il est à noter aussi qu’il est 
+préférable de penser à optimiser la taille et la résolution des images 
+utilisées pour qu’elles aient le minimum de poids possible.</p>
+<h3 style="text-align: justify;"><strong>#7 – Utiliser JSON </strong></h3>
+<p style="text-align: justify;">L’utilisation de JSON permet d’avoir une
+ communication plus légère que l’utilisation d’un autre format de 
+données.&nbsp; Avoir le couple JSON et SPA permet ainsi d’améliorer la 
+performance du fait que:</p>
+<ul style="text-align: justify;">
+<li>L’UI est générée côté client (Rapide)</li>
+<li>Le format JSON est léger, en plus il est facile&nbsp;à&nbsp;manipuler par Javascript</li>
+</ul>
+<p style="text-align: justify;">Il faut juste préciser que votre JSON doit être simple et bien structuré.</p>
+<h3 style="text-align: justify;"><strong>#8- Minifier vos fichiers JS et CSS</strong></h3>
+<p style="text-align: justify;">Minifier ses scripts JavaScript et les 
+fichiers CSS permet de supprimer les octets inutiles de vos fichiers et 
+aussi de rendre votre code plus difficile à comprendre, car la 
+minification permet de renommer les variables et les paramètres des 
+fonctions.</p>
+<p style="text-align: justify;">L’intérêt principal de la minification 
+est de regrouper tous les scripts Javascript dans un seul fichier et les
+ fichiers CSS dans un autre avec une taille minimale. Cela permet de 
+minimiser les appels HTTP et de réduire le temps de chargement, ce qui 
+contribue à l’amélioration des performances !</p>
+<h3 style="text-align: justify;"><strong>#9 – Respecter l’architecture du code HTML/CSS de jQuery Mobile</strong></h3>
+<p style="text-align: justify;">Si vous lisez la documentation de jQuery
+ Mobile, vous allez vous rendre compte que chaque div dispose d’un 
+attribut “data-role”. Essayez de respecter cette architecture.</p>
+<p style="text-align: justify;">De la même manière, la feuille de style 
+générée par défaut avec jQM est trop chargée mais indispensable pour 
+garder une cohérence dans l’aspect global&nbsp;de l’application : nous 
+vous conseillons de “nettoyer” un peu la feuille de style jQM, et 
+ensuite de rajouter la vôtre.</p>
+<h3 style="text-align: justify;"><strong>#10 – Utiliser des outils de développement et de débogage </strong></h3>
+<p style="text-align: justify;">Facebook et LinkedIn ont abandonné 
+l’approche hybride à cause du manque des bons outils de débogage. Ces 
+outils présentent un élément primordial dans le cycle de développement. 
+Aujourd’hui, <a href="https://developer.chrome.com/devtools/docs/remote-debugging"><strong>Chrome Devs tools</strong></a>, les outils de <a href="https://developer.apple.com/safari/tools/">développement web de Apple </a>et <a href="http://developer.blackberry.com/html5/documentation/v2_2/debugging_using_web_inspector.html">l’inspecteur de BlackBerry</a> sont disponibles pour déboguer vos applications respectivement sur les trois plateformes:</p>
+<ul style="text-align: justify;">
+<li>Android</li>
+<li>Blackberry</li>
+<li>iOS</li>
+</ul>
+<p style="text-align: justify;">Pour Windows phone vous pouvez utiliser <a href="http://people.apache.org/%7Epmuellr/weinre-docs/latest/"><strong>WEINRE </strong></a><strong>.</strong></p>
+<p style="text-align: justify;">Ces inspecteurs permettent non seulement
+ de déboguer, mais aussi de profiler l’activité de vos scripts, 
+d’auditer puis d’améliorer les performances de vos applications.</p>
+<h3 style="text-align: justify;"><strong>#11 – Tester votre application directement sur votre device !</strong></h3>
+<p style="text-align: justify;">On peut dire que les émulateurs ne sont 
+pas le support le plus adapté pour évaluer la performance d’une 
+application hybride, car ils ont souvent un temps de réponse très lent. 
+Il est fortement conseillé de tester et d’évaluer la performance de vos 
+applications sur un terminal mobile afin d’avoir un résultat plus 
+fiable.</p>
+<h3 style="text-align: justify;"><strong>EN RÉSUMÉ </strong></h3>
+<p style="text-align: justify;">Une application mobile hybride n’est pas
+ forcément simple à mettre en place et peut facilement être confrontée 
+au problème de performance. Il faut juste garder en tête que même en 
+codant avec des langages web, les limitations de performance et les 
+spécificité des devices mobiles nous obligent à respecter certaines 
+bonnes pratiques pour que les applications hybrides soient plus fluides.</p>
+<p style="text-align: justify;">“Et c’est possible, chez NEOXIA, nous l’avons fait !”</p>
+
+<div class="juiz_sps_links  counters_both juiz_sps_displayed_bottom">
+<p class="screen-reader-text juiz_sps_maybe_hidden_text">Partager la publication "Comment booster les performances d’une application mobile hybride ?"</p>
+
+	<ul class="juiz_sps_links_list juiz_sps_hide_name"><li class="juiz_sps_item juiz_sps_link_facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/" rel="nofollow" title="Partager sur Facebook" target="_blank"><span class="juiz_sps_icon jsps-facebook"></span><span class="juiz_sps_network_name">Facebook</span></a></li><li class="juiz_sps_item juiz_sps_link_twitter"><a href="https://twitter.com/intent/tweet?source=webclient&amp;original_referer=http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/&amp;text=Comment+booster+les+performances+d%27une+application+mobile+hybride+%3F&amp;url=http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/&amp;related=neoxiaparis&amp;via=neoxiaparis" rel="nofollow" title="Partager sur Twitter" target="_blank"><span class="juiz_sps_icon jsps-twitter"></span><span class="juiz_sps_network_name">Twitter</span></a></li><li class="juiz_sps_item juiz_sps_link_linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=JuizSocialPostSharer&amp;title=Comment+booster+les+performances+d%27une+application+mobile+hybride+%3F&amp;url=http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/" rel="nofollow" title="Partager sur LinkedIn" target="_blank"><span class="juiz_sps_icon jsps-linkedin"></span><span class="juiz_sps_network_name">LinkedIn</span></a></li><li class="juiz_sps_item juiz_sps_link_mail"><a href="mailto:?subject=Lis%20cet%20article%20trouv%C3%A9%20sur%20http://blog.neoxia.com&amp;body=J%27ai%20trouv%C3%A9%20cet%20article%20%22Comment%20booster%20les%20performances%20d%E2%80%99une%20application%20mobile%20hybride%20?%22%20qui%20pourrait%20t%27int%C3%A9resser%20%21%20Voici%20le%20lien%20direct%20:%20http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/%20Bonne%20journ%C3%A9e" rel="nofollow" title="Partager cette publication avec un ami (e-mail)" target="_blank"><span class="juiz_sps_icon jsps-mail"></span><span class="juiz_sps_network_name">E-mail</span></a></li></ul>
+	</div>
+
+<div id="themify_builder_content-3775" data-postid="3775" class="themify_builder_content themify_builder_content-3775 themify_builder themify_builder_front">
+				
+			<!-- module_row -->
+			<div class="themify_builder_row module_row module_row_56cc572bf3524 clearfix">
+				<div class="row_inner_wrapper">
+					<div class="row_inner">
+
+						
+						
+						
+						
+						<div class="themify_builder_col col-full first last">
+															
+								&nbsp;							
+													</div>
+						<!-- /col -->
+
+						
+												
+											
+					</div>
+					<!-- /row_inner -->
+				</div>
+			<!-- /row_inner_wrapper -->
+			</div>
+			<!-- /module_row -->
+			
+</div>
+<!-- /themify_builder_content -->	
+	
+	</div><!-- /.entry-content -->
+</div>
+<!-- /post-content -->		
+					<!-- post-meta -->
+			<p class="post-meta entry-meta"> 
+				<span class="post-author"><a href="http://blog.neoxia.com/author/iza/" title="Articles par Ilham Zakha" class="url fn" rel="author">Ilham Zakha</a> et <a href="http://blog.neoxia.com/author/yei/" title="Articles par Yassine Elqandili" class="url fn" rel="author">Yassine Elqandili</a></span>
+				<span class="post-category"><a href="http://blog.neoxia.com/category/retours-experience/" rel="category tag">Retours d'expérience</a></span>
+				
+				 <span class="post-tag"><a href="http://blog.neoxia.com/tag/blog/" rel="tag">blog</a>, <a href="http://blog.neoxia.com/tag/html5/" rel="tag">html5</a>, <a href="http://blog.neoxia.com/tag/hybride/" rel="tag">Hybride</a>, <a href="http://blog.neoxia.com/tag/mobile/" rel="tag">mobile</a>, <a href="http://blog.neoxia.com/tag/performance/" rel="tag">Performance</a></span>			</p>
+			<!-- /post-meta -->
+			
+				
+	</div>
+	<!-- /.post-inner -->
+
+	</article>
+<!-- /post -->
+
+		
+			
+			<!-- post-nav -->
+	<div class="post-nav clearfix"> 
+		<span class="prev"><a href="http://blog.neoxia.com/liens-de-la-semaine-8/" rel="prev"><span class="arrow">«</span> Liens de la semaine #8</a></span>		<span class="next"><a href="http://blog.neoxia.com/liens-de-la-semaine-9/" rel="next"><span class="arrow">»</span> Liens de la semaine #9</a></span>	</div>
+	<!-- /post-nav -->
+
+					
+
+
+<div id="comments" class="commentwrap">
+	
+	
+
+						<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Laisser un commentaire <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://blog.neoxia.com/comment-booster-les-performances-dune-application-mobile-hybride/#respond" style="display: none;">Cancel</a></small></h3>
+									<form action="http://blog.neoxia.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										<p class="comment-form-author"><input id="author" name="author" size="30" class="required" type="text"><label for="author">Your Name</label> <span class="required">*</span></p>
+<p class="comment-form-email"><input id="email" name="email" size="30" class="required email" type="text"><label for="email">Your Email</label> <span class="required">*</span></p>
+<p class="comment-form-url"><input id="url" name="url" size="30" type="text"><label for="website">Your Website</label> </p>
+												<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" class="required"></textarea></p>						
+						<p class="form-submit"><input name="submit" id="submit" class="submit" value="Commenter" type="submit"> <input name="comment_post_ID" value="3775" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+</p><p style="display:none;"><input name="nxts" value="1456232236" type="text"><input name="nxts_signed" value="4660918120c3a4242e3bc1f0bdc7762165610340" type="text"><input name="c4ed6401b3bc2e1f3a60ea5964" type="text"><input name="974132a4bc8bc4053108006" value="7624fae6967cbe4c8" type="text"></p>					</form>
+							</div><!-- #respond -->
+			
+</div>
+<!-- /.commentwrap -->
+				
+        
+	</div>
+	<!-- /content -->
+    
+
+
+<aside id="sidebar">
+	
+	<div id="search-4" class="widget widget_search"><h4 class="widgettitle">TROUVER</h4><form method="get" id="searchform" action="http://blog.neoxia.com/">
+	<input name="s" id="s" placeholder="Search" type="text">
+</form>
+</div><div id="tag_cloud-6" class="widget widget_tag_cloud"><h4 class="widgettitle">MOTS-CLÉS</h4><div class="tagcloud"><a href="http://blog.neoxia.com/tag/dotnet/" class="tag-link-6" title="20 sujets" style="font-size: 19.3258pt;">.NET</a>
+<a href="http://blog.neoxia.com/tag/agilite/" class="tag-link-33" title="19 sujets" style="font-size: 19.0112pt;">Agilité</a>
+<a href="http://blog.neoxia.com/tag/amazon/" class="tag-link-43" title="3 sujets" style="font-size: 8pt;">amazon</a>
+<a href="http://blog.neoxia.com/tag/apple/" class="tag-link-69" title="7 sujets" style="font-size: 12.7191pt;">Apple</a>
+<a href="http://blog.neoxia.com/tag/application/" class="tag-link-125" title="9 sujets" style="font-size: 14.2921pt;">application</a>
+<a href="http://blog.neoxia.com/tag/aws/" class="tag-link-44" title="6 sujets" style="font-size: 11.9326pt;">aws</a>
+<a href="http://blog.neoxia.com/tag/azure/" class="tag-link-22" title="3 sujets" style="font-size: 8pt;">azure</a>
+<a href="http://blog.neoxia.com/tag/bdd/" class="tag-link-7" title="3 sujets" style="font-size: 8pt;">Base de données</a>
+<a href="http://blog.neoxia.com/tag/big-data/" class="tag-link-108" title="6 sujets" style="font-size: 11.9326pt;">big data</a>
+<a href="http://blog.neoxia.com/tag/blog/" class="tag-link-301" title="6 sujets" style="font-size: 11.9326pt;">blog</a>
+<a href="http://blog.neoxia.com/tag/changement/" class="tag-link-169" title="18 sujets" style="font-size: 18.6966pt;">changement</a>
+<a href="http://blog.neoxia.com/tag/christophe-faurie/" class="tag-link-166" title="16 sujets" style="font-size: 17.9101pt;">christophe faurie</a>
+<a href="http://blog.neoxia.com/tag/cloud-2/" class="tag-link-21" title="30 sujets" style="font-size: 22pt;">cloud</a>
+<a href="http://blog.neoxia.com/tag/crm/" class="tag-link-50" title="6 sujets" style="font-size: 11.9326pt;">crm</a>
+<a href="http://blog.neoxia.com/tag/digital/" class="tag-link-264" title="9 sujets" style="font-size: 14.2921pt;">digital</a>
+<a href="http://blog.neoxia.com/tag/dsi/" class="tag-link-72" title="4 sujets" style="font-size: 9.57303pt;">DSI</a>
+<a href="http://blog.neoxia.com/tag/developpement-2/" class="tag-link-178" title="28 sujets" style="font-size: 21.5281pt;">développement</a>
+<a href="http://blog.neoxia.com/tag/entreprise/" class="tag-link-182" title="5 sujets" style="font-size: 10.8315pt;">entreprise</a>
+<a href="http://blog.neoxia.com/tag/ergonomie/" class="tag-link-120" title="5 sujets" style="font-size: 10.8315pt;">ergonomie</a>
+<a href="http://blog.neoxia.com/tag/evenement/" class="tag-link-229" title="8 sujets" style="font-size: 13.5056pt;">evenement</a>
+<a href="http://blog.neoxia.com/tag/projet/" class="tag-link-9" title="23 sujets" style="font-size: 20.2697pt;">Gestion de projet</a>
+<a href="http://blog.neoxia.com/tag/google/" class="tag-link-78" title="17 sujets" style="font-size: 18.382pt;">google</a>
+<a href="http://blog.neoxia.com/tag/general/" class="tag-link-3" title="8 sujets" style="font-size: 13.5056pt;">Général</a>
+<a href="http://blog.neoxia.com/tag/iaas/" class="tag-link-14" title="5 sujets" style="font-size: 10.8315pt;">IaaS</a>
+<a href="http://blog.neoxia.com/tag/ipad/" class="tag-link-76" title="5 sujets" style="font-size: 10.8315pt;">iPad</a>
+<a href="http://blog.neoxia.com/tag/iphone/" class="tag-link-83" title="4 sujets" style="font-size: 9.57303pt;">iPhone</a>
+<a href="http://blog.neoxia.com/tag/java/" class="tag-link-5" title="30 sujets" style="font-size: 22pt;">Java</a>
+<a href="http://blog.neoxia.com/tag/lean/" class="tag-link-34" title="3 sujets" style="font-size: 8pt;">Lean</a>
+<a href="http://blog.neoxia.com/tag/leanagile/" class="tag-link-12" title="15 sujets" style="font-size: 17.4382pt;">Lean et agile</a>
+<a href="http://blog.neoxia.com/tag/meetup/" class="tag-link-133" title="4 sujets" style="font-size: 9.57303pt;">meetup</a>
+<a href="http://blog.neoxia.com/tag/microsoft/" class="tag-link-17" title="7 sujets" style="font-size: 12.7191pt;">Microsoft</a>
+<a href="http://blog.neoxia.com/tag/mobile/" class="tag-link-15" title="5 sujets" style="font-size: 10.8315pt;">mobile</a>
+<a href="http://blog.neoxia.com/tag/mobilite-2/" class="tag-link-29" title="14 sujets" style="font-size: 17.1236pt;">mobilité</a>
+<a href="http://blog.neoxia.com/tag/neoxia/" class="tag-link-183" title="4 sujets" style="font-size: 9.57303pt;">Neoxia</a>
+<a href="http://blog.neoxia.com/tag/news-neoxia/" class="tag-link-399" title="3 sujets" style="font-size: 8pt;">News NX</a>
+<a href="http://blog.neoxia.com/tag/numerique/" class="tag-link-265" title="6 sujets" style="font-size: 11.9326pt;">numérique</a>
+<a href="http://blog.neoxia.com/tag/performance/" class="tag-link-13" title="11 sujets" style="font-size: 15.5506pt;">Performance</a>
+<a href="http://blog.neoxia.com/tag/saas/" class="tag-link-24" title="3 sujets" style="font-size: 8pt;">saas</a>
+<a href="http://blog.neoxia.com/tag/salesforce-2/" class="tag-link-86" title="16 sujets" style="font-size: 17.9101pt;">salesforce</a>
+<a href="http://blog.neoxia.com/tag/scrum/" class="tag-link-31" title="5 sujets" style="font-size: 10.8315pt;">scrum</a>
+<a href="http://blog.neoxia.com/tag/tdd/" class="tag-link-35" title="4 sujets" style="font-size: 9.57303pt;">TDD</a>
+<a href="http://blog.neoxia.com/tag/test/" class="tag-link-37" title="3 sujets" style="font-size: 8pt;">test</a>
+<a href="http://blog.neoxia.com/tag/transformation-digitale/" class="tag-link-262" title="5 sujets" style="font-size: 10.8315pt;">transformation digitale</a>
+<a href="http://blog.neoxia.com/tag/ux/" class="tag-link-136" title="6 sujets" style="font-size: 11.9326pt;">Ux</a>
+<a href="http://blog.neoxia.com/tag/web-2/" class="tag-link-62" title="6 sujets" style="font-size: 11.9326pt;">web</a></div>
+</div>		<div id="recent-posts-4" class="widget widget_recent_entries">		<h4 class="widgettitle">ARTICLES RÉCENTS</h4>		<ul>
+					<li>
+				<a href="http://blog.neoxia.com/inline-editing-list-view-in-salesforce-settings-and-pitfalls/">Inline editing list view in Salesforce : settings and pitfalls (EN/FR)</a>
+						</li>
+					<li>
+				<a href="http://blog.neoxia.com/global-cross-object-picklists-in-salesforce-enfr/">Global, cross-object picklists in Salesforce (en/fr)</a>
+						</li>
+					<li>
+				<a href="http://blog.neoxia.com/9-methodesastuces-pour-reussir-votre-integration-responsive-web-design/">9 astuces pour réussir votre intégration responsive</a>
+						</li>
+					<li>
+				<a href="http://blog.neoxia.com/meetup-aws-et-docker-2/">Meetup Big Data HADOOP &amp; MESOS</a>
+						</li>
+				</ul>
+		</div><div id="linkcat-2" class="widget widget_links"><h4 class="widgettitle">NOS OFFRES</h4>
+	<ul class="xoxo blogroll">
+<li><a href="http://neoxia.com/conseil_audit" target="_blank">Conseil &amp; Audit</a></li>
+<li><a href="http://neoxia.com/mobilite" target="_blank">Mobilité</a></li>
+<li><a href="http://neoxia.com/ux_design" target="_blank">UX/UI Design</a></li>
+<li><a href="http://neoxia.com/salesforce" target="_blank">Salesforce</a></li>
+<li><a href="http://neoxia.com/cloud" target="_blank">Cloud</a></li>
+<li><a href="http://neoxia.com/bigdata" target="_blank">Big Data</a></li>
+<li><a href="http://neoxia.com/performance" target="_blank">Performance</a></li>
+<li><a href="http://neoxia.com/devops" target="_blank">Devops</a></li>
+
+	</ul>
+</div>
+
+	</aside>
+<!-- /#sidebar -->
+
+</div>
+<!-- /layout-container -->
+	
+	
+		</div>
+	<!-- /body -->
+	
+	<div id="footerwrap">
+    
+		<footer id="footer" class="clearfix">
+                	<div class="footer-part footer-description">
+                		<img src="Comment_files/neoxia-logo.png">
+                		<p class="italic">La révolution numérique en cours 
+impose à nos organisations de réussir un véritable partenariat 
+stratégique entre les équipes métier et les équipes IT et Technologies. 
+Telle est la vision de l'IT as a Buisness Partner !</p>
+                                <div class="clearer"></div>
+                	</div>
+                	
+                	<div class="footer-part footer-contact">
+                                <div style="display:inline-block; margin:auto;">
+                                        <p><span class="footer-part-title">FRANCE</span><br>33 av. des Champs Elysées<br>75 008 PARIS<br>+33 (0) 158 36 40 60</p>
+                                        <p><span class="footer-part-title">MAROC</span><br>119 Boulevard Emile Zola<br>20 300 CASABLANCA<br>+212 (0) 522 45 61 50</p>
+                                </div>
+                                <div class="clearer"></div>
+                	</div>
+                	
+                	<div class="footer-part footer-social">
+                                <span class="footer-part-title">SUIVEZ-NOUS</span>
+                                <div class="social-links">
+                                        <a href="https://www.facebook.com/neoxia"><div class="social-link fb-link"></div></a>
+                                        <a href="https://twitter.com/neoxiaparis"><div class="social-link twitter-link"></div></a>
+                                        <a href="https://www.linkedin.com/company/52814?trk=tyah&amp;trkInfo=tarId%3A1418051300116%2Ctas%3Aneoxia%2Cidx%3A1-1-1"><div class="social-link linkedin-link"></div></a>
+                                        <div class="clearer"></div>
+                                        <a href="https://www.youtube.com/channel/UCAUBP5-1xO7-BrYT3N8xjOg"><div class="social-link youtube-link second-line"></div></a>
+                                        <a href="https://github.com/neoxia"><div class="social-link github-link second-line"></div></a>
+                                        <div class="clearer"></div>
+                                </div>
+                	</div>
+                	
+		</footer>
+        
+        <div class="footer-bottom">
+        	<nav>
+        		<a href="">Copyright 2014 NEOXIA </a> |
+        		<a href=""> Mentions légales</a>
+        	</nav>
+        </div>
+
+	</div>
+	<!-- /#footerwrap -->
+	
+</div>
+<!-- /#pagewrap -->
+
+
+<!-- wp_footer -->
+
+
+<script type="text/javascript" src="Comment_files/carousel_002.js"></script>
+<script type="text/javascript" src="Comment_files/themify_003.js"></script>
+<script type="text/javascript" src="Comment_files/waypoints.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var tbLocalScript = {"isTouch":"","isAnimationActive":"1","animationInviewSelectors":[".fly-in > .post",".fly-in .row_inner > .tb-column",".fade-in > .post",".fade-in .row_inner > .tb-column",".slide-up > .post",".slide-up .row_inner > .tb-column",".col4-1.fly-in",".col4-2.fly-in, .col4-3.fly-in",".col3-1.fly-in",".col3-2.fly-in",".col2-1.fly-in",".col-full.fly-in",".col4-1.fade-in",".col4-2.fade-in",".col4-3.fade-in",".col3-1.fade-in",".col3-2.fade-in",".col2-1.fade-in",".col-full.fade-in",".col4-1.slide-up",".col4-2.slide-up",".col4-3.slide-up",".col3-1.slide-up",".col3-2.slide-up",".col2-1.slide-up",".col-full.slide-up"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Comment_files/themify.js"></script><div style="visibility: hidden;" class="wow"></div>
+<script type="text/javascript" src="Comment_files/carousel.js"></script>
+<script type="text/javascript" src="Comment_files/jquery_002.js"></script>
+<script type="text/javascript" src="Comment_files/jquery.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var themifyScript = {"loadingImg":"http:\/\/blog.neoxia.com\/wp-content\/themes\/grido-custom\/images\/loading.gif","maxPages":"0","autoInfinite":"","lightbox":{"lightboxSelector":".lightbox","lightboxOn":true,"lightboxContentImages":false,"lightboxContentImagesSelector":".post-content a[href$=jpg],.page-content a[href$=jpg],.post-content a[href$=gif],.page-content a[href$=gif],.post-content a[href$=png],.page-content a[href$=png],.post-content a[href$=JPG],.page-content a[href$=JPG],.post-content a[href$=GIF],.page-content a[href$=GIF],.post-content a[href$=PNG],.page-content a[href$=PNG],.post-content a[href$=jpeg],.page-content a[href$=jpeg],.post-content a[href$=JPEG],.page-content a[href$=JPEG]","theme":"pp_default","social_tools":false,"allow_resize":true,"show_title":false,"overlay_gallery":false,"screenWidthNoLightbox":600,"deeplinking":false,"contentImagesAreas":".post, .type-page, .type-highlight, .type-slider","gallerySelector":".gallery-icon > a[href$=jpg],.gallery-icon > a[href$=gif],.gallery-icon > a[href$=png],.gallery-icon > a[href$=JPG],.gallery-icon > a[href$=GIF],.gallery-icon > a[href$=PNG],.gallery-icon > a[href$=jpeg],.gallery-icon > a[href$=JPEG]","lightboxGalleryOn":true},"lightboxContext":"#pagewrap","isTouch":"false","audioPlayer":"http:\/\/blog.neoxia.com\/wp-content\/themes\/grido-custom\/js\/player.swf"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Comment_files/themify_002.js"></script>
+<script type="text/javascript" src="Comment_files/themify_005.js"></script>
+<script type="text/javascript" src="Comment_files/lightbox.js"></script>
+<script type="text/javascript" src="Comment_files/comment-reply.js"></script>
+<script type="text/javascript" src="Comment_files/retina.js"></script>
+
+<script>
+	jQuery(window).load(function(){ jQuery(window).resize(); });
+</script>
+
+<script type="text/javascript">
+        //gère la partie basse du menu persistant (fixed) au scroll)
+        var scroll = document.body.scrollTop;
+        if(scroll>=0)
+                var offset = (30-scroll > 0)? 30-scroll : 0;
+        else
+                var offset = 30;
+        document.getElementById('header').style.top = offset+'px';
+        window.onscroll = function (event) {
+                var scroll = document.body.scrollTop;
+                if(scroll>=0)
+                        var offset = (30-scroll > 0)? 30-scroll : 0;
+                else
+                        var offset = 30;
+                document.getElementById('header').style.top = offset+'px';
+        };
+
+        //ajoute des éléments custom dans le menu (ne s'afficheront que sur version mobile)
+        var menu = document.getElementById('main-nav');
+        menu.innerHTML +=   '<li class="first-of-second-part menu-item menu-item-type-taxonomy menu-item-object-category mobile-only"><a class="nightblue" href="http://neoxia.com/">A propos</a></li>';
+        menu.innerHTML +=   '<li class="menu-item menu-item-type-taxonomy menu-item-object-category mobile-only"><a class="nightblue" href="http://neoxia.com/contact">Contact</a></li>';
+        menu.innerHTML +=   '<li class="menu-item menu-item-type-taxonomy menu-item-object-category mobile-only"><a class="nightblue" href="http://portfolio.neoxia.com/">Portfolio</a></li>';
+
+        //formate le texte (car difficile de modifier la DOM du contenu des articles)
+        jQuery('.post-content .entry-content h6, .post-content .entry-content h2').after('<div class="trait"></div>');
+
+        var menu = false;
+        jQuery('#menu-icon').click(function(){
+                if (!menu){
+                        jQuery('#main-nav-wrap nav').css('height', '100%');
+                        jQuery('.mobile-close-button').css('display', 'block');
+                }
+                else {
+                        jQuery('#main-nav-wrap nav').css('height', '0');
+                        jQuery('.mobile-close-button').css('display', 'none');       
+                }
+                menu = !menu;
+        });
+
+        jQuery('.mobile-close-button').click(function(){
+                jQuery('#menu-icon').click();
+        });
+</script>
+
+
+
+</body></html>
